@@ -1,0 +1,7 @@
+requests
+pandas
+uvicorn
+fastapi
+httpx
+pydantic
+ratelimit

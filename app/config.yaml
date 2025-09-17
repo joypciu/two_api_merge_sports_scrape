@@ -1,0 +1,123 @@
+# Sports Data Collection System Configuration
+
+# API Settings
+apis:
+  xbet:
+    base_url: "https://1xlite-86981.world/service-api"
+    rate_limit: 45
+    timeout: 30
+    enabled: true
+
+  thesportsdb:
+    api_key: ""  # Add your API key if available
+    rate_limit: 1
+    enabled: true
+
+  iscj:
+    base_url: "https://iscjxxqgmb.com/api"
+    enabled: false  # Currently failing
+
+# Database Settings
+database:
+  path: "sports_data_v2.db"
+  retention_days: 90
+  partition_by: "day"
+  optimize_interval_hours: 24
+
+# Collection Settings
+collection:
+  interval_minutes: 15
+  max_workers: 10
+  retry_attempts: 3
+  retry_delay_seconds: 5
+
+# Sports Configuration
+sports:
+  # High priority - working well
+  soccer:
+    id: 1
+    active: true
+    priority: 1
+
+  basketball:
+    id: 7
+    active: true
+    priority: 1
+
+  tennis:
+    id: 3
+    active: true
+    priority: 1
+
+  ice_hockey:
+    id: 5
+    active: true
+    priority: 1
+
+  cricket:
+    id: 45
+    active: true
+    priority: 2
+
+  futsal:
+    id: 21
+    active: true
+    priority: 2
+
+  kabaddi:
+    id: 161
+    active: true
+    priority: 3
+
+  rugby:
+    id: 49
+    active: true
+    priority: 3
+
+  # Low priority - may have limited data
+  volleyball:
+    id: 13
+    active: false
+    priority: 4
+
+  baseball:
+    id: 19
+    active: false
+    priority: 4
+
+  handball:
+    id: 17
+    active: false
+    priority: 4
+
+# Analysis Settings
+analysis:
+  enabled: true
+  prediction_models:
+    - win_probability
+    - score_prediction
+    - odds_movement
+
+  cache:
+    team_stats_hours: 1
+    predictions_hours: 6
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  file: "sports_collector_v2.log"
+  max_file_size_mb: 100
+  backup_count: 5
+
+# Monitoring
+monitoring:
+  health_check_interval_minutes: 5
+  alert_on_failure: true
+  metrics_enabled: true
+
+# Export Settings
+export:
+  formats: ["json", "csv", "parquet"]
+  compression: "gzip"
+  auto_export: false
+  export_interval_hours: 24

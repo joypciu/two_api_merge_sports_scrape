@@ -1,0 +1,273 @@
+{
+  "timestamp": "2025-09-17T16:18:38.599236",
+  "session_id": "discovery_1758104318",
+  "apis": {
+    "1xbet": {
+      "name": "1xBet",
+      "base_url": "https://1xlite-86981.world/service-api",
+      "endpoints_discovered": {
+        "sports_list": {
+          "name": "sports_list",
+          "description": "Complete sports catalog with IDs",
+          "status": "success",
+          "response_time": 0.4270308017730713,
+          "http_status": 200,
+          "data_size": 11338,
+          "error_message": null,
+          "data_analysis": {
+            "top_level_keys": [
+              "Error",
+              "ErrorCode",
+              "Guid",
+              "Id",
+              "Success",
+              "Value"
+            ],
+            "top_level_count": 6,
+            "data_types": [
+              "array",
+              "string",
+              "array_of_objects",
+              "number"
+            ],
+            "total_data_items": 1213,
+            "max_nesting_depth": 3
+          },
+          "content_type": "json"
+        },
+        "live_matches": {
+          "name": "live_matches",
+          "description": "Live match data across all sports",
+          "status": "success",
+          "response_time": 0.4980449676513672,
+          "http_status": 200,
+          "data_size": 229256,
+          "error_message": null,
+          "data_analysis": {
+            "top_level_keys": [
+              "Error",
+              "ErrorCode",
+              "Guid",
+              "Id",
+              "Success",
+              "Value"
+            ],
+            "top_level_count": 6,
+            "data_types": [
+              "array",
+              "string",
+              "array_of_objects",
+              "number"
+            ],
+            "total_data_items": 24733,
+            "max_nesting_depth": 8
+          },
+          "content_type": "json"
+        },
+        "top_games": {
+          "name": "top_games",
+          "description": "Popular games and statistics",
+          "status": "success",
+          "response_time": 0.22178912162780762,
+          "http_status": 200,
+          "data_size": 9466,
+          "error_message": null,
+          "data_analysis": {
+            "top_level_keys": [
+              "Error",
+              "ErrorCode",
+              "Guid",
+              "Id",
+              "Success",
+              "Value"
+            ],
+            "top_level_count": 6,
+            "data_types": [
+              "array",
+              "string",
+              "array_of_objects",
+              "number"
+            ],
+            "total_data_items": 1000,
+            "max_nesting_depth": 8
+          },
+          "content_type": "json"
+        },
+        "express_games": {
+          "name": "express_games",
+          "description": "Express betting options",
+          "status": "success",
+          "response_time": 0.2408444881439209,
+          "http_status": 200,
+          "data_size": 69816,
+          "error_message": null,
+          "data_analysis": {},
+          "content_type": "json"
+        }
+      },
+      "working_endpoints": 4,
+      "total_endpoints_tested": 4,
+      "sports_coverage": {},
+      "data_types_available": "{'array', 'string', 'array_of_objects', 'number'}",
+      "performance_metrics": {
+        "success_rate": 1.0,
+        "total_sports_discovered": 0,
+        "data_types_count": 4,
+        "average_response_time": 0.34692734479904175
+      },
+      "status": "excellent",
+      "error_summary": []
+    },
+    "thesportsdb": {
+      "name": "TheSportsDB",
+      "base_url": "https://www.thesportsdb.com/api/v1/json",
+      "endpoints_discovered": {
+        "daily_events": {
+          "name": "daily_events",
+          "description": "Daily events by sport and date",
+          "status": "error",
+          "response_time": 0.42830562591552734,
+          "http_status": 404,
+          "data_size": 1245,
+          "error_message": "HTTP 404: Not Found",
+          "data_analysis": {}
+        },
+        "team_lookup": {
+          "name": "team_lookup",
+          "description": "Team information lookup",
+          "status": "error",
+          "response_time": 0.23946857452392578,
+          "http_status": 404,
+          "data_size": 1245,
+          "error_message": "HTTP 404: Not Found",
+          "data_analysis": {}
+        },
+        "league_lookup": {
+          "name": "league_lookup",
+          "description": "League information lookup",
+          "status": "error",
+          "response_time": 0.23308444023132324,
+          "http_status": 404,
+          "data_size": 1245,
+          "error_message": "HTTP 404: Not Found",
+          "data_analysis": {}
+        },
+        "player_lookup": {
+          "name": "player_lookup",
+          "description": "Player information lookup",
+          "status": "error",
+          "response_time": 0.24699854850769043,
+          "http_status": 404,
+          "data_size": 1245,
+          "error_message": "HTTP 404: Not Found",
+          "data_analysis": {}
+        }
+      },
+      "working_endpoints": 0,
+      "total_endpoints_tested": 4,
+      "sports_coverage": {},
+      "data_types_available": "set()",
+      "performance_metrics": {
+        "success_rate": 0.0,
+        "total_sports_discovered": 0,
+        "data_types_count": 0,
+        "average_response_time": 0.0
+      },
+      "status": "critical",
+      "error_summary": []
+    },
+    "iscj": {
+      "name": "iscjxxqgmb",
+      "base_url": "https://iscjxxqgmb.com/api",
+      "endpoints_discovered": {
+        "match_list": {
+          "name": "match_list",
+          "description": "Match listings with betting lines",
+          "status": "success",
+          "response_time": 1.0127215385437012,
+          "http_status": 200,
+          "data_size": 191166,
+          "error_message": null,
+          "data_analysis": {
+            "top_level_keys": [
+              "lines_hierarchy",
+              "line_count",
+              "line_types",
+              "site_section",
+              "is_granted_role_user",
+              "translations"
+            ],
+            "top_level_count": 6,
+            "data_types": [
+              "string",
+              "array_of_objects",
+              "array",
+              "object",
+              "number"
+            ],
+            "total_data_items": 10483,
+            "max_nesting_depth": 15
+          },
+          "content_type": "json"
+        },
+        "match_details": {
+          "name": "match_details",
+          "description": "Detailed match information",
+          "status": "error",
+          "response_time": 0.1983959674835205,
+          "http_status": 404,
+          "data_size": 765,
+          "error_message": "HTTP 404: Not Found",
+          "data_analysis": {}
+        },
+        "sports_list": {
+          "name": "sports_list",
+          "description": "Available sports catalog",
+          "status": "error",
+          "response_time": 0.20861172676086426,
+          "http_status": 404,
+          "data_size": 765,
+          "error_message": "HTTP 404: Not Found",
+          "data_analysis": {}
+        },
+        "live_matches": {
+          "name": "live_matches",
+          "description": "Currently live matches",
+          "status": "error",
+          "response_time": 0.20624399185180664,
+          "http_status": 404,
+          "data_size": 765,
+          "error_message": "HTTP 404: Not Found",
+          "data_analysis": {}
+        }
+      },
+      "working_endpoints": 1,
+      "total_endpoints_tested": 4,
+      "sports_coverage": {},
+      "data_types_available": "{'string', 'array_of_objects', 'array', 'object', 'number'}",
+      "performance_metrics": {
+        "success_rate": 0.25,
+        "total_sports_discovered": 0,
+        "data_types_count": 5,
+        "average_response_time": 1.0127215385437012
+      },
+      "status": "poor",
+      "error_summary": []
+    }
+  },
+  "overall_summary": {
+    "total_apis": 3,
+    "working_apis": 1,
+    "total_endpoints_tested": 12,
+    "working_endpoints": 5,
+    "total_sports_discovered": 0,
+    "api_status_breakdown": {
+      "excellent": 1,
+      "critical": 1,
+      "poor": 1
+    },
+    "best_performing_api": "1xbet",
+    "sports_coverage_comparison": {},
+    "overall_success_rate": 0.4166666666666667
+  }
+}

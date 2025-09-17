@@ -1,0 +1,45 @@
+2025-09-17 17:55:49,814 - INFO - 📊 System Status: {'timestamp': '2025-09-17T17:55:38.275062', 'api_status': {'xbet': {'request_count': 0, 'last_request_time': 0, 'rate_limit': 45, 'healthy': False, 'sports_cached': 0, 'client_status': 'active'}, 'iscjxxqgmb': {'request_count': 0, 'last_request_time': 0, 'rate_limit': 50, 'healthy': False, 'sports_cached': 0, 'sports_supported': 38, 'api_status': 'active'}}, 'database_stats': {'total_tables': 0, 'total_records': 0, 'sports_covered': [], 'date_range': {'oldest': None, 'newest': None}}, 'predictions_available': True}
+2025-09-17 17:55:49,814 - INFO - 🎯 Demonstrating prediction capabilities
+2025-09-17 17:55:50,067 - INFO - 🔮 Manchester City vs Arsenal (soccer)
+2025-09-17 17:55:50,068 - INFO -    Outcome: home_win (40.0% confidence)
+2025-09-17 17:55:50,068 - INFO -    Score: 0:0
+2025-09-17 17:55:50,320 - INFO - 🔮 Los Angeles Lakers vs Golden State Warriors (basketball)
+2025-09-17 17:55:50,320 - INFO -    Outcome: home_win (40.0% confidence)
+2025-09-17 17:55:50,320 - INFO -    Score: 0:0
+2025-09-17 17:55:50,565 - INFO - 🔮 Real Madrid vs Barcelona (soccer)
+2025-09-17 17:55:50,566 - INFO -    Outcome: home_win (40.0% confidence)
+2025-09-17 17:55:50,566 - INFO -    Score: 0:0
+2025-09-17 17:55:50,566 - INFO - 🔄 Starting continuous collection (interval: 15 minutes)
+2025-09-17 17:55:50,567 - INFO - 🚀 Starting comprehensive sports data collection
+2025-09-17 17:55:50,567 - INFO - 📡 Collecting soccer data
+2025-09-17 17:55:51,211 - INFO - ✅ 1xBet: Retrieved 57 matches for sport 1
+2025-09-17 17:55:51,909 - INFO - ✅ ISCJXXQGMB: Retrieved 20 live matches for sport 1
+2025-09-17 17:55:51,910 - INFO - 📊 Intelligently merged (normalized): 57 from 1xBet + 20 from ISCJXXQGMB = 77 total
+2025-09-17 17:55:51,928 - INFO - ✅ Created/verified table: soccer_2025_09_17
+2025-09-17 17:55:51,932 - INFO - ✅ Inserted 77 matches into soccer_2025_09_17
+2025-09-17 17:56:18,657 - INFO - ✅ soccer: 77 matches from BOTH
+2025-09-17 17:56:18,658 - INFO - ✅ soccer: 77 matches collected
+2025-09-17 17:56:18,658 - INFO - 🎯 Collection complete: 1 sports, 77 matches
+2025-09-17 17:56:18,658 - INFO - 📊 Collection cycle complete: 77 matches from 1 sports
+2025-09-17 17:56:49,171 - INFO - 🛑 Collection stopped by user
+2025-09-17 18:02:30,363 - INFO - 📊 System Status: {'timestamp': '2025-09-17T18:02:19.050312', 'api_status': {'xbet': {'request_count': 0, 'last_request_time': 0, 'rate_limit': 45, 'healthy': False, 'sports_cached': 0, 'client_status': 'active'}, 'iscjxxqgmb': {'request_count': 0, 'last_request_time': 0, 'rate_limit': 50, 'healthy': False, 'sports_cached': 0, 'sports_supported': 38, 'api_status': 'active'}}, 'database_stats': {'total_tables': 1, 'total_records': 77, 'sports_covered': ['soccer'], 'date_range': {'oldest': '2025-09-17', 'newest': '2025-09-17'}}, 'predictions_available': True}
+2025-09-17 18:02:30,363 - INFO - 🎯 Demonstrating prediction capabilities
+2025-09-17 18:02:30,637 - INFO - 🔮 Manchester City vs Arsenal (soccer)
+2025-09-17 18:02:30,638 - INFO -    Outcome: home_win (40.0% confidence)
+2025-09-17 18:02:30,638 - INFO -    Score: 0:0
+2025-09-17 18:02:30,909 - INFO - 🔮 Los Angeles Lakers vs Golden State Warriors (basketball)
+2025-09-17 18:02:30,909 - INFO -    Outcome: home_win (40.0% confidence)
+2025-09-17 18:02:30,909 - INFO -    Score: 0:0
+2025-09-17 18:02:31,182 - INFO - 🔮 Real Madrid vs Barcelona (soccer)
+2025-09-17 18:02:31,182 - INFO -    Outcome: home_win (40.0% confidence)
+2025-09-17 18:02:31,182 - INFO -    Score: 0:0
+2025-09-17 18:02:31,183 - INFO - 🔄 Starting continuous collection (interval: 15 minutes)
+2025-09-17 18:02:31,183 - INFO - 🚀 Starting comprehensive sports data collection
+2025-09-17 18:02:31,184 - INFO - 📡 Collecting soccer data
+2025-09-17 18:02:31,841 - INFO - ✅ 1xBet: Retrieved 66 matches for sport 1
+2025-09-17 18:02:32,537 - INFO - ✅ ISCJXXQGMB: Retrieved 20 live matches for sport 1
+2025-09-17 18:02:32,539 - INFO - 📊 Intelligently merged (normalized): 67 from 1xBet + 21 from ISCJXXQGMB = 87 total
+2025-09-17 18:02:32,544 - INFO - ✅ Created/verified table: soccer_2025_09_17
+2025-09-17 18:02:32,549 - INFO - ✅ Inserted 87 matches into soccer_2025_09_17
+2025-09-17 18:02:52,719 - INFO - ✅ soccer: 87 matches from BOTH
+2025-09-17 18:02:52,719 - INFO - 🛑 Collection stopped by user
