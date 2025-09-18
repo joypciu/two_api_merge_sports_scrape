@@ -62,16 +62,13 @@ class XBetApiClient:
         virtual_sports: bool = True,
         no_filter_block_event: bool = True
     ):
-        url = f"{self.service_api_url}/LiveFeed/Get1x2_VZip"
+        url = f"{self.service_api_url}/LineFeed/Get1x2_VZip"
         params = {
             "sports": sports,
             "count": count,
             "lng": lng,
-            "gr": gr,
             "mode": mode,
-            "country": country,
-            "virtualSports": str(virtual_sports).lower(),
-            "noFilterBlockEvent": str(no_filter_block_event).lower()
+            "country": country
         }
         try:
             response = self.session.get(url, params=params, timeout=10)

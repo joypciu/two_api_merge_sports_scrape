@@ -1,45 +1,208 @@
-2025-09-17 17:55:49,814 - INFO - 📊 System Status: {'timestamp': '2025-09-17T17:55:38.275062', 'api_status': {'xbet': {'request_count': 0, 'last_request_time': 0, 'rate_limit': 45, 'healthy': False, 'sports_cached': 0, 'client_status': 'active'}, 'iscjxxqgmb': {'request_count': 0, 'last_request_time': 0, 'rate_limit': 50, 'healthy': False, 'sports_cached': 0, 'sports_supported': 38, 'api_status': 'active'}}, 'database_stats': {'total_tables': 0, 'total_records': 0, 'sports_covered': [], 'date_range': {'oldest': None, 'newest': None}}, 'predictions_available': True}
-2025-09-17 17:55:49,814 - INFO - 🎯 Demonstrating prediction capabilities
-2025-09-17 17:55:50,067 - INFO - 🔮 Manchester City vs Arsenal (soccer)
-2025-09-17 17:55:50,068 - INFO -    Outcome: home_win (40.0% confidence)
-2025-09-17 17:55:50,068 - INFO -    Score: 0:0
-2025-09-17 17:55:50,320 - INFO - 🔮 Los Angeles Lakers vs Golden State Warriors (basketball)
-2025-09-17 17:55:50,320 - INFO -    Outcome: home_win (40.0% confidence)
-2025-09-17 17:55:50,320 - INFO -    Score: 0:0
-2025-09-17 17:55:50,565 - INFO - 🔮 Real Madrid vs Barcelona (soccer)
-2025-09-17 17:55:50,566 - INFO -    Outcome: home_win (40.0% confidence)
-2025-09-17 17:55:50,566 - INFO -    Score: 0:0
-2025-09-17 17:55:50,566 - INFO - 🔄 Starting continuous collection (interval: 15 minutes)
-2025-09-17 17:55:50,567 - INFO - 🚀 Starting comprehensive sports data collection
-2025-09-17 17:55:50,567 - INFO - 📡 Collecting soccer data
-2025-09-17 17:55:51,211 - INFO - ✅ 1xBet: Retrieved 57 matches for sport 1
-2025-09-17 17:55:51,909 - INFO - ✅ ISCJXXQGMB: Retrieved 20 live matches for sport 1
-2025-09-17 17:55:51,910 - INFO - 📊 Intelligently merged (normalized): 57 from 1xBet + 20 from ISCJXXQGMB = 77 total
-2025-09-17 17:55:51,928 - INFO - ✅ Created/verified table: soccer_2025_09_17
-2025-09-17 17:55:51,932 - INFO - ✅ Inserted 77 matches into soccer_2025_09_17
-2025-09-17 17:56:18,657 - INFO - ✅ soccer: 77 matches from BOTH
-2025-09-17 17:56:18,658 - INFO - ✅ soccer: 77 matches collected
-2025-09-17 17:56:18,658 - INFO - 🎯 Collection complete: 1 sports, 77 matches
-2025-09-17 17:56:18,658 - INFO - 📊 Collection cycle complete: 77 matches from 1 sports
-2025-09-17 17:56:49,171 - INFO - 🛑 Collection stopped by user
-2025-09-17 18:02:30,363 - INFO - 📊 System Status: {'timestamp': '2025-09-17T18:02:19.050312', 'api_status': {'xbet': {'request_count': 0, 'last_request_time': 0, 'rate_limit': 45, 'healthy': False, 'sports_cached': 0, 'client_status': 'active'}, 'iscjxxqgmb': {'request_count': 0, 'last_request_time': 0, 'rate_limit': 50, 'healthy': False, 'sports_cached': 0, 'sports_supported': 38, 'api_status': 'active'}}, 'database_stats': {'total_tables': 1, 'total_records': 77, 'sports_covered': ['soccer'], 'date_range': {'oldest': '2025-09-17', 'newest': '2025-09-17'}}, 'predictions_available': True}
-2025-09-17 18:02:30,363 - INFO - 🎯 Demonstrating prediction capabilities
-2025-09-17 18:02:30,637 - INFO - 🔮 Manchester City vs Arsenal (soccer)
-2025-09-17 18:02:30,638 - INFO -    Outcome: home_win (40.0% confidence)
-2025-09-17 18:02:30,638 - INFO -    Score: 0:0
-2025-09-17 18:02:30,909 - INFO - 🔮 Los Angeles Lakers vs Golden State Warriors (basketball)
-2025-09-17 18:02:30,909 - INFO -    Outcome: home_win (40.0% confidence)
-2025-09-17 18:02:30,909 - INFO -    Score: 0:0
-2025-09-17 18:02:31,182 - INFO - 🔮 Real Madrid vs Barcelona (soccer)
-2025-09-17 18:02:31,182 - INFO -    Outcome: home_win (40.0% confidence)
-2025-09-17 18:02:31,182 - INFO -    Score: 0:0
-2025-09-17 18:02:31,183 - INFO - 🔄 Starting continuous collection (interval: 15 minutes)
-2025-09-17 18:02:31,183 - INFO - 🚀 Starting comprehensive sports data collection
-2025-09-17 18:02:31,184 - INFO - 📡 Collecting soccer data
-2025-09-17 18:02:31,841 - INFO - ✅ 1xBet: Retrieved 66 matches for sport 1
-2025-09-17 18:02:32,537 - INFO - ✅ ISCJXXQGMB: Retrieved 20 live matches for sport 1
-2025-09-17 18:02:32,539 - INFO - 📊 Intelligently merged (normalized): 67 from 1xBet + 21 from ISCJXXQGMB = 87 total
-2025-09-17 18:02:32,544 - INFO - ✅ Created/verified table: soccer_2025_09_17
-2025-09-17 18:02:32,549 - INFO - ✅ Inserted 87 matches into soccer_2025_09_17
-2025-09-17 18:02:52,719 - INFO - ✅ soccer: 87 matches from BOTH
-2025-09-17 18:02:52,719 - INFO - 🛑 Collection stopped by user
+2025-09-18 12:32:51,746 - INFO - STATUS: System Status: {'timestamp': '2025-09-18T12:32:40.146215', 'api_status': {'xbet': {'request_count': 0, 'last_request_time': 0, 'rate_limit': 45, 'healthy': False, 'sports_cached': 0, 'client_status': 'active'}, 'iscjxxqgmb': {'request_count': 0, 'last_request_time': 0, 'rate_limit': 50, 'healthy': False, 'sports_cached': 0, 'sports_supported': 38, 'api_status': 'active'}}, 'database_stats': {'total_tables': 0, 'total_records': 0, 'sports_covered': [], 'date_range': {'oldest': None, 'newest': None}}, 'predictions_available': True}
+2025-09-18 12:32:51,746 - INFO - DEMO: Demonstrating prediction capabilities
+2025-09-18 12:32:51,875 - INFO - PREDICT: Manchester City vs Arsenal (soccer)
+2025-09-18 12:32:51,877 - INFO -    Outcome: home_win (40.0% confidence)
+2025-09-18 12:32:51,877 - INFO -    Score: 0:0
+2025-09-18 12:32:52,006 - INFO - PREDICT: Los Angeles Lakers vs Golden State Warriors (basketball)
+2025-09-18 12:32:52,006 - INFO -    Outcome: home_win (40.0% confidence)
+2025-09-18 12:32:52,006 - INFO -    Score: 0:0
+2025-09-18 12:32:52,137 - INFO - PREDICT: Real Madrid vs Barcelona (soccer)
+2025-09-18 12:32:52,137 - INFO -    Outcome: home_win (40.0% confidence)
+2025-09-18 12:32:52,137 - INFO -    Score: 0:0
+2025-09-18 12:32:52,138 - INFO - CONTINUOUS: Starting continuous collection (interval: 15 minutes)
+2025-09-18 12:32:52,138 - INFO - STARTING: Comprehensive sports data collection
+2025-09-18 12:32:52,139 - INFO - COLLECTING: soccer data
+2025-09-18 12:32:52,139 - INFO - COLLECTING: basketball data
+2025-09-18 12:32:52,140 - INFO - COLLECTING: tennis data
+2025-09-18 12:32:52,140 - INFO - COLLECTING: ice_hockey data
+2025-09-18 12:32:52,141 - INFO - COLLECTING: cricket data
+2025-09-18 12:32:52,142 - INFO - COLLECTING: volleyball data
+2025-09-18 12:32:52,143 - INFO - COLLECTING: baseball data
+2025-09-18 12:32:52,144 - INFO - COLLECTING: handball data
+2025-09-18 12:32:52,146 - INFO - COLLECTING: futsal data
+2025-09-18 12:32:52,147 - INFO - COLLECTING: table_tennis data
+2025-09-18 12:32:52,749 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 17
+2025-09-18 12:32:52,751 - INFO - WARNING: ISCJXXQGMB failed for handball, trying XBET
+2025-09-18 12:32:52,755 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 8 live matches for sport 7
+2025-09-18 12:32:52,757 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 21
+2025-09-18 12:32:52,758 - INFO - WARNING: ISCJXXQGMB failed for futsal, trying XBET
+2025-09-18 12:32:52,768 - INFO - SUCCESS: 1xBet: Retrieved 50 matches for sport 1
+2025-09-18 12:32:52,773 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 19
+2025-09-18 12:32:52,773 - INFO - WARNING: ISCJXXQGMB failed for baseball, trying XBET
+2025-09-18 12:32:52,782 - INFO - SUCCESS: Created/verified table: basketball_2025_09_18
+2025-09-18 12:32:52,783 - INFO - DB Insert: Match 24325236 has event_count: 2
+2025-09-18 12:32:52,784 - INFO - DB Insert: Match 24325918 has event_count: 2
+2025-09-18 12:32:52,785 - INFO - DB Insert: Match 24325814 has event_count: 2
+2025-09-18 12:32:52,786 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 4 live matches for sport 45
+2025-09-18 12:32:52,787 - INFO - DB Insert: Match 24325916 has event_count: 2
+2025-09-18 12:32:52,787 - INFO - DB Insert: Match 24325912 has event_count: 2
+2025-09-18 12:32:52,790 - INFO - SUCCESS: Inserted 8 matches into basketball_2025_09_18
+2025-09-18 12:32:52,790 - INFO - SUCCESS: basketball: 8 matches from ISCJXXQGMB
+2025-09-18 12:32:52,790 - INFO - COLLECTING: rugby data
+2025-09-18 12:32:52,790 - INFO - SUCCESS: basketball: 8 matches collected
+2025-09-18 12:32:52,794 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 57
+2025-09-18 12:32:52,794 - INFO - WARNING: ISCJXXQGMB failed for table_tennis, trying XBET
+2025-09-18 12:32:52,806 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 8 live matches for sport 5
+2025-09-18 12:32:52,810 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 3
+2025-09-18 12:32:52,810 - INFO - WARNING: ISCJXXQGMB failed for tennis, trying XBET
+2025-09-18 12:32:52,833 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 13
+2025-09-18 12:32:52,834 - INFO - WARNING: ISCJXXQGMB failed for volleyball, trying XBET
+2025-09-18 12:32:52,835 - INFO - SUCCESS: Created/verified table: cricket_2025_09_18
+2025-09-18 12:32:52,840 - INFO - SUCCESS: Inserted 4 matches into cricket_2025_09_18
+2025-09-18 12:32:52,841 - INFO - SUCCESS: cricket: 4 matches from ISCJXXQGMB
+2025-09-18 12:32:52,841 - INFO - COLLECTING: american_football data
+2025-09-18 12:32:52,841 - INFO - SUCCESS: cricket: 4 matches collected
+2025-09-18 12:32:52,876 - INFO - SUCCESS: Created/verified table: ice_hockey_2025_09_18
+2025-09-18 12:32:52,877 - INFO - DB Insert: Match 24325658 has event_count: 2
+2025-09-18 12:32:52,878 - INFO - DB Insert: Match 24325698 has event_count: 2
+2025-09-18 12:32:52,878 - INFO - DB Insert: Match 24325826 has event_count: 2
+2025-09-18 12:32:52,879 - INFO - DB Insert: Match 24325840 has event_count: 2
+2025-09-18 12:32:52,879 - INFO - DB Insert: Match 24325872 has event_count: 2
+2025-09-18 12:32:52,882 - INFO - SUCCESS: Inserted 8 matches into ice_hockey_2025_09_18
+2025-09-18 12:32:52,882 - INFO - SUCCESS: ice_hockey: 8 matches from ISCJXXQGMB
+2025-09-18 12:32:52,883 - INFO - COLLECTING: boxing data
+2025-09-18 12:32:52,883 - INFO - SUCCESS: ice_hockey: 8 matches collected
+2025-09-18 12:32:52,996 - INFO - INFO: No matches found for baseball
+2025-09-18 12:32:52,996 - INFO - SUCCESS: baseball: 0 matches collected
+2025-09-18 12:32:53,118 - INFO - SUCCESS: 1xBet: Retrieved 2 matches for sport 17
+2025-09-18 12:32:53,144 - INFO - SUCCESS: Created/verified table: handball_2025_09_18
+2025-09-18 12:32:53,145 - INFO - SUCCESS: 1xBet: Retrieved 25 matches for sport 21
+2025-09-18 12:32:53,145 - INFO - DB Insert: Match 654365787 has event_count: 13
+2025-09-18 12:32:53,146 - INFO - DB Insert: Match 654365788 has event_count: 13
+2025-09-18 12:32:53,149 - INFO - SUCCESS: Inserted 2 matches into handball_2025_09_18
+2025-09-18 12:32:53,188 - INFO - SUCCESS: Created/verified table: futsal_2025_09_18
+2025-09-18 12:32:53,188 - INFO - DB Insert: Match 654421562 has event_count: 6
+2025-09-18 12:32:53,190 - INFO - DB Insert: Match 654422917 has event_count: 6
+2025-09-18 12:32:53,190 - INFO - DB Insert: Match 654401096 has event_count: 6
+2025-09-18 12:32:53,191 - INFO - DB Insert: Match 654422919 has event_count: 6
+2025-09-18 12:32:53,191 - INFO - DB Insert: Match 654422918 has event_count: 6
+2025-09-18 12:32:53,191 - INFO - SUCCESS: 1xBet: Retrieved 0 matches for sport 57
+2025-09-18 12:32:53,191 - INFO - INFO: No matches found for table_tennis
+2025-09-18 12:32:53,191 - INFO - SUCCESS: table_tennis: 0 matches collected
+2025-09-18 12:32:53,195 - INFO - SUCCESS: Inserted 25 matches into futsal_2025_09_18
+2025-09-18 12:32:53,397 - INFO - SUCCESS: 1xBet: Retrieved 50 matches for sport 13
+2025-09-18 12:32:53,420 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 49
+2025-09-18 12:32:53,420 - INFO - WARNING: ISCJXXQGMB failed for rugby, trying XBET
+2025-09-18 12:32:53,436 - INFO - SUCCESS: Created/verified table: volleyball_2025_09_18
+2025-09-18 12:32:53,436 - INFO - DB Insert: Match 653579268 has event_count: 10
+2025-09-18 12:32:53,437 - INFO - DB Insert: Match 652231912 has event_count: 10
+2025-09-18 12:32:53,437 - INFO - DB Insert: Match 654454654 has event_count: 6
+2025-09-18 12:32:53,438 - INFO - DB Insert: Match 653847592 has event_count: 10
+2025-09-18 12:32:53,438 - INFO - DB Insert: Match 653450550 has event_count: 10
+2025-09-18 12:32:53,442 - INFO - SUCCESS: Inserted 50 matches into volleyball_2025_09_18
+2025-09-18 12:32:53,455 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 11 live matches for sport 1
+2025-09-18 12:32:53,455 - INFO - 1xBet match 649529227 has event_count: 20
+2025-09-18 12:32:53,455 - INFO - 1xBet match fields: ['match_id', 'home_team', 'away_team', 'score', 'status', 'period', 'tournament', 'sport_id', 'event_count', 'start_time', 'odds_home', 'odds_away', 'odds_draw', 'raw_data']
+2025-09-18 12:32:53,456 - INFO - 1xBet match 649529221 has event_count: 20
+2025-09-18 12:32:53,456 - INFO - 1xBet match fields: ['match_id', 'home_team', 'away_team', 'score', 'status', 'period', 'tournament', 'sport_id', 'event_count', 'start_time', 'odds_home', 'odds_away', 'odds_draw', 'raw_data']
+2025-09-18 12:32:53,456 - INFO - 1xBet match 649543844 has event_count: 20
+2025-09-18 12:32:53,456 - INFO - 1xBet match fields: ['match_id', 'home_team', 'away_team', 'score', 'status', 'period', 'tournament', 'sport_id', 'event_count', 'start_time', 'odds_home', 'odds_away', 'odds_draw', 'raw_data']
+2025-09-18 12:32:53,456 - INFO - 1xBet match 649543850 has event_count: 20
+2025-09-18 12:32:53,456 - INFO - 1xBet match 649543838 has event_count: 20
+2025-09-18 12:32:53,457 - INFO - 1xBet match 649529840 has event_count: 20
+2025-09-18 12:32:53,457 - INFO - 1xBet match 653771323 has event_count: 18
+2025-09-18 12:32:53,457 - INFO - 1xBet match 652467922 has event_count: 20
+2025-09-18 12:32:53,457 - INFO - 1xBet match 654361550 has event_count: 15
+2025-09-18 12:32:53,457 - INFO - 1xBet match 649246066 has event_count: 22
+2025-09-18 12:32:53,457 - INFO - 1xBet match 649246560 has event_count: 22
+2025-09-18 12:32:53,458 - INFO - 1xBet match 654275124 has event_count: 20
+2025-09-18 12:32:53,458 - INFO - 1xBet match 653902365 has event_count: 20
+2025-09-18 12:32:53,458 - INFO - 1xBet match 653678608 has event_count: 20
+2025-09-18 12:32:53,458 - INFO - 1xBet match 653678602 has event_count: 20
+2025-09-18 12:32:53,458 - INFO - 1xBet match 653382162 has event_count: 20
+2025-09-18 12:32:53,458 - INFO - 1xBet match 654308044 has event_count: 11
+2025-09-18 12:32:53,458 - INFO - 1xBet match 654243305 has event_count: 20
+2025-09-18 12:32:53,459 - INFO - 1xBet match 654243308 has event_count: 20
+2025-09-18 12:32:53,459 - INFO - 1xBet match 654248930 has event_count: 20
+2025-09-18 12:32:53,459 - INFO - 1xBet match 654235743 has event_count: 20
+2025-09-18 12:32:53,459 - INFO - 1xBet match 654243314 has event_count: 20
+2025-09-18 12:32:53,459 - INFO - 1xBet match 654243311 has event_count: 20
+2025-09-18 12:32:53,459 - INFO - 1xBet match 654485120 has event_count: 18
+2025-09-18 12:32:53,460 - INFO - 1xBet match 653643027 has event_count: 20
+2025-09-18 12:32:53,460 - INFO - 1xBet match 653333429 has event_count: 20
+2025-09-18 12:32:53,460 - INFO - 1xBet match 654030705 has event_count: 20
+2025-09-18 12:32:53,460 - INFO - 1xBet match 654310988 has event_count: 11
+2025-09-18 12:32:53,460 - INFO - 1xBet match 654435354 has event_count: 20
+2025-09-18 12:32:53,460 - INFO - 1xBet match 654419667 has event_count: 20
+2025-09-18 12:32:53,460 - INFO - 1xBet match 654463845 has event_count: 20
+2025-09-18 12:32:53,460 - INFO - 1xBet match 654431973 has event_count: 20
+2025-09-18 12:32:53,460 - INFO - 1xBet match 654185739 has event_count: 20
+2025-09-18 12:32:53,460 - INFO - 1xBet match 654189020 has event_count: 20
+2025-09-18 12:32:53,461 - INFO - 1xBet match 654194527 has event_count: 20
+2025-09-18 12:32:53,461 - INFO - 1xBet match 654226412 has event_count: 20
+2025-09-18 12:32:53,461 - INFO - 1xBet match 654226415 has event_count: 20
+2025-09-18 12:32:53,461 - INFO - 1xBet match 654224871 has event_count: 20
+2025-09-18 12:32:53,461 - INFO - 1xBet match 654437738 has event_count: 14
+2025-09-18 12:32:53,461 - INFO - 1xBet match 654202254 has event_count: 18
+2025-09-18 12:32:53,461 - INFO - 1xBet match 654220288 has event_count: 18
+2025-09-18 12:32:53,462 - INFO - 1xBet match 654202640 has event_count: 18
+2025-09-18 12:32:53,462 - INFO - 1xBet match 654202646 has event_count: 18
+2025-09-18 12:32:53,462 - INFO - 1xBet match 654202263 has event_count: 16
+2025-09-18 12:32:53,462 - INFO - 1xBet match 654202257 has event_count: 18
+2025-09-18 12:32:53,462 - INFO - 1xBet match 654202637 has event_count: 18
+2025-09-18 12:32:53,462 - INFO - 1xBet match 654202643 has event_count: 18
+2025-09-18 12:32:53,463 - INFO - 1xBet match 654269162 has event_count: 18
+2025-09-18 12:32:53,463 - INFO - 1xBet match 649845447 has event_count: 20
+2025-09-18 12:32:53,463 - INFO - 1xBet match 653579576 has event_count: 20
+2025-09-18 12:32:53,463 - INFO - ISCJXXQGMB match 24325808 has event_count: 2
+2025-09-18 12:32:53,463 - INFO - ISCJXXQGMB match fields: ['match_id', 'home_team', 'away_team', 'score', 'status', 'period', 'tournament', 'sport_id', 'event_count', 'is_live', 'start_time', 'odds_home', 'odds_away', 'odds_draw', 'home_team_id', 'away_team_id', 'home_team_logo', 'away_team_logo', 'match_weight', 'set_number', 'match_time_extended', 'in_top', 'match_in_campaign', 'yellow_cards_home', 'yellow_cards_away', 'red_cards_home', 'red_cards_away', 'corners_home', 'corners_away', 'segment_scores', 'sets_score', 'stoppage_time', 'half_time', 'overtime_score', 'regular_time_score', 'after_penalties_score', 'line_status', 'is_outright', 'is_cyber', 'in_favorites', 'other_outcomes_qty', 'raw_data'], event_count: 2
+2025-09-18 12:32:53,463 - INFO - ISCJXXQGMB match 24325660 has event_count: 2
+2025-09-18 12:32:53,463 - INFO - ISCJXXQGMB match fields: ['match_id', 'home_team', 'away_team', 'score', 'status', 'period', 'tournament', 'sport_id', 'event_count', 'is_live', 'start_time', 'odds_home', 'odds_away', 'odds_draw', 'home_team_id', 'away_team_id', 'home_team_logo', 'away_team_logo', 'match_weight', 'set_number', 'match_time_extended', 'in_top', 'match_in_campaign', 'yellow_cards_home', 'yellow_cards_away', 'red_cards_home', 'red_cards_away', 'corners_home', 'corners_away', 'segment_scores', 'sets_score', 'stoppage_time', 'half_time', 'overtime_score', 'regular_time_score', 'after_penalties_score', 'line_status', 'is_outright', 'is_cyber', 'in_favorites', 'other_outcomes_qty', 'raw_data'], event_count: 2
+2025-09-18 12:32:53,464 - INFO - ISCJXXQGMB match 24325406 has event_count: 2
+2025-09-18 12:32:53,464 - INFO - ISCJXXQGMB match fields: ['match_id', 'home_team', 'away_team', 'score', 'status', 'period', 'tournament', 'sport_id', 'event_count', 'is_live', 'start_time', 'odds_home', 'odds_away', 'odds_draw', 'home_team_id', 'away_team_id', 'home_team_logo', 'away_team_logo', 'match_weight', 'set_number', 'match_time_extended', 'in_top', 'match_in_campaign', 'yellow_cards_home', 'yellow_cards_away', 'red_cards_home', 'red_cards_away', 'corners_home', 'corners_away', 'segment_scores', 'sets_score', 'stoppage_time', 'half_time', 'overtime_score', 'regular_time_score', 'after_penalties_score', 'line_status', 'is_outright', 'is_cyber', 'in_favorites', 'other_outcomes_qty', 'raw_data'], event_count: 2
+2025-09-18 12:32:53,464 - INFO - ISCJXXQGMB match 24325824 has event_count: 2
+2025-09-18 12:32:53,464 - INFO - ISCJXXQGMB match 24325830 has event_count: 2
+2025-09-18 12:32:53,465 - INFO - ISCJXXQGMB match 24325846 has event_count: 2
+2025-09-18 12:32:53,465 - INFO - ISCJXXQGMB match 24325858 has event_count: 2
+2025-09-18 12:32:53,465 - INFO - ISCJXXQGMB match 24325860 has event_count: 2
+2025-09-18 12:32:53,465 - INFO - ISCJXXQGMB match 24325874 has event_count: 2
+2025-09-18 12:32:53,465 - INFO - ISCJXXQGMB match 24325906 has event_count: 2
+2025-09-18 12:32:53,465 - INFO - ISCJXXQGMB match 24325908 has event_count: 2
+2025-09-18 12:32:53,466 - INFO - MERGED: Intelligently merged (normalized): 50 from 1xBet + 11 from ISCJXXQGMB = 61 total
+2025-09-18 12:32:53,466 - INFO - STATS: Event counts: 61/61 matches have event_count > 0, values: [2, 11, 14, 15, 16, 18, 20, 22]
+2025-09-18 12:32:53,493 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 9
+2025-09-18 12:32:53,493 - INFO - WARNING: ISCJXXQGMB failed for boxing, trying XBET
+2025-09-18 12:32:53,496 - INFO - SUCCESS: Created/verified table: soccer_2025_09_18
+2025-09-18 12:32:53,497 - INFO - DB Insert: Match 649529227 has event_count: 20
+2025-09-18 12:32:53,498 - INFO - DB Insert: Match 649529221 has event_count: 20
+2025-09-18 12:32:53,498 - INFO - DB Insert: Match 649543844 has event_count: 20
+2025-09-18 12:32:53,498 - INFO - DB Insert: Match 649543850 has event_count: 20
+2025-09-18 12:32:53,498 - INFO - DB Insert: Match 649543838 has event_count: 20
+2025-09-18 12:32:53,501 - INFO - SUCCESS: Inserted 61 matches into soccer_2025_09_18
+2025-09-18 12:32:53,536 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 35
+2025-09-18 12:32:53,536 - INFO - WARNING: ISCJXXQGMB failed for american_football, trying XBET
+2025-09-18 12:32:53,647 - INFO - INFO: No matches found for rugby
+2025-09-18 12:32:53,647 - INFO - SUCCESS: rugby: 0 matches collected
+2025-09-18 12:32:53,691 - INFO - SUCCESS: 1xBet: Retrieved 50 matches for sport 3
+2025-09-18 12:32:53,732 - INFO - SUCCESS: Created/verified table: tennis_2025_09_18
+2025-09-18 12:32:53,732 - INFO - DB Insert: Match 654322156 has event_count: 15
+2025-09-18 12:32:53,733 - INFO - DB Insert: Match 654314799 has event_count: 15
+2025-09-18 12:32:53,733 - INFO - DB Insert: Match 654314792 has event_count: 15
+2025-09-18 12:32:53,733 - INFO - DB Insert: Match 654514928 has event_count: 13
+2025-09-18 12:32:53,734 - INFO - DB Insert: Match 654502221 has event_count: 13
+2025-09-18 12:32:53,737 - INFO - SUCCESS: Inserted 50 matches into tennis_2025_09_18
+2025-09-18 12:32:53,765 - INFO - INFO: No matches found for american_football
+2025-09-18 12:32:53,765 - INFO - SUCCESS: american_football: 0 matches collected
+2025-09-18 12:32:53,897 - INFO - SUCCESS: handball: 2 matches from XBET
+2025-09-18 12:32:53,897 - INFO - SUCCESS: handball: 2 matches collected
+2025-09-18 12:32:53,987 - INFO - SUCCESS: 1xBet: Retrieved 48 matches for sport 9
+2025-09-18 12:32:54,025 - INFO - SUCCESS: Created/verified table: boxing_2025_09_18
+2025-09-18 12:32:54,026 - INFO - DB Insert: Match 654000117 has event_count: 3
+2025-09-18 12:32:54,027 - INFO - DB Insert: Match 654303710 has event_count: 5
+2025-09-18 12:32:54,027 - INFO - DB Insert: Match 654022179 has event_count: 8
+2025-09-18 12:32:54,027 - INFO - DB Insert: Match 649772946 has event_count: 9
+2025-09-18 12:32:54,027 - INFO - DB Insert: Match 654367417 has event_count: 3
+2025-09-18 12:32:54,031 - INFO - SUCCESS: Inserted 48 matches into boxing_2025_09_18
+2025-09-18 12:33:05,374 - INFO - SUCCESS: futsal: 25 matches from XBET
+2025-09-18 12:33:05,374 - INFO - SUCCESS: futsal: 25 matches collected
+2025-09-18 12:33:17,071 - INFO - SUCCESS: boxing: 48 matches from XBET
+2025-09-18 12:33:17,071 - INFO - SUCCESS: boxing: 48 matches collected
+2025-09-18 12:33:17,353 - INFO - SUCCESS: tennis: 50 matches from XBET
+2025-09-18 12:33:17,354 - INFO - SUCCESS: tennis: 50 matches collected
+2025-09-18 12:33:17,392 - INFO - SUCCESS: volleyball: 50 matches from XBET
+2025-09-18 12:33:17,393 - INFO - SUCCESS: volleyball: 50 matches collected
+2025-09-18 12:33:19,557 - INFO - SUCCESS: soccer: 61 matches from BOTH
+2025-09-18 12:33:19,558 - INFO - SUCCESS: soccer: 61 matches collected
+2025-09-18 12:33:19,559 - INFO - COMPLETE: Collection complete: 13 sports, 256 matches
+2025-09-18 12:33:19,559 - INFO - CYCLE: Collection cycle complete: 256 matches from 13 sports
+2025-09-18 12:33:40,072 - INFO - STOPPED: Collection stopped by user

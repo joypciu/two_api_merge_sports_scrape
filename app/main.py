@@ -1,6 +1,12 @@
 """
 Improved Sports Data Collection System v2.0
 Modular architecture with day-by-day tables and analysis capabilities
+
+⚠️  CRITICAL WARNING: This is PRODUCTION CODE ⚠️
+- DO NOT add mock, fake, or test data to this system
+- All data MUST come from legitimate API endpoints only
+- Mock data injection will contaminate the production database
+- Use test files (test_*.py) for any testing/mock data needs
 """
 import asyncio
 import logging
@@ -35,26 +41,170 @@ class SportsDataCollector:
 
         # Sports to monitor (prioritizing working ones)
         self.sports_config = {
+            # Major sports with both APIs
             'soccer': {
                 'xbet_id': 1,
                 'iscjxxqgmb_id': 1,
                 'active': True,
-                'preferred_api': 'both',  # Simulate both APIs for football
+                'preferred_api': 'both',
                 'fallback_api': None
             },
-            # Other sports commented out for simulation
-            # 'basketball': {...},
-            # 'tennis': {...},
-            # 'ice_hockey': {...},
-            # 'futsal': {...},
-            # 'cricket': {...},
-            # 'kabaddi': {...},
-            # 'rugby': {...},
+            'basketball': {
+                'xbet_id': 7,  # Estimated - will be verified
+                'iscjxxqgmb_id': 7,
+                'active': True,
+                'preferred_api': 'iscjxxqgmb',
+                'fallback_api': 'xbet'
+            },
+            'tennis': {
+                'xbet_id': 3,  # Estimated - will be verified
+                'iscjxxqgmb_id': 3,
+                'active': True,
+                'preferred_api': 'iscjxxqgmb',
+                'fallback_api': 'xbet'
+            },
+            'ice_hockey': {
+                'xbet_id': 5,  # Estimated - will be verified
+                'iscjxxqgmb_id': 5,
+                'active': True,
+                'preferred_api': 'iscjxxqgmb',
+                'fallback_api': 'xbet'
+            },
+
+            # Popular sports (ISCJXXQGMB supported)
+            'cricket': {
+                'xbet_id': 45,  # Estimated - will be verified
+                'iscjxxqgmb_id': 45,
+                'active': True,
+                'preferred_api': 'iscjxxqgmb',
+                'fallback_api': 'xbet'
+            },
+            'volleyball': {
+                'xbet_id': 13,  # Estimated - will be verified
+                'iscjxxqgmb_id': 13,
+                'active': True,
+                'preferred_api': 'iscjxxqgmb',
+                'fallback_api': 'xbet'
+            },
+            'baseball': {
+                'xbet_id': 19,  # Estimated - will be verified
+                'iscjxxqgmb_id': 19,
+                'active': True,
+                'preferred_api': 'iscjxxqgmb',
+                'fallback_api': 'xbet'
+            },
+            'handball': {
+                'xbet_id': 17,  # Estimated - will be verified
+                'iscjxxqgmb_id': 17,
+                'active': True,
+                'preferred_api': 'iscjxxqgmb',
+                'fallback_api': 'xbet'
+            },
+            'futsal': {
+                'xbet_id': 21,  # Estimated - will be verified
+                'iscjxxqgmb_id': 21,
+                'active': True,
+                'preferred_api': 'iscjxxqgmb',
+                'fallback_api': 'xbet'
+            },
+            'table_tennis': {
+                'xbet_id': 57,  # Estimated - will be verified
+                'iscjxxqgmb_id': 57,
+                'active': True,
+                'preferred_api': 'iscjxxqgmb',
+                'fallback_api': 'xbet'
+            },
+            'rugby': {
+                'xbet_id': 49,  # Estimated - will be verified
+                'iscjxxqgmb_id': 49,
+                'active': True,
+                'preferred_api': 'iscjxxqgmb',
+                'fallback_api': 'xbet'
+            },
+            'american_football': {
+                'xbet_id': 35,  # Estimated - will be verified
+                'iscjxxqgmb_id': 35,
+                'active': True,
+                'preferred_api': 'iscjxxqgmb',
+                'fallback_api': 'xbet'
+            },
+            'boxing': {
+                'xbet_id': 9,  # Estimated - will be verified
+                'iscjxxqgmb_id': 9,
+                'active': True,
+                'preferred_api': 'iscjxxqgmb',
+                'fallback_api': 'xbet'
+            },
+
+            # Additional sports (ISCJXXQGMB supported)
+            'snooker': {
+                'xbet_id': 31,  # Estimated - will be verified
+                'iscjxxqgmb_id': 31,
+                'active': False,  # Less popular, keep inactive for now
+                'preferred_api': 'iscjxxqgmb',
+                'fallback_api': 'xbet'
+            },
+            'darts': {
+                'xbet_id': 39,  # Estimated - will be verified
+                'iscjxxqgmb_id': 39,
+                'active': False,  # Less popular, keep inactive for now
+                'preferred_api': 'iscjxxqgmb',
+                'fallback_api': 'xbet'
+            },
+            'formula_1': {
+                'xbet_id': 15,  # Estimated - will be verified
+                'iscjxxqgmb_id': 15,
+                'active': False,  # Less popular, keep inactive for now
+                'preferred_api': 'iscjxxqgmb',
+                'fallback_api': 'xbet'
+            },
+            'floorball': {
+                'xbet_id': 61,  # Estimated - will be verified
+                'iscjxxqgmb_id': 61,
+                'active': False,  # Niche sport, keep inactive for now
+                'preferred_api': 'iscjxxqgmb',
+                'fallback_api': 'xbet'
+            },
+            'water_polo': {
+                'xbet_id': 69,  # Estimated - will be verified
+                'iscjxxqgmb_id': 69,
+                'active': False,  # Niche sport, keep inactive for now
+                'preferred_api': 'iscjxxqgmb',
+                'fallback_api': 'xbet'
+            },
+            'bandy': {
+                'xbet_id': 73,  # Estimated - will be verified
+                'iscjxxqgmb_id': 73,
+                'active': False,  # Niche sport, keep inactive for now
+                'preferred_api': 'iscjxxqgmb',
+                'fallback_api': 'xbet'
+            },
+            'kabaddi': {
+                'xbet_id': 161,  # Estimated - will be verified
+                'iscjxxqgmb_id': 161,
+                'active': False,  # Regional sport, keep inactive for now
+                'preferred_api': 'iscjxxqgmb',
+                'fallback_api': 'xbet'
+            },
+            'chess': {
+                'xbet_id': 27,  # Estimated - will be verified
+                'iscjxxqgmb_id': 27,
+                'active': False,  # Esports, keep inactive for now
+                'preferred_api': 'iscjxxqgmb',
+                'fallback_api': 'xbet'
+            },
+            'esports': {
+                'xbet_id': 11,  # Estimated - will be verified
+                'iscjxxqgmb_id': 11,
+                'active': False,  # Broad category, keep inactive for now
+                'preferred_api': 'iscjxxqgmb',
+                'fallback_api': 'xbet'
+            }
         }
 
     def collect_all_sports(self) -> Dict:
         """Collect data from all active sports"""
-        logging.info("🚀 Starting comprehensive sports data collection")
+        logging.info("STARTING: Comprehensive sports data collection")
 
         results = {
             'timestamp': datetime.now().isoformat(),
@@ -77,20 +227,20 @@ class SportsDataCollector:
                     sport_results = future.result()
                     results['sports_processed'] += 1
                     results['total_matches'] += sport_results.get('matches_collected', 0)
-                    logging.info(f"✅ {sport_name}: {sport_results.get('matches_collected', 0)} matches collected")
+                    logging.info(f"SUCCESS: {sport_name}: {sport_results.get('matches_collected', 0)} matches collected")
 
                 except Exception as e:
                     error_msg = f"Failed to collect {sport_name}: {e}"
                     logging.error(error_msg)
                     results['errors'].append(error_msg)
 
-        logging.info(f"🎯 Collection complete: {results['sports_processed']} sports, {results['total_matches']} matches")
+        logging.info(f"COMPLETE: Collection complete: {results['sports_processed']} sports, {results['total_matches']} matches")
         return results
 
     def _collect_sport_data(self, sport_name: str, config: Dict) -> Dict:
         """Collect data for a specific sport using dual API approach"""
         try:
-            logging.info(f"📡 Collecting {sport_name} data")
+            logging.info(f"COLLECTING: {sport_name} data")
 
             matches = []
             api_used = None
@@ -130,7 +280,7 @@ class SportsDataCollector:
 
             # If preferred API failed, try fallback
             if not matches and fallback_api:
-                logging.info(f"⚠️ {preferred_api.upper()} failed for {sport_name}, trying {fallback_api.upper()}")
+                logging.info(f"WARNING: {preferred_api.upper()} failed for {sport_name}, trying {fallback_api.upper()}")
                 if fallback_api == 'xbet':
                     sport_id = config.get('xbet_id', config.get('id', 1))
                     matches = self.xbet_api.get_live_matches(str(sport_id))
@@ -152,7 +302,7 @@ class SportsDataCollector:
                 predictions = self._generate_predictions(matches, sport_name)
 
                 api_name = api_used.upper() if api_used else "UNKNOWN"
-                logging.info(f"✅ {sport_name}: {len(matches)} matches from {api_name}")
+                logging.info(f"SUCCESS: {sport_name}: {len(matches)} matches from {api_name}")
 
                 return {
                     'sport': sport_name,
@@ -162,7 +312,7 @@ class SportsDataCollector:
                     'api_used': api_used
                 }
             else:
-                logging.info(f"ℹ️ No matches found for {sport_name}")
+                logging.info(f"INFO: No matches found for {sport_name}")
                 return {
                     'sport': sport_name,
                     'matches_collected': 0,
@@ -176,7 +326,12 @@ class SportsDataCollector:
             raise
 
     def _merge_api_results(self, xbet_matches: List[Dict], iscjxxqgmb_matches: List[Dict]) -> List[Dict]:
-        """Intelligently merge and deduplicate results from both APIs for football, normalizing keys and merging all relevant fields. Injects a fake overlap for simulation."""
+        """Intelligently merge and deduplicate results from both APIs for football, normalizing keys and merging all relevant fields.
+
+        WARNING: This function should ONLY process data from real API endpoints.
+        DO NOT add mock, fake, or test data here as it will contaminate the production database.
+        All data must come from legitimate API sources only.
+        """
         def norm(val):
             return str(val).strip().lower() if val is not None else ''
         def match_key(match):
@@ -188,44 +343,25 @@ class SportsDataCollector:
             )
         match_dict = {}
 
-        # All possible fields to merge
+        # Only include fields that exist in the optimized database schema (17 columns)
         merge_fields = [
-            'match_id', 'home_team', 'away_team', 'score', 'period', 'tournament',
-            'sport_id', 'is_live', 'start_time', 'odds_home', 'odds_away', 'odds_draw',
-            'raw_data', 'half_time', 'status', 'total_over_odds', 'total_under_odds',
-            'handicap_1_odds', 'handicap_2_odds', 'total_title', 'handicap_title'
+            'match_id', 'home_team', 'away_team', 'score', 'status', 'period', 'tournament',
+            'event_count', 'start_time', 'odds_home', 'odds_away', 'odds_draw',
+            'home_team_id', 'away_team_id', 'stoppage_time', 'half_time'
         ]
 
-        # --- Inject a fake overlapping match for simulation ---
-        fake_match = {
-            'match_id': 'FAKE123',
-            'home_team': 'Simulated United',
-            'away_team': 'Test City',
-            'score': '',
-            'period': 1,
-            'tournament': 'Sim League',
-            'sport_id': '1',
-            'is_live': True,
-            'start_time': 1234567890,
-            'odds_home': 2.1,
-            'odds_away': None,
-            'odds_draw': None,
-            'raw_data': {},
-        }
-        fake_match2 = fake_match.copy()
-        fake_match2['odds_home'] = None
-        fake_match2['odds_away'] = 3.5
-        fake_match2['odds_draw'] = 4.2
-        # Add to both lists
-        xbet_matches = list(xbet_matches) + [fake_match]
-        iscjxxqgmb_matches = list(iscjxxqgmb_matches) + [fake_match2]
-        # --- End injection ---
 
         # Add all 1xBet matches first
         for match in xbet_matches:
             key = match_key(match)
             match_copy = {k: match.get(k) for k in merge_fields if k in match}
             match_copy['data_source'] = 'xbet'
+            # Debug: Log event_count for 1xBet matches
+            if match.get('event_count', 0) > 0:
+                logging.info(f"1xBet match {match.get('match_id')} has event_count: {match.get('event_count')}")
+            # Debug: Log all fields for first few matches
+            if len(match_dict) < 3:
+                logging.info(f"1xBet match fields: {list(match.keys())}")
             match_dict[key] = match_copy
 
         # Merge ISCJXXQGMB matches
@@ -235,7 +371,14 @@ class SportsDataCollector:
                 existing = match_dict[key]
                 for k in merge_fields:
                     v = match.get(k)
-                    if (k not in existing or existing[k] in [None, '', []]) and v not in [None, '', []]:
+                    if k == 'event_count':
+                        # Special handling for event_count: take the maximum value
+                        existing_ec = existing.get('event_count', 0) or 0
+                        new_ec = v or 0
+                        if new_ec > existing_ec:
+                            existing[k] = new_ec
+                            logging.info(f"Updated event_count for match {match.get('match_id')} from {existing_ec} to {new_ec}")
+                    elif (k not in existing or existing[k] in [None, '', []]) and v not in [None, '', []]:
                         existing[k] = v
                 # Optionally, record both sources
                 if 'data_source' in existing and existing['data_source'] != 'both':
@@ -243,10 +386,22 @@ class SportsDataCollector:
             else:
                 match_copy = {k: match.get(k) for k in merge_fields if k in match}
                 match_copy['data_source'] = 'iscjxxqgmb'
+                # Debug: Log event_count for ISCJXXQGMB matches
+                if match.get('event_count', 0) > 0:
+                    logging.info(f"ISCJXXQGMB match {match.get('match_id')} has event_count: {match.get('event_count')}")
+                # Debug: Log all fields for first few matches
+                if len([m for m in match_dict.values() if m.get('data_source') == 'iscjxxqgmb']) < 3:
+                    logging.info(f"ISCJXXQGMB match fields: {list(match.keys())}, event_count: {match.get('event_count')}")
                 match_dict[key] = match_copy
 
         merged_matches = list(match_dict.values())
-        logging.info(f"📊 Intelligently merged (normalized): {len(xbet_matches)} from 1xBet + {len(iscjxxqgmb_matches)} from ISCJXXQGMB = {len(merged_matches)} total")
+
+        # Debug: Check event_count in final merged matches
+        event_counts = [m.get('event_count', 0) for m in merged_matches]
+        non_zero_events = sum(1 for ec in event_counts if ec > 0)
+        logging.info(f"MERGED: Intelligently merged (normalized): {len(xbet_matches)} from 1xBet + {len(iscjxxqgmb_matches)} from ISCJXXQGMB = {len(merged_matches)} total")
+        logging.info(f"STATS: Event counts: {non_zero_events}/{len(merged_matches)} matches have event_count > 0, values: {sorted(set(event_counts))}")
+
         return merged_matches
 
     def _generate_predictions(self, matches: List[Dict], sport: str) -> List[Dict]:
@@ -285,7 +440,7 @@ class SportsDataCollector:
 
     def run_continuous_collection(self, interval_minutes: int = 15):
         """Run continuous data collection"""
-        logging.info(f"🔄 Starting continuous collection (interval: {interval_minutes} minutes)")
+        logging.info(f"CONTINUOUS: Starting continuous collection (interval: {interval_minutes} minutes)")
 
         while True:
             try:
@@ -293,7 +448,7 @@ class SportsDataCollector:
                 results = self.collect_all_sports()
 
                 # Log summary
-                logging.info(f"📊 Collection cycle complete: {results['total_matches']} matches from {results['sports_processed']} sports")
+                logging.info(f"CYCLE: Collection cycle complete: {results['total_matches']} matches from {results['sports_processed']} sports")
 
                 # Clean up old data (keep 90 days)
                 self.db_manager.cleanup_old_data(90)
@@ -302,15 +457,15 @@ class SportsDataCollector:
                 time.sleep(interval_minutes * 60)
 
             except KeyboardInterrupt:
-                logging.info("🛑 Collection stopped by user")
+                logging.info("STOPPED: Collection stopped by user")
                 break
             except Exception as e:
-                logging.error(f"❌ Collection cycle failed: {e}")
+                logging.error(f"ERROR: Collection cycle failed: {e}")
                 time.sleep(60)  # Wait 1 minute before retry
 
     def demonstrate_predictions(self):
         """Demonstrate prediction capabilities"""
-        logging.info("🎯 Demonstrating prediction capabilities")
+        logging.info("DEMO: Demonstrating prediction capabilities")
 
         # Example predictions
         examples = [
@@ -324,7 +479,7 @@ class SportsDataCollector:
                 prediction = self.predictor.predict_match_outcome(home, away, sport)
                 score_pred = self.predictor.predict_score(home, away, sport)
 
-                logging.info(f"🔮 {home} vs {away} ({sport})")
+                logging.info(f"PREDICT: {home} vs {away} ({sport})")
                 logging.info(f"   Outcome: {prediction['prediction']} ({prediction['confidence']}% confidence)")
                 logging.info(f"   Score: {score_pred.get('predicted_score', 'N/A')}")
 
@@ -337,7 +492,7 @@ def main():
 
     # Show system status
     status = collector.get_system_status()
-    logging.info(f"📊 System Status: {status}")
+    logging.info(f"STATUS: System Status: {status}")
 
     # Demonstrate predictions
     collector.demonstrate_predictions()
@@ -346,7 +501,7 @@ def main():
     try:
         collector.run_continuous_collection(interval_minutes=15)
     except KeyboardInterrupt:
-        logging.info("👋 Shutting down gracefully")
+        logging.info("SHUTDOWN: Shutting down gracefully")
 
 if __name__ == "__main__":
     main()
