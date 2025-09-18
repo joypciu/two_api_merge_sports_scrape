@@ -174,10 +174,16 @@ class ISCJXXQGMBAPI(BaseAPI):
                 sport_name = self.sports_map.get(int(sport_id_num), 'unknown')
                 matches = self._parse_matches(data, 'all', sport_name)
 
-                # Filter for live matches only
-                live_matches = [match for match in matches if match.get('type') == 'live']
+                # Filter for live matches only and process them
+                live_matches = []
+                for match in matches:
+                    if match.get('type') == 'live':
+                        # Process the match to standardize fields and ensure event_count
+                        processed_match = self._process_match_data(match)
+                        if processed_match:
+                            live_matches.append(processed_match)
 
-                logging.info(f"✅ ISCJXXQGMB: Retrieved {len(live_matches)} live matches for sport {sport_id}")
+                logging.info(f"SUCCESS: ISCJXXQGMB: Retrieved {len(live_matches)} live matches for sport {sport_id}")
                 return live_matches
 
         except Exception as e:
@@ -258,7 +264,7 @@ class ISCJXXQGMBAPI(BaseAPI):
                                 "line_id": lid,
                                 "match_id": match.get("id"),
                                 "title": match.get("title"),
-                                "begin_at": datetime.fromtimestamp(begin_at).strftime("%Y-%m-%d %H:%M:%S") if begin_at else None,
+                                "begin_at": begin_at,  # Keep as Unix timestamp for processing
                                 "home_team": match.get("team1", {}).get("title"),
                                 "away_team": match.get("team2", {}).get("title"),
                                 "home_team_id": match.get("team1", {}).get("id"),
@@ -361,22 +367,200 @@ class ISCJXXQGMBAPI(BaseAPI):
         return processed
 
     def _process_match_data(self, match_data: Dict) -> Optional[Dict]:
-        """Process raw ISCJXXQGMB match data into standardized format"""
+        """Process raw ISCJXXQGMB match data into standardized format with expanded fields"""
         try:
+            # Extract basic match info
+            match_id = str(match_data.get('line_id', ''))
+            home_team = match_data.get('home_team', '')
+            away_team = match_data.get('away_team', '')
+            tournament = match_data.get('title', '')
+
+            if not home_team or not away_team:
+                return None
+
+            # Extract start time - ISCJXXQGMB provides Unix timestamp
+            start_time_raw = match_data.get('begin_at', 0)
+            if isinstance(start_time_raw, str):
+                # If it's a string, try to parse it
+                try:
+                    start_time = int(start_time_raw)
+                except ValueError:
+                    start_time = 0
+            elif isinstance(start_time_raw, (int, float)):
+                # If it's already a number, ensure it's reasonable Unix timestamp
+                if start_time_raw > 1e12:  # Milliseconds
+                    start_time = int(start_time_raw / 1000)
+                else:  # Seconds
+                    start_time = int(start_time_raw)
+            else:
+                start_time = 0
+
+            # Determine status - ISCJXXQGMB provides actual status like "2nd_half"
+            is_live = match_data.get('type') == 'live'
+            status = 'live' if is_live else 'pregame'
+
+            # Extract period from match_time, stat, or raw_data
+            period = 1  # Default
+
+            # First check raw_data for stat.status
+            if match_data.get('raw_data') and match_data['raw_data'].get('stat'):
+                stat_status = match_data['raw_data']['stat'].get('status', '').lower()
+                if '1st' in stat_status or 'first' in stat_status:
+                    period = 1
+                elif '2nd' in stat_status or 'second' in stat_status:
+                    period = 2
+                elif 'extra' in stat_status:
+                    period = 3
+                elif 'half' in stat_status:
+                    if '1st' in stat_status:
+                        period = 1
+                    elif '2nd' in stat_status:
+                        period = 2
+
+            # Fallback to match_time if stat.status didn't work
+            if period == 1:
+                match_time = match_data.get('match_time')
+                if match_time:
+                    # Try to extract period from match_time string
+                    match_time_str = str(match_time).lower()
+                    if '1st' in match_time_str or 'first' in match_time_str:
+                        period = 1
+                    elif '2nd' in match_time_str or 'second' in match_time_str:
+                        period = 2
+                    elif 'extra' in match_time_str:
+                        period = 3
+                    elif 'half' in match_time_str:
+                        # Try to determine which half
+                        if '1st' in match_time_str:
+                            period = 1
+                        elif '2nd' in match_time_str:
+                            period = 2
+                        else:
+                            period = 1  # Default to 1st half
+
+            # Count events - ISCJXXQGMB has different structure, count meaningful data elements
+            event_count = 0
+            if match_data.get('outcomes'):
+                event_count = len(match_data['outcomes'])
+            elif match_data.get('raw_data') and match_data['raw_data'].get('outcomes'):
+                event_count = len(match_data['raw_data']['outcomes'])
+
+            # If no outcomes, count other data elements
+            if event_count == 0:
+                event_count = sum(1 for key in ['score', 'match_time', 'stat'] if match_data.get(key))
+
+            # ===== EXTRACT ADDITIONAL DATA FIELDS =====
+
+            # Initialize additional data fields
+            additional_data = {
+                'home_team_id': None,
+                'away_team_id': None,
+                'home_team_logo': None,
+                'away_team_logo': None,
+                'match_weight': None,
+                'set_number': None,
+                'match_time_extended': None,
+                'in_top': False,
+                'match_in_campaign': False,
+                'yellow_cards_home': 0,
+                'yellow_cards_away': 0,
+                'red_cards_home': 0,
+                'red_cards_away': 0,
+                'corners_home': 0,
+                'corners_away': 0,
+                'segment_scores': None,
+                'sets_score': None,
+                'stoppage_time': False,
+                'half_time': False,
+                'overtime_score': None,
+                'regular_time_score': None,
+                'after_penalties_score': None,
+                'line_status': None,
+                'is_outright': False,
+                'is_cyber': False,
+                'in_favorites': False,
+                'other_outcomes_qty': 0
+            }
+
+            # Extract data from raw_data if available
+            raw_data = match_data.get('raw_data', {})
+            if raw_data:
+                # Extract from match data
+                match_info = raw_data.get('match', {})
+                if match_info:
+                    # Team IDs and logos
+                    team1 = match_info.get('team1', {})
+                    team2 = match_info.get('team2', {})
+                    if team1:
+                        additional_data['home_team_id'] = team1.get('id')
+                        additional_data['home_team_logo'] = team1.get('_image_name')
+                    if team2:
+                        additional_data['away_team_id'] = team2.get('id')
+                        additional_data['away_team_logo'] = team2.get('_image_name')
+
+                    # Match metadata
+                    additional_data['match_weight'] = match_info.get('weight')
+                    additional_data['set_number'] = match_info.get('set_number')
+                    additional_data['match_time_extended'] = match_info.get('match_time_extended')
+                    additional_data['in_top'] = match_info.get('in_top', False)
+                    additional_data['match_in_campaign'] = match_info.get('match_in_campaign', False)
+
+                    # Sport-specific statistics
+                    stat_info = match_info.get('stat', {})
+                    if stat_info:
+                        # Cards and corners
+                        yellow_cards = stat_info.get('yellow_cards', {})
+                        red_cards = stat_info.get('red_cards', {})
+                        corners = stat_info.get('corners', {})
+
+                        if isinstance(yellow_cards, dict):
+                            additional_data['yellow_cards_home'] = yellow_cards.get('home', 0)
+                            additional_data['yellow_cards_away'] = yellow_cards.get('away', 0)
+                        if isinstance(red_cards, dict):
+                            additional_data['red_cards_home'] = red_cards.get('home', 0)
+                            additional_data['red_cards_away'] = red_cards.get('away', 0)
+                        if isinstance(corners, dict):
+                            additional_data['corners_home'] = corners.get('home', 0)
+                            additional_data['corners_away'] = corners.get('away', 0)
+
+                        # Period-specific scores
+                        additional_data['segment_scores'] = stat_info.get('segment_scores')
+                        additional_data['sets_score'] = stat_info.get('sets_score')
+                        additional_data['stoppage_time'] = stat_info.get('stoppage_time', False)
+                        additional_data['half_time'] = stat_info.get('half_time', False)
+                        additional_data['overtime_score'] = stat_info.get('overtime_score')
+                        additional_data['regular_time_score'] = stat_info.get('regular_time_score')
+                        additional_data['after_penalties_score'] = stat_info.get('after_penalties_score')
+
+                # Extract from line data
+                line_info = raw_data
+                additional_data['line_status'] = line_info.get('status')
+                additional_data['is_outright'] = line_info.get('is_outright', False)
+                additional_data['is_cyber'] = line_info.get('is_cyber', False)
+                additional_data['in_favorites'] = line_info.get('in_favorites', False)
+                additional_data['other_outcomes_qty'] = line_info.get('other_outcomes_qty', 0)
+
             return {
-                'match_id': str(match_data.get('line_id', '')),
-                'home_team': match_data.get('home_team', ''),
-                'away_team': match_data.get('away_team', ''),
+                'match_id': match_id,
+                'home_team': home_team.strip(),
+                'away_team': away_team.strip(),
                 'score': match_data.get('score', ''),
-                'period': match_data.get('match_time', ''),
-                'tournament': match_data.get('title', ''),
+                'status': status,
+                'period': period,
+                'tournament': tournament,
                 'sport_id': str(match_data.get('sport', '')),
-                'is_live': match_data.get('type') == 'live',
-                'start_time': match_data.get('begin_at', 0),
+                'event_count': event_count,
+                'is_live': is_live,
+                'start_time': start_time,
+                'odds_home': match_data.get('odds_home'),
+                'odds_away': match_data.get('odds_away'),
+                'odds_draw': match_data.get('odds_draw'),
+                # Add all the additional fields
+                **additional_data,
                 'raw_data': match_data
             }
         except Exception as e:
-            logging.error(f"Error processing match data: {e}")
+            logging.error(f"Error processing ISCJXXQGMB match data: {e}")
             return None
 
     def get_request_stats(self) -> Dict:

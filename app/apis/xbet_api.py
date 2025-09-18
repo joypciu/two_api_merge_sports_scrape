@@ -7,6 +7,9 @@ from typing import Dict, List, Optional, Any
 from datetime import datetime
 
 from .base_api import BaseAPI
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 from api_client import XBetApiClient  # Import existing working client
 
 class XBetAPI(BaseAPI):
@@ -62,11 +65,15 @@ class XBetAPI(BaseAPI):
             if matches_data and matches_data.get('Success') and matches_data.get('Value'):
                 matches = []
                 for match in matches_data['Value']:
+                    # Check if 'E' field exists for odds
+                    if 'E' not in match:
+                        logging.debug(f"Match {match.get('I', 'unknown')} has no 'E' field for odds")
+
                     processed_match = self._process_match_data(match)
                     if processed_match:
                         matches.append(processed_match)
 
-                logging.info(f"✅ 1xBet: Retrieved {len(matches)} matches for sport {sport_id}")
+                logging.info(f"SUCCESS: 1xBet: Retrieved {len(matches)} matches for sport {sport_id}")
                 return matches
 
         except Exception as e:
@@ -136,30 +143,85 @@ class XBetAPI(BaseAPI):
             if 'LE' in match_data and match_data['LE']:
                 tournament = match_data['LE']
 
-            # Extract odds
+            # Count events and extract odds
+            event_count = 0
             odds_home = None
             odds_away = None
             odds_draw = None
 
             if 'E' in match_data:
+                event_count = len(match_data['E'])
                 for event in match_data['E']:
                     if event.get('G') == 1:  # Main odds
                         odds_data = self._extract_odds(event)
-                        odds_home = odds_data.get('home_win')
-                        odds_away = odds_data.get('away_win')
-                        odds_draw = odds_data.get('draw')
-                        break
+                        if odds_data.get('home_win') and not odds_home:
+                            odds_home = odds_data.get('home_win')
+                        if odds_data.get('away_win') and not odds_away:
+                            odds_away = odds_data.get('away_win')
+                        if odds_data.get('draw') and not odds_draw:
+                            odds_draw = odds_data.get('draw')
+                    elif event.get('G') == 2:  # Alternative odds location
+                        odds_data = self._extract_odds(event)
+                        if odds_data.get('home_win') and not odds_home:
+                            odds_home = odds_data.get('home_win')
+                        if odds_data.get('away_win') and not odds_away:
+                            odds_away = odds_data.get('away_win')
+                        if odds_data.get('draw') and not odds_draw:
+                            odds_draw = odds_data.get('draw')
+                    elif event.get('G') == 17:  # Check all G=17 events for odds
+                        odds_data = self._extract_odds(event)
+                        if odds_data.get('home_win') and not odds_home:
+                            odds_home = odds_data.get('home_win')
+                        if odds_data.get('away_win') and not odds_away:
+                            odds_away = odds_data.get('away_win')
+                        if odds_data.get('draw') and not odds_draw:
+                            odds_draw = odds_data.get('draw')
+                    elif event.get('G') in [15, 62]:  # Check other groups that might have odds
+                        odds_data = self._extract_odds(event)
+                        if odds_data.get('home_win') and not odds_home:
+                            odds_home = odds_data.get('home_win')
+                        if odds_data.get('away_win') and not odds_away:
+                            odds_away = odds_data.get('away_win')
+                        if odds_data.get('draw') and not odds_draw:
+                            odds_draw = odds_data.get('draw')
+
+            # Determine match status
+            is_live = match_data.get('IsLive', False)
+            status = 'live' if is_live else 'pregame'
+
+            # Process start time - convert from Unix timestamp if needed
+            start_time_raw = match_data.get('S', 0)
+            if isinstance(start_time_raw, (int, float)) and start_time_raw > 0:
+                # If it's a reasonable Unix timestamp (after 2020), keep as is
+                # Otherwise convert to current time or handle appropriately
+                if start_time_raw > 1577836800:  # 2020-01-01
+                    start_time = int(start_time_raw)
+                else:
+                    start_time = int(datetime.now().timestamp())
+            else:
+                start_time = int(datetime.now().timestamp())
+
+            # Fix period logic - only use meaningful period values
+            if period and isinstance(period, (int, float)):
+                # Only keep period if it's a reasonable value (1-10)
+                if 1 <= int(period) <= 10:
+                    final_period = int(period)
+                else:
+                    final_period = 1  # Default to 1
+            else:
+                final_period = 1
 
             return {
                 'match_id': str(match_data.get('I', '')),
                 'home_team': home_team.strip(),
                 'away_team': away_team.strip(),
                 'score': score,
-                'period': period,
+                'status': status,
+                'period': final_period,
                 'tournament': tournament,
                 'sport_id': str(match_data.get('SI', '')),
-                'is_live': match_data.get('IsLive', False),
-                'start_time': match_data.get('S', 0),
+                'event_count': event_count,
+                'start_time': start_time,
                 'odds_home': odds_home,
                 'odds_away': odds_away,
                 'odds_draw': odds_draw,
@@ -203,17 +265,77 @@ class XBetAPI(BaseAPI):
 
         try:
             if 'P' in event_data:
-                for participant in event_data['P']:
-                    if 'C' in participant:
-                        coeff = participant['C']
-                        if isinstance(coeff, (int, float)) and coeff > 1:
-                            # Map common odds types
-                            if participant.get('T') == 1:  # Home win
-                                odds['home_win'] = coeff
-                            elif participant.get('T') == 2:  # Away win
-                                odds['away_win'] = coeff
-                            elif participant.get('T') == 3:  # Draw
-                                odds['draw'] = coeff
+                p_data = event_data['P']
+
+                # Handle case where P is a list of participants
+                if isinstance(p_data, list):
+                    for participant in p_data:
+                        if 'C' in participant:
+                            coeff = participant['C']
+                            if isinstance(coeff, (int, float)) and coeff > 1:
+                                # Map common odds types
+                                if participant.get('T') == 1:  # Home win
+                                    odds['home_win'] = coeff
+                                elif participant.get('T') == 2:  # Away win
+                                    odds['away_win'] = coeff
+                                elif participant.get('T') == 3:  # Draw
+                                    odds['draw'] = coeff
+                                elif participant.get('T') == 7:  # Alternative home win
+                                    odds['home_win'] = coeff
+                                elif participant.get('T') == 8:  # Alternative away win
+                                    odds['away_win'] = coeff
+                                elif participant.get('T') == 9:  # Alternative draw
+                                    odds['draw'] = coeff
+                # Handle case where P is a single value (coefficient)
+                elif isinstance(p_data, (int, float)):
+                    coeff = p_data
+                    # Accept both positive and negative coefficients (odds can be < 1)
+                    if abs(coeff) > 0.1:  # Filter out very small values
+                        # Map different event types to odds
+                        g = event_data.get('G')
+                        t = event_data.get('T')
+
+                        if g == 2:
+                            if t == 7:  # Home win
+                                odds['home_win'] = abs(coeff)
+                            elif t == 8:  # Away win
+                                odds['away_win'] = abs(coeff)
+                            elif t == 9:  # Draw
+                                odds['draw'] = abs(coeff)
+                        elif g == 17:
+                            if t == 9:  # Draw
+                                odds['draw'] = abs(coeff)
+                            elif t == 10:  # Likely away win (since draw is T=9)
+                                odds['away_win'] = abs(coeff)
+                        elif g == 15:
+                            if t == 11:  # Possible home/away odds
+                                if not odds.get('home_win'):
+                                    odds['home_win'] = abs(coeff)
+                                elif not odds.get('away_win'):
+                                    odds['away_win'] = abs(coeff)
+                            elif t == 12:  # Possible home/away odds
+                                if not odds.get('home_win'):
+                                    odds['home_win'] = abs(coeff)
+                                elif not odds.get('away_win'):
+                                    odds['away_win'] = abs(coeff)
+                        elif g == 62:
+                            if t == 13:  # Possible home/away odds
+                                if not odds.get('home_win'):
+                                    odds['home_win'] = abs(coeff)
+                                elif not odds.get('away_win'):
+                                    odds['away_win'] = abs(coeff)
+                            elif t == 14:  # Possible home/away odds
+                                if not odds.get('home_win'):
+                                    odds['home_win'] = abs(coeff)
+                                elif not odds.get('away_win'):
+                                    odds['away_win'] = abs(coeff)
+                        elif g == 1:
+                            if t == 1:  # Home win
+                                odds['home_win'] = abs(coeff)
+                            elif t == 2:  # Away win
+                                odds['away_win'] = abs(coeff)
+                            elif t == 3:  # Draw
+                                odds['draw'] = abs(coeff)
 
         except Exception as e:
             logging.error(f"Error extracting odds: {e}")
