@@ -1,38 +1,41 @@
 import sqlite3
 import json
 
-# Connect to the database
-conn = sqlite3.connect('app/sports_data_v2.db')
-cursor = conn.cursor()
+def inspect_database():
+    conn = sqlite3.connect('sports_data_v2.db')
+    cursor = conn.cursor()
 
-# Get all tables
-cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
-tables = cursor.fetchall()
+    # Get all tables
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table'")
+    tables = cursor.fetchall()
 
-print("Tables in database:")
-for table in tables:
-    print(f"- {table[0]}")
+    print("=== DATABASE INSPECTION ===")
+    print(f"Tables found: {[t[0] for t in tables]}")
 
-print("\n" + "="*50)
+    for table_name, in tables:
+        print(f"\n=== TABLE: {table_name} ===")
 
-# Check recent tables
-recent_tables = ['soccer_2025_09_17', 'basketball_2025_09_17', 'cricket_2025_09_17']
+        # Get column info
+        cursor.execute(f"PRAGMA table_info({table_name})")
+        columns = cursor.fetchall()
+        print(f"Columns ({len(columns)}):")
+        for col in columns:
+            print(f"  {col[1]} ({col[2]}) {'NOT NULL' if col[3] else 'NULL'}")
 
-for table_name in recent_tables:
-    print(f"\nTable: {table_name}")
-    try:
+        # Get record count
         cursor.execute(f"SELECT COUNT(*) FROM {table_name}")
         count = cursor.fetchone()[0]
         print(f"Records: {count}")
 
         if count > 0:
-            # Get sample records
-            cursor.execute(f"SELECT match_id, home_team, away_team, data_source, is_live, score FROM {table_name} LIMIT 5")
-            rows = cursor.fetchall()
-            print("Sample records:")
-            for row in rows:
-                print(f"  {row}")
-    except sqlite3.Error as e:
-        print(f"Error querying table: {e}")
+            # Sample some records to see data structure
+            cursor.execute(f"SELECT * FROM {table_name} LIMIT 3")
+            sample_rows = cursor.fetchall()
+            print("Sample data:")
+            for i, row in enumerate(sample_rows):
+                print(f"  Row {i+1}: {row}")
 
-conn.close()
+    conn.close()
+
+if __name__ == "__main__":
+    inspect_database()

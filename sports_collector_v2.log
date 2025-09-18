@@ -1,0 +1,1871 @@
+2025-09-18 12:00:18,296 - INFO - STATUS: System Status: {'timestamp': '2025-09-18T12:00:07.122813', 'api_status': {'xbet': {'request_count': 0, 'last_request_time': 0, 'rate_limit': 45, 'healthy': False, 'sports_cached': 0, 'client_status': 'active'}, 'iscjxxqgmb': {'request_count': 0, 'last_request_time': 0, 'rate_limit': 50, 'healthy': False, 'sports_cached': 0, 'sports_supported': 38, 'api_status': 'active'}}, 'database_stats': {'total_tables': 0, 'total_records': 0, 'sports_covered': [], 'date_range': {'oldest': None, 'newest': None}}, 'predictions_available': True}
+2025-09-18 12:00:18,296 - INFO - DEMO: Demonstrating prediction capabilities
+2025-09-18 12:00:18,443 - INFO - PREDICT: Manchester City vs Arsenal (soccer)
+2025-09-18 12:00:18,444 - INFO -    Outcome: home_win (40.0% confidence)
+2025-09-18 12:00:18,444 - INFO -    Score: 0:0
+2025-09-18 12:00:18,582 - INFO - PREDICT: Los Angeles Lakers vs Golden State Warriors (basketball)
+2025-09-18 12:00:18,582 - INFO -    Outcome: home_win (40.0% confidence)
+2025-09-18 12:00:18,582 - INFO -    Score: 0:0
+2025-09-18 12:00:18,719 - INFO - PREDICT: Real Madrid vs Barcelona (soccer)
+2025-09-18 12:00:18,721 - INFO -    Outcome: home_win (40.0% confidence)
+2025-09-18 12:00:18,721 - INFO -    Score: 0:0
+2025-09-18 12:00:18,721 - INFO - CONTINUOUS: Starting continuous collection (interval: 15 minutes)
+2025-09-18 12:00:18,721 - INFO - STARTING: Comprehensive sports data collection
+2025-09-18 12:00:18,722 - INFO - COLLECTING: soccer data
+2025-09-18 12:00:18,722 - INFO - COLLECTING: basketball data
+2025-09-18 12:00:18,723 - INFO - COLLECTING: tennis data
+2025-09-18 12:00:18,723 - INFO - COLLECTING: ice_hockey data
+2025-09-18 12:00:18,725 - INFO - COLLECTING: cricket data
+2025-09-18 12:00:18,726 - INFO - COLLECTING: volleyball data
+2025-09-18 12:00:18,727 - INFO - COLLECTING: baseball data
+2025-09-18 12:00:18,728 - INFO - COLLECTING: handball data
+2025-09-18 12:00:18,729 - INFO - COLLECTING: futsal data
+2025-09-18 12:00:18,730 - INFO - COLLECTING: table_tennis data
+2025-09-18 12:00:19,321 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 17
+2025-09-18 12:00:19,321 - INFO - WARNING: ISCJXXQGMB failed for handball, trying XBET
+2025-09-18 12:00:19,339 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 3
+2025-09-18 12:00:19,339 - INFO - WARNING: ISCJXXQGMB failed for tennis, trying XBET
+2025-09-18 12:00:19,342 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 19
+2025-09-18 12:00:19,342 - INFO - WARNING: ISCJXXQGMB failed for baseball, trying XBET
+2025-09-18 12:00:19,349 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 21
+2025-09-18 12:00:19,351 - INFO - WARNING: ISCJXXQGMB failed for futsal, trying XBET
+2025-09-18 12:00:19,351 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 13
+2025-09-18 12:00:19,354 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 8 live matches for sport 7
+2025-09-18 12:00:19,354 - INFO - WARNING: ISCJXXQGMB failed for volleyball, trying XBET
+2025-09-18 12:00:19,372 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 3 live matches for sport 45
+2025-09-18 12:00:19,374 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 57
+2025-09-18 12:00:19,374 - INFO - WARNING: ISCJXXQGMB failed for table_tennis, trying XBET
+2025-09-18 12:00:19,382 - INFO - SUCCESS: 1xBet: Retrieved 50 matches for sport 1
+2025-09-18 12:00:19,389 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 6 live matches for sport 5
+2025-09-18 12:00:19,391 - INFO - SUCCESS: Created/verified table: basketball_2025_09_18
+2025-09-18 12:00:19,391 - INFO - DB Insert: Match 24325236 has event_count: 2
+2025-09-18 12:00:19,391 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,392 - ERROR - Failed to insert match 24325236: 46 values for 41 columns
+2025-09-18 12:00:19,392 - INFO - DB Insert: Match 24325210 has event_count: 2
+2025-09-18 12:00:19,392 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,392 - ERROR - Failed to insert match 24325210: 46 values for 41 columns
+2025-09-18 12:00:19,392 - INFO - DB Insert: Match 24325192 has event_count: 2
+2025-09-18 12:00:19,392 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,392 - ERROR - Failed to insert match 24325192: 46 values for 41 columns
+2025-09-18 12:00:19,392 - INFO - DB Insert: Match 24325186 has event_count: 2
+2025-09-18 12:00:19,392 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,392 - ERROR - Failed to insert match 24325186: 46 values for 41 columns
+2025-09-18 12:00:19,392 - INFO - DB Insert: Match 24325572 has event_count: 2
+2025-09-18 12:00:19,392 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,392 - ERROR - Failed to insert match 24325572: 46 values for 41 columns
+2025-09-18 12:00:19,392 - INFO - DB Insert: Match 24325594 has event_count: 2
+2025-09-18 12:00:19,392 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,393 - ERROR - Failed to insert match 24325594: 46 values for 41 columns
+2025-09-18 12:00:19,393 - INFO - DB Insert: Match 24325652 has event_count: 1
+2025-09-18 12:00:19,393 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,393 - ERROR - Failed to insert match 24325652: 46 values for 41 columns
+2025-09-18 12:00:19,393 - INFO - DB Insert: Match 24325654 has event_count: 1
+2025-09-18 12:00:19,393 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,393 - ERROR - Failed to insert match 24325654: 46 values for 41 columns
+2025-09-18 12:00:19,397 - INFO - SUCCESS: Inserted 0 matches into basketball_2025_09_18
+2025-09-18 12:00:19,398 - INFO - SUCCESS: basketball: 8 matches from ISCJXXQGMB
+2025-09-18 12:00:19,398 - INFO - COLLECTING: rugby data
+2025-09-18 12:00:19,398 - INFO - SUCCESS: basketball: 8 matches collected
+2025-09-18 12:00:19,426 - INFO - SUCCESS: Created/verified table: ice_hockey_2025_09_18
+2025-09-18 12:00:19,426 - INFO - DB Insert: Match 24325440 has event_count: 2
+2025-09-18 12:00:19,426 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,426 - ERROR - Failed to insert match 24325440: 46 values for 41 columns
+2025-09-18 12:00:19,426 - INFO - DB Insert: Match 24325526 has event_count: 2
+2025-09-18 12:00:19,426 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,427 - ERROR - Failed to insert match 24325526: 46 values for 41 columns
+2025-09-18 12:00:19,427 - INFO - DB Insert: Match 24325554 has event_count: 2
+2025-09-18 12:00:19,427 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,427 - ERROR - Failed to insert match 24325554: 46 values for 41 columns
+2025-09-18 12:00:19,427 - INFO - DB Insert: Match 24325580 has event_count: 1
+2025-09-18 12:00:19,427 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,427 - ERROR - Failed to insert match 24325580: 46 values for 41 columns
+2025-09-18 12:00:19,427 - INFO - DB Insert: Match 24325608 has event_count: 1
+2025-09-18 12:00:19,427 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,427 - ERROR - Failed to insert match 24325608: 46 values for 41 columns
+2025-09-18 12:00:19,427 - INFO - DB Insert: Match 24325650 has event_count: 1
+2025-09-18 12:00:19,427 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,427 - ERROR - Failed to insert match 24325650: 46 values for 41 columns
+2025-09-18 12:00:19,432 - INFO - SUCCESS: Inserted 0 matches into ice_hockey_2025_09_18
+2025-09-18 12:00:19,432 - INFO - SUCCESS: ice_hockey: 6 matches from ISCJXXQGMB
+2025-09-18 12:00:19,433 - INFO - COLLECTING: american_football data
+2025-09-18 12:00:19,433 - INFO - SUCCESS: ice_hockey: 6 matches collected
+2025-09-18 12:00:19,477 - INFO - SUCCESS: Created/verified table: cricket_2025_09_18
+2025-09-18 12:00:19,477 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,478 - ERROR - Failed to insert match 24285046: 46 values for 41 columns
+2025-09-18 12:00:19,478 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,478 - ERROR - Failed to insert match 24285050: 46 values for 41 columns
+2025-09-18 12:00:19,478 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,478 - ERROR - Failed to insert match 24285052: 46 values for 41 columns
+2025-09-18 12:00:19,482 - INFO - SUCCESS: Inserted 0 matches into cricket_2025_09_18
+2025-09-18 12:00:19,482 - INFO - SUCCESS: cricket: 3 matches from ISCJXXQGMB
+2025-09-18 12:00:19,483 - INFO - COLLECTING: boxing data
+2025-09-18 12:00:19,483 - INFO - SUCCESS: cricket: 3 matches collected
+2025-09-18 12:00:19,697 - INFO - SUCCESS: 1xBet: Retrieved 2 matches for sport 17
+2025-09-18 12:00:19,706 - INFO - INFO: No matches found for baseball
+2025-09-18 12:00:19,706 - INFO - SUCCESS: baseball: 0 matches collected
+2025-09-18 12:00:19,725 - INFO - SUCCESS: Created/verified table: handball_2025_09_18
+2025-09-18 12:00:19,726 - INFO - DB Insert: Match 654365787 has event_count: 13
+2025-09-18 12:00:19,726 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,726 - ERROR - Failed to insert match 654365787: 46 values for 41 columns
+2025-09-18 12:00:19,726 - INFO - DB Insert: Match 654365788 has event_count: 13
+2025-09-18 12:00:19,726 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,726 - ERROR - Failed to insert match 654365788: 46 values for 41 columns
+2025-09-18 12:00:19,730 - INFO - SUCCESS: Inserted 0 matches into handball_2025_09_18
+2025-09-18 12:00:19,739 - INFO - SUCCESS: 1xBet: Retrieved 25 matches for sport 21
+2025-09-18 12:00:19,780 - INFO - SUCCESS: Created/verified table: futsal_2025_09_18
+2025-09-18 12:00:19,781 - INFO - DB Insert: Match 654421562 has event_count: 6
+2025-09-18 12:00:19,781 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,782 - ERROR - Failed to insert match 654421562: 46 values for 41 columns
+2025-09-18 12:00:19,782 - INFO - DB Insert: Match 654422917 has event_count: 6
+2025-09-18 12:00:19,782 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,782 - ERROR - Failed to insert match 654422917: 46 values for 41 columns
+2025-09-18 12:00:19,782 - INFO - DB Insert: Match 654401096 has event_count: 6
+2025-09-18 12:00:19,782 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,782 - ERROR - Failed to insert match 654401096: 46 values for 41 columns
+2025-09-18 12:00:19,782 - INFO - DB Insert: Match 654422919 has event_count: 6
+2025-09-18 12:00:19,782 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,782 - ERROR - Failed to insert match 654422919: 46 values for 41 columns
+2025-09-18 12:00:19,782 - INFO - DB Insert: Match 654422918 has event_count: 6
+2025-09-18 12:00:19,782 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,782 - ERROR - Failed to insert match 654422918: 46 values for 41 columns
+2025-09-18 12:00:19,782 - INFO - DB Insert: Match 654401091 has event_count: 6
+2025-09-18 12:00:19,782 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,783 - ERROR - Failed to insert match 654401091: 46 values for 41 columns
+2025-09-18 12:00:19,783 - INFO - DB Insert: Match 654422922 has event_count: 6
+2025-09-18 12:00:19,783 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,783 - ERROR - Failed to insert match 654422922: 46 values for 41 columns
+2025-09-18 12:00:19,783 - INFO - DB Insert: Match 654401095 has event_count: 6
+2025-09-18 12:00:19,783 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,783 - ERROR - Failed to insert match 654401095: 46 values for 41 columns
+2025-09-18 12:00:19,783 - INFO - DB Insert: Match 654422925 has event_count: 6
+2025-09-18 12:00:19,783 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,783 - ERROR - Failed to insert match 654422925: 46 values for 41 columns
+2025-09-18 12:00:19,783 - INFO - DB Insert: Match 654422924 has event_count: 6
+2025-09-18 12:00:19,783 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,783 - ERROR - Failed to insert match 654422924: 46 values for 41 columns
+2025-09-18 12:00:19,783 - INFO - DB Insert: Match 654422923 has event_count: 6
+2025-09-18 12:00:19,783 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,783 - ERROR - Failed to insert match 654422923: 46 values for 41 columns
+2025-09-18 12:00:19,784 - INFO - DB Insert: Match 654401106 has event_count: 6
+2025-09-18 12:00:19,784 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,784 - ERROR - Failed to insert match 654401106: 46 values for 41 columns
+2025-09-18 12:00:19,784 - INFO - DB Insert: Match 654422920 has event_count: 6
+2025-09-18 12:00:19,784 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,784 - ERROR - Failed to insert match 654422920: 46 values for 41 columns
+2025-09-18 12:00:19,784 - INFO - DB Insert: Match 654422921 has event_count: 6
+2025-09-18 12:00:19,784 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,784 - ERROR - Failed to insert match 654422921: 46 values for 41 columns
+2025-09-18 12:00:19,784 - INFO - DB Insert: Match 654401092 has event_count: 6
+2025-09-18 12:00:19,784 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,784 - ERROR - Failed to insert match 654401092: 46 values for 41 columns
+2025-09-18 12:00:19,784 - INFO - DB Insert: Match 654432327 has event_count: 6
+2025-09-18 12:00:19,784 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,785 - ERROR - Failed to insert match 654432327: 46 values for 41 columns
+2025-09-18 12:00:19,785 - INFO - DB Insert: Match 654432328 has event_count: 6
+2025-09-18 12:00:19,785 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,785 - ERROR - Failed to insert match 654432328: 46 values for 41 columns
+2025-09-18 12:00:19,785 - INFO - DB Insert: Match 654434025 has event_count: 6
+2025-09-18 12:00:19,785 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,785 - ERROR - Failed to insert match 654434025: 46 values for 41 columns
+2025-09-18 12:00:19,785 - INFO - DB Insert: Match 654435595 has event_count: 6
+2025-09-18 12:00:19,786 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,786 - ERROR - Failed to insert match 654435595: 46 values for 41 columns
+2025-09-18 12:00:19,786 - INFO - DB Insert: Match 654437073 has event_count: 6
+2025-09-18 12:00:19,786 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,786 - ERROR - Failed to insert match 654437073: 46 values for 41 columns
+2025-09-18 12:00:19,787 - INFO - DB Insert: Match 654437482 has event_count: 6
+2025-09-18 12:00:19,787 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,787 - ERROR - Failed to insert match 654437482: 46 values for 41 columns
+2025-09-18 12:00:19,787 - INFO - DB Insert: Match 654438578 has event_count: 6
+2025-09-18 12:00:19,787 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,787 - ERROR - Failed to insert match 654438578: 46 values for 41 columns
+2025-09-18 12:00:19,787 - INFO - DB Insert: Match 654440934 has event_count: 6
+2025-09-18 12:00:19,787 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,787 - ERROR - Failed to insert match 654440934: 46 values for 41 columns
+2025-09-18 12:00:19,787 - INFO - DB Insert: Match 654440933 has event_count: 6
+2025-09-18 12:00:19,787 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,788 - ERROR - Failed to insert match 654440933: 46 values for 41 columns
+2025-09-18 12:00:19,788 - INFO - DB Insert: Match 654440935 has event_count: 6
+2025-09-18 12:00:19,788 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,788 - ERROR - Failed to insert match 654440935: 46 values for 41 columns
+2025-09-18 12:00:19,805 - INFO - SUCCESS: Inserted 0 matches into futsal_2025_09_18
+2025-09-18 12:00:19,897 - INFO - SUCCESS: 1xBet: Retrieved 50 matches for sport 3
+2025-09-18 12:00:19,936 - INFO - SUCCESS: Created/verified table: tennis_2025_09_18
+2025-09-18 12:00:19,936 - INFO - DB Insert: Match 654322156 has event_count: 15
+2025-09-18 12:00:19,936 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,937 - ERROR - Failed to insert match 654322156: 46 values for 41 columns
+2025-09-18 12:00:19,938 - INFO - DB Insert: Match 654314799 has event_count: 15
+2025-09-18 12:00:19,938 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,938 - ERROR - Failed to insert match 654314799: 46 values for 41 columns
+2025-09-18 12:00:19,938 - INFO - DB Insert: Match 654314792 has event_count: 15
+2025-09-18 12:00:19,938 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,938 - ERROR - Failed to insert match 654314792: 46 values for 41 columns
+2025-09-18 12:00:19,938 - INFO - DB Insert: Match 654382304 has event_count: 13
+2025-09-18 12:00:19,938 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,938 - ERROR - Failed to insert match 654382304: 46 values for 41 columns
+2025-09-18 12:00:19,938 - INFO - DB Insert: Match 654502221 has event_count: 13
+2025-09-18 12:00:19,938 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,939 - ERROR - Failed to insert match 654502221: 46 values for 41 columns
+2025-09-18 12:00:19,939 - INFO - DB Insert: Match 654367933 has event_count: 11
+2025-09-18 12:00:19,939 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,939 - ERROR - Failed to insert match 654367933: 46 values for 41 columns
+2025-09-18 12:00:19,939 - INFO - DB Insert: Match 654506589 has event_count: 10
+2025-09-18 12:00:19,939 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,939 - ERROR - Failed to insert match 654506589: 46 values for 41 columns
+2025-09-18 12:00:19,939 - INFO - DB Insert: Match 652595103 has event_count: 13
+2025-09-18 12:00:19,939 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,939 - ERROR - Failed to insert match 652595103: 46 values for 41 columns
+2025-09-18 12:00:19,939 - INFO - DB Insert: Match 654498574 has event_count: 15
+2025-09-18 12:00:19,939 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,939 - ERROR - Failed to insert match 654498574: 46 values for 41 columns
+2025-09-18 12:00:19,939 - INFO - DB Insert: Match 654317157 has event_count: 7
+2025-09-18 12:00:19,939 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,939 - ERROR - Failed to insert match 654317157: 46 values for 41 columns
+2025-09-18 12:00:19,940 - INFO - DB Insert: Match 654317506 has event_count: 7
+2025-09-18 12:00:19,940 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,940 - ERROR - Failed to insert match 654317506: 46 values for 41 columns
+2025-09-18 12:00:19,940 - INFO - DB Insert: Match 654317507 has event_count: 7
+2025-09-18 12:00:19,940 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,940 - ERROR - Failed to insert match 654317507: 46 values for 41 columns
+2025-09-18 12:00:19,940 - INFO - DB Insert: Match 654317505 has event_count: 7
+2025-09-18 12:00:19,940 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,940 - ERROR - Failed to insert match 654317505: 46 values for 41 columns
+2025-09-18 12:00:19,940 - INFO - DB Insert: Match 654318037 has event_count: 7
+2025-09-18 12:00:19,940 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,940 - ERROR - Failed to insert match 654318037: 46 values for 41 columns
+2025-09-18 12:00:19,940 - INFO - DB Insert: Match 654318038 has event_count: 7
+2025-09-18 12:00:19,940 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,940 - ERROR - Failed to insert match 654318038: 46 values for 41 columns
+2025-09-18 12:00:19,940 - INFO - DB Insert: Match 654318914 has event_count: 7
+2025-09-18 12:00:19,940 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,941 - ERROR - Failed to insert match 654318914: 46 values for 41 columns
+2025-09-18 12:00:19,941 - INFO - DB Insert: Match 654318913 has event_count: 7
+2025-09-18 12:00:19,941 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,941 - ERROR - Failed to insert match 654318913: 46 values for 41 columns
+2025-09-18 12:00:19,941 - INFO - DB Insert: Match 654305974 has event_count: 4
+2025-09-18 12:00:19,941 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,941 - ERROR - Failed to insert match 654305974: 46 values for 41 columns
+2025-09-18 12:00:19,941 - INFO - DB Insert: Match 654304193 has event_count: 9
+2025-09-18 12:00:19,941 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,941 - ERROR - Failed to insert match 654304193: 46 values for 41 columns
+2025-09-18 12:00:19,942 - INFO - DB Insert: Match 654365659 has event_count: 15
+2025-09-18 12:00:19,942 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,942 - ERROR - Failed to insert match 654365659: 46 values for 41 columns
+2025-09-18 12:00:19,942 - INFO - DB Insert: Match 654386278 has event_count: 15
+2025-09-18 12:00:19,942 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,942 - ERROR - Failed to insert match 654386278: 46 values for 41 columns
+2025-09-18 12:00:19,943 - INFO - DB Insert: Match 654394911 has event_count: 15
+2025-09-18 12:00:19,943 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,943 - ERROR - Failed to insert match 654394911: 46 values for 41 columns
+2025-09-18 12:00:19,943 - INFO - DB Insert: Match 652612417 has event_count: 15
+2025-09-18 12:00:19,943 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,943 - ERROR - Failed to insert match 652612417: 46 values for 41 columns
+2025-09-18 12:00:19,943 - INFO - DB Insert: Match 654328703 has event_count: 15
+2025-09-18 12:00:19,943 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,944 - ERROR - Failed to insert match 654328703: 46 values for 41 columns
+2025-09-18 12:00:19,944 - INFO - DB Insert: Match 654289687 has event_count: 9
+2025-09-18 12:00:19,944 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,944 - ERROR - Failed to insert match 654289687: 46 values for 41 columns
+2025-09-18 12:00:19,944 - INFO - DB Insert: Match 654365966 has event_count: 9
+2025-09-18 12:00:19,944 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,944 - ERROR - Failed to insert match 654365966: 46 values for 41 columns
+2025-09-18 12:00:19,944 - INFO - DB Insert: Match 654494742 has event_count: 5
+2025-09-18 12:00:19,944 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,944 - ERROR - Failed to insert match 654494742: 46 values for 41 columns
+2025-09-18 12:00:19,944 - INFO - DB Insert: Match 654360390 has event_count: 9
+2025-09-18 12:00:19,944 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,944 - ERROR - Failed to insert match 654360390: 46 values for 41 columns
+2025-09-18 12:00:19,944 - INFO - DB Insert: Match 654360386 has event_count: 9
+2025-09-18 12:00:19,944 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,944 - ERROR - Failed to insert match 654360386: 46 values for 41 columns
+2025-09-18 12:00:19,944 - INFO - DB Insert: Match 654057768 has event_count: 9
+2025-09-18 12:00:19,944 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,945 - ERROR - Failed to insert match 654057768: 46 values for 41 columns
+2025-09-18 12:00:19,945 - INFO - DB Insert: Match 654360388 has event_count: 9
+2025-09-18 12:00:19,945 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,945 - ERROR - Failed to insert match 654360388: 46 values for 41 columns
+2025-09-18 12:00:19,945 - INFO - DB Insert: Match 654360387 has event_count: 9
+2025-09-18 12:00:19,945 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,945 - ERROR - Failed to insert match 654360387: 46 values for 41 columns
+2025-09-18 12:00:19,945 - INFO - DB Insert: Match 654360391 has event_count: 9
+2025-09-18 12:00:19,945 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,945 - ERROR - Failed to insert match 654360391: 46 values for 41 columns
+2025-09-18 12:00:19,946 - INFO - DB Insert: Match 654365660 has event_count: 15
+2025-09-18 12:00:19,946 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,946 - ERROR - Failed to insert match 654365660: 46 values for 41 columns
+2025-09-18 12:00:19,946 - INFO - DB Insert: Match 654302895 has event_count: 15
+2025-09-18 12:00:19,946 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,946 - ERROR - Failed to insert match 654302895: 46 values for 41 columns
+2025-09-18 12:00:19,946 - INFO - DB Insert: Match 654261379 has event_count: 15
+2025-09-18 12:00:19,946 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,946 - ERROR - Failed to insert match 654261379: 46 values for 41 columns
+2025-09-18 12:00:19,946 - INFO - DB Insert: Match 654288687 has event_count: 13
+2025-09-18 12:00:19,946 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,947 - ERROR - Failed to insert match 654288687: 46 values for 41 columns
+2025-09-18 12:00:19,947 - INFO - DB Insert: Match 654389141 has event_count: 15
+2025-09-18 12:00:19,947 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,947 - ERROR - Failed to insert match 654389141: 46 values for 41 columns
+2025-09-18 12:00:19,947 - INFO - DB Insert: Match 654339168 has event_count: 15
+2025-09-18 12:00:19,947 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,947 - ERROR - Failed to insert match 654339168: 46 values for 41 columns
+2025-09-18 12:00:19,947 - INFO - DB Insert: Match 654386091 has event_count: 15
+2025-09-18 12:00:19,947 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,947 - ERROR - Failed to insert match 654386091: 46 values for 41 columns
+2025-09-18 12:00:19,947 - INFO - DB Insert: Match 654303721 has event_count: 15
+2025-09-18 12:00:19,948 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,948 - ERROR - Failed to insert match 654303721: 46 values for 41 columns
+2025-09-18 12:00:19,948 - INFO - DB Insert: Match 654249969 has event_count: 15
+2025-09-18 12:00:19,948 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,948 - ERROR - Failed to insert match 654249969: 46 values for 41 columns
+2025-09-18 12:00:19,948 - INFO - DB Insert: Match 654415412 has event_count: 13
+2025-09-18 12:00:19,948 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,948 - ERROR - Failed to insert match 654415412: 46 values for 41 columns
+2025-09-18 12:00:19,948 - INFO - DB Insert: Match 654395575 has event_count: 15
+2025-09-18 12:00:19,949 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,949 - ERROR - Failed to insert match 654395575: 46 values for 41 columns
+2025-09-18 12:00:19,949 - INFO - DB Insert: Match 654319847 has event_count: 13
+2025-09-18 12:00:19,949 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,949 - ERROR - Failed to insert match 654319847: 46 values for 41 columns
+2025-09-18 12:00:19,950 - INFO - DB Insert: Match 654403456 has event_count: 13
+2025-09-18 12:00:19,950 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,950 - ERROR - Failed to insert match 654403456: 46 values for 41 columns
+2025-09-18 12:00:19,951 - INFO - DB Insert: Match 654254650 has event_count: 10
+2025-09-18 12:00:19,951 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,951 - ERROR - Failed to insert match 654254650: 46 values for 41 columns
+2025-09-18 12:00:19,951 - INFO - DB Insert: Match 654250662 has event_count: 15
+2025-09-18 12:00:19,951 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,951 - ERROR - Failed to insert match 654250662: 46 values for 41 columns
+2025-09-18 12:00:19,951 - INFO - DB Insert: Match 654386092 has event_count: 15
+2025-09-18 12:00:19,951 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,951 - ERROR - Failed to insert match 654386092: 46 values for 41 columns
+2025-09-18 12:00:19,952 - INFO - DB Insert: Match 654403925 has event_count: 13
+2025-09-18 12:00:19,952 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:19,952 - ERROR - Failed to insert match 654403925: 46 values for 41 columns
+2025-09-18 12:00:19,960 - INFO - SUCCESS: Inserted 0 matches into tennis_2025_09_18
+2025-09-18 12:00:19,967 - INFO - SUCCESS: 1xBet: Retrieved 0 matches for sport 57
+2025-09-18 12:00:19,967 - INFO - INFO: No matches found for table_tennis
+2025-09-18 12:00:19,967 - INFO - SUCCESS: table_tennis: 0 matches collected
+2025-09-18 12:00:20,014 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 49
+2025-09-18 12:00:20,014 - INFO - WARNING: ISCJXXQGMB failed for rugby, trying XBET
+2025-09-18 12:00:20,082 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 8 live matches for sport 1
+2025-09-18 12:00:20,082 - INFO - 1xBet match 649529227 has event_count: 20
+2025-09-18 12:00:20,083 - INFO - 1xBet match fields: ['match_id', 'home_team', 'away_team', 'score', 'status', 'period', 'tournament', 'sport_id', 'event_count', 'start_time', 'odds_home', 'odds_away', 'odds_draw', 'raw_data']
+2025-09-18 12:00:20,083 - INFO - 1xBet match 649529221 has event_count: 20
+2025-09-18 12:00:20,084 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 9
+2025-09-18 12:00:20,084 - INFO - 1xBet match fields: ['match_id', 'home_team', 'away_team', 'score', 'status', 'period', 'tournament', 'sport_id', 'event_count', 'start_time', 'odds_home', 'odds_away', 'odds_draw', 'raw_data']
+2025-09-18 12:00:20,085 - INFO - WARNING: ISCJXXQGMB failed for boxing, trying XBET
+2025-09-18 12:00:20,085 - INFO - 1xBet match 649543844 has event_count: 20
+2025-09-18 12:00:20,085 - INFO - 1xBet match fields: ['match_id', 'home_team', 'away_team', 'score', 'status', 'period', 'tournament', 'sport_id', 'event_count', 'start_time', 'odds_home', 'odds_away', 'odds_draw', 'raw_data']
+2025-09-18 12:00:20,085 - INFO - 1xBet match 649543850 has event_count: 20
+2025-09-18 12:00:20,085 - INFO - 1xBet match 649543838 has event_count: 20
+2025-09-18 12:00:20,085 - INFO - 1xBet match 649529840 has event_count: 20
+2025-09-18 12:00:20,086 - INFO - 1xBet match 653771323 has event_count: 18
+2025-09-18 12:00:20,086 - INFO - 1xBet match 652467922 has event_count: 20
+2025-09-18 12:00:20,086 - INFO - 1xBet match 654361550 has event_count: 15
+2025-09-18 12:00:20,086 - INFO - 1xBet match 649246066 has event_count: 22
+2025-09-18 12:00:20,086 - INFO - 1xBet match 649246560 has event_count: 22
+2025-09-18 12:00:20,086 - INFO - 1xBet match 654275124 has event_count: 20
+2025-09-18 12:00:20,087 - INFO - 1xBet match 653902365 has event_count: 20
+2025-09-18 12:00:20,087 - INFO - 1xBet match 653678608 has event_count: 20
+2025-09-18 12:00:20,087 - INFO - 1xBet match 653678602 has event_count: 20
+2025-09-18 12:00:20,087 - INFO - 1xBet match 653382162 has event_count: 20
+2025-09-18 12:00:20,088 - INFO - 1xBet match 654308044 has event_count: 11
+2025-09-18 12:00:20,088 - INFO - 1xBet match 654243305 has event_count: 20
+2025-09-18 12:00:20,088 - INFO - 1xBet match 654243308 has event_count: 20
+2025-09-18 12:00:20,088 - INFO - 1xBet match 654248930 has event_count: 20
+2025-09-18 12:00:20,089 - INFO - 1xBet match 654235743 has event_count: 20
+2025-09-18 12:00:20,089 - INFO - 1xBet match 654243314 has event_count: 20
+2025-09-18 12:00:20,089 - INFO - 1xBet match 654243311 has event_count: 20
+2025-09-18 12:00:20,089 - INFO - 1xBet match 654485120 has event_count: 18
+2025-09-18 12:00:20,089 - INFO - 1xBet match 653643027 has event_count: 20
+2025-09-18 12:00:20,089 - INFO - 1xBet match 653333429 has event_count: 20
+2025-09-18 12:00:20,089 - INFO - 1xBet match 654310988 has event_count: 11
+2025-09-18 12:00:20,090 - INFO - 1xBet match 654435354 has event_count: 20
+2025-09-18 12:00:20,090 - INFO - 1xBet match 654419667 has event_count: 20
+2025-09-18 12:00:20,090 - INFO - 1xBet match 654463845 has event_count: 20
+2025-09-18 12:00:20,090 - INFO - 1xBet match 654431973 has event_count: 20
+2025-09-18 12:00:20,090 - INFO - 1xBet match 654185739 has event_count: 20
+2025-09-18 12:00:20,090 - INFO - 1xBet match 654189020 has event_count: 20
+2025-09-18 12:00:20,090 - INFO - 1xBet match 654194527 has event_count: 20
+2025-09-18 12:00:20,090 - INFO - 1xBet match 654226412 has event_count: 20
+2025-09-18 12:00:20,090 - INFO - 1xBet match 654226415 has event_count: 20
+2025-09-18 12:00:20,091 - INFO - 1xBet match 654224871 has event_count: 20
+2025-09-18 12:00:20,091 - INFO - 1xBet match 654437738 has event_count: 14
+2025-09-18 12:00:20,091 - INFO - 1xBet match 654202254 has event_count: 18
+2025-09-18 12:00:20,091 - INFO - 1xBet match 654220288 has event_count: 18
+2025-09-18 12:00:20,091 - INFO - 1xBet match 654202640 has event_count: 18
+2025-09-18 12:00:20,091 - INFO - 1xBet match 654202646 has event_count: 18
+2025-09-18 12:00:20,091 - INFO - 1xBet match 654202263 has event_count: 16
+2025-09-18 12:00:20,091 - INFO - 1xBet match 654202257 has event_count: 18
+2025-09-18 12:00:20,091 - INFO - 1xBet match 653245157 has event_count: 20
+2025-09-18 12:00:20,092 - INFO - 1xBet match 653245154 has event_count: 20
+2025-09-18 12:00:20,092 - INFO - 1xBet match 652982131 has event_count: 20
+2025-09-18 12:00:20,092 - INFO - 1xBet match 654296858 has event_count: 18
+2025-09-18 12:00:20,092 - INFO - 1xBet match 649845447 has event_count: 20
+2025-09-18 12:00:20,092 - INFO - 1xBet match 653579576 has event_count: 20
+2025-09-18 12:00:20,092 - INFO - ISCJXXQGMB match 24325406 has event_count: 2
+2025-09-18 12:00:20,092 - INFO - ISCJXXQGMB match fields: ['match_id', 'home_team', 'away_team', 'score', 'status', 'period', 'tournament', 'sport_id', 'event_count', 'is_live', 'start_time', 'odds_home', 'odds_away', 'odds_draw', 'home_team_id', 'away_team_id', 'home_team_logo', 'away_team_logo', 'match_weight', 'set_number', 'match_time_extended', 'in_top', 'match_in_campaign', 'yellow_cards_home', 'yellow_cards_away', 'red_cards_home', 'red_cards_away', 'corners_home', 'corners_away', 'segment_scores', 'sets_score', 'stoppage_time', 'half_time', 'overtime_score', 'regular_time_score', 'after_penalties_score', 'line_status', 'is_outright', 'is_cyber', 'in_favorites', 'other_outcomes_qty', 'raw_data'], event_count: 2
+2025-09-18 12:00:20,092 - INFO - ISCJXXQGMB match 24325158 has event_count: 2
+2025-09-18 12:00:20,092 - INFO - ISCJXXQGMB match fields: ['match_id', 'home_team', 'away_team', 'score', 'status', 'period', 'tournament', 'sport_id', 'event_count', 'is_live', 'start_time', 'odds_home', 'odds_away', 'odds_draw', 'home_team_id', 'away_team_id', 'home_team_logo', 'away_team_logo', 'match_weight', 'set_number', 'match_time_extended', 'in_top', 'match_in_campaign', 'yellow_cards_home', 'yellow_cards_away', 'red_cards_home', 'red_cards_away', 'corners_home', 'corners_away', 'segment_scores', 'sets_score', 'stoppage_time', 'half_time', 'overtime_score', 'regular_time_score', 'after_penalties_score', 'line_status', 'is_outright', 'is_cyber', 'in_favorites', 'other_outcomes_qty', 'raw_data'], event_count: 2
+2025-09-18 12:00:20,092 - INFO - ISCJXXQGMB match 24325552 has event_count: 2
+2025-09-18 12:00:20,093 - INFO - ISCJXXQGMB match fields: ['match_id', 'home_team', 'away_team', 'score', 'status', 'period', 'tournament', 'sport_id', 'event_count', 'is_live', 'start_time', 'odds_home', 'odds_away', 'odds_draw', 'home_team_id', 'away_team_id', 'home_team_logo', 'away_team_logo', 'match_weight', 'set_number', 'match_time_extended', 'in_top', 'match_in_campaign', 'yellow_cards_home', 'yellow_cards_away', 'red_cards_home', 'red_cards_away', 'corners_home', 'corners_away', 'segment_scores', 'sets_score', 'stoppage_time', 'half_time', 'overtime_score', 'regular_time_score', 'after_penalties_score', 'line_status', 'is_outright', 'is_cyber', 'in_favorites', 'other_outcomes_qty', 'raw_data'], event_count: 2
+2025-09-18 12:00:20,093 - INFO - ISCJXXQGMB match 24325578 has event_count: 2
+2025-09-18 12:00:20,093 - INFO - ISCJXXQGMB match 24325592 has event_count: 2
+2025-09-18 12:00:20,093 - INFO - ISCJXXQGMB match 24325604 has event_count: 2
+2025-09-18 12:00:20,093 - INFO - ISCJXXQGMB match 24325628 has event_count: 1
+2025-09-18 12:00:20,093 - INFO - ISCJXXQGMB match 24325630 has event_count: 1
+2025-09-18 12:00:20,093 - INFO - MERGED: Intelligently merged (normalized): 50 from 1xBet + 8 from ISCJXXQGMB = 58 total
+2025-09-18 12:00:20,094 - INFO - STATS: Event counts: 58/58 matches have event_count > 0, values: [1, 2, 11, 14, 15, 16, 18, 20, 22]
+2025-09-18 12:00:20,138 - INFO - SUCCESS: Created/verified table: soccer_2025_09_18
+2025-09-18 12:00:20,138 - INFO - DB Insert: Match 649529227 has event_count: 20
+2025-09-18 12:00:20,138 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,139 - ERROR - Failed to insert match 649529227: 46 values for 41 columns
+2025-09-18 12:00:20,139 - INFO - DB Insert: Match 649529221 has event_count: 20
+2025-09-18 12:00:20,139 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,139 - ERROR - Failed to insert match 649529221: 46 values for 41 columns
+2025-09-18 12:00:20,139 - INFO - DB Insert: Match 649543844 has event_count: 20
+2025-09-18 12:00:20,139 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,139 - ERROR - Failed to insert match 649543844: 46 values for 41 columns
+2025-09-18 12:00:20,139 - INFO - DB Insert: Match 649543850 has event_count: 20
+2025-09-18 12:00:20,139 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,139 - ERROR - Failed to insert match 649543850: 46 values for 41 columns
+2025-09-18 12:00:20,139 - INFO - DB Insert: Match 649543838 has event_count: 20
+2025-09-18 12:00:20,139 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,139 - ERROR - Failed to insert match 649543838: 46 values for 41 columns
+2025-09-18 12:00:20,140 - INFO - DB Insert: Match 649529840 has event_count: 20
+2025-09-18 12:00:20,140 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,140 - ERROR - Failed to insert match 649529840: 46 values for 41 columns
+2025-09-18 12:00:20,140 - INFO - DB Insert: Match 653771323 has event_count: 18
+2025-09-18 12:00:20,140 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,140 - ERROR - Failed to insert match 653771323: 46 values for 41 columns
+2025-09-18 12:00:20,140 - INFO - DB Insert: Match 652467922 has event_count: 20
+2025-09-18 12:00:20,140 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,140 - ERROR - Failed to insert match 652467922: 46 values for 41 columns
+2025-09-18 12:00:20,140 - INFO - DB Insert: Match 654361550 has event_count: 15
+2025-09-18 12:00:20,140 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,140 - ERROR - Failed to insert match 654361550: 46 values for 41 columns
+2025-09-18 12:00:20,140 - INFO - DB Insert: Match 649246066 has event_count: 22
+2025-09-18 12:00:20,140 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,140 - ERROR - Failed to insert match 649246066: 46 values for 41 columns
+2025-09-18 12:00:20,140 - INFO - DB Insert: Match 649246560 has event_count: 22
+2025-09-18 12:00:20,140 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,141 - ERROR - Failed to insert match 649246560: 46 values for 41 columns
+2025-09-18 12:00:20,141 - INFO - DB Insert: Match 654275124 has event_count: 20
+2025-09-18 12:00:20,141 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,141 - ERROR - Failed to insert match 654275124: 46 values for 41 columns
+2025-09-18 12:00:20,141 - INFO - DB Insert: Match 653902365 has event_count: 20
+2025-09-18 12:00:20,141 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,141 - ERROR - Failed to insert match 653902365: 46 values for 41 columns
+2025-09-18 12:00:20,141 - INFO - DB Insert: Match 653678608 has event_count: 20
+2025-09-18 12:00:20,141 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,141 - ERROR - Failed to insert match 653678608: 46 values for 41 columns
+2025-09-18 12:00:20,141 - INFO - DB Insert: Match 653678602 has event_count: 20
+2025-09-18 12:00:20,141 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,141 - ERROR - Failed to insert match 653678602: 46 values for 41 columns
+2025-09-18 12:00:20,141 - INFO - DB Insert: Match 653382162 has event_count: 20
+2025-09-18 12:00:20,141 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,141 - ERROR - Failed to insert match 653382162: 46 values for 41 columns
+2025-09-18 12:00:20,141 - INFO - DB Insert: Match 654308044 has event_count: 11
+2025-09-18 12:00:20,142 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,142 - ERROR - Failed to insert match 654308044: 46 values for 41 columns
+2025-09-18 12:00:20,142 - INFO - DB Insert: Match 654243305 has event_count: 20
+2025-09-18 12:00:20,142 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,142 - ERROR - Failed to insert match 654243305: 46 values for 41 columns
+2025-09-18 12:00:20,142 - INFO - DB Insert: Match 654243308 has event_count: 20
+2025-09-18 12:00:20,142 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,142 - ERROR - Failed to insert match 654243308: 46 values for 41 columns
+2025-09-18 12:00:20,142 - INFO - DB Insert: Match 654248930 has event_count: 20
+2025-09-18 12:00:20,142 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,142 - ERROR - Failed to insert match 654248930: 46 values for 41 columns
+2025-09-18 12:00:20,142 - INFO - DB Insert: Match 654235743 has event_count: 20
+2025-09-18 12:00:20,142 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,142 - ERROR - Failed to insert match 654235743: 46 values for 41 columns
+2025-09-18 12:00:20,142 - INFO - DB Insert: Match 654243314 has event_count: 20
+2025-09-18 12:00:20,142 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,142 - ERROR - Failed to insert match 654243314: 46 values for 41 columns
+2025-09-18 12:00:20,142 - INFO - DB Insert: Match 654243311 has event_count: 20
+2025-09-18 12:00:20,143 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,143 - ERROR - Failed to insert match 654243311: 46 values for 41 columns
+2025-09-18 12:00:20,143 - INFO - DB Insert: Match 654485120 has event_count: 18
+2025-09-18 12:00:20,143 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,143 - ERROR - Failed to insert match 654485120: 46 values for 41 columns
+2025-09-18 12:00:20,143 - INFO - DB Insert: Match 653643027 has event_count: 20
+2025-09-18 12:00:20,143 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,143 - ERROR - Failed to insert match 653643027: 46 values for 41 columns
+2025-09-18 12:00:20,143 - INFO - DB Insert: Match 653333429 has event_count: 20
+2025-09-18 12:00:20,143 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,143 - ERROR - Failed to insert match 653333429: 46 values for 41 columns
+2025-09-18 12:00:20,143 - INFO - DB Insert: Match 654310988 has event_count: 11
+2025-09-18 12:00:20,143 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,143 - ERROR - Failed to insert match 654310988: 46 values for 41 columns
+2025-09-18 12:00:20,143 - INFO - DB Insert: Match 654435354 has event_count: 20
+2025-09-18 12:00:20,143 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,144 - ERROR - Failed to insert match 654435354: 46 values for 41 columns
+2025-09-18 12:00:20,144 - INFO - DB Insert: Match 654419667 has event_count: 20
+2025-09-18 12:00:20,144 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,144 - ERROR - Failed to insert match 654419667: 46 values for 41 columns
+2025-09-18 12:00:20,144 - INFO - DB Insert: Match 654463845 has event_count: 20
+2025-09-18 12:00:20,144 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,144 - ERROR - Failed to insert match 654463845: 46 values for 41 columns
+2025-09-18 12:00:20,144 - INFO - DB Insert: Match 654431973 has event_count: 20
+2025-09-18 12:00:20,144 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,145 - ERROR - Failed to insert match 654431973: 46 values for 41 columns
+2025-09-18 12:00:20,145 - INFO - DB Insert: Match 654185739 has event_count: 20
+2025-09-18 12:00:20,145 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,146 - ERROR - Failed to insert match 654185739: 46 values for 41 columns
+2025-09-18 12:00:20,146 - INFO - DB Insert: Match 654189020 has event_count: 20
+2025-09-18 12:00:20,146 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,146 - ERROR - Failed to insert match 654189020: 46 values for 41 columns
+2025-09-18 12:00:20,146 - INFO - DB Insert: Match 654194527 has event_count: 20
+2025-09-18 12:00:20,146 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,147 - ERROR - Failed to insert match 654194527: 46 values for 41 columns
+2025-09-18 12:00:20,147 - INFO - DB Insert: Match 654226412 has event_count: 20
+2025-09-18 12:00:20,147 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,147 - ERROR - Failed to insert match 654226412: 46 values for 41 columns
+2025-09-18 12:00:20,147 - INFO - DB Insert: Match 654226415 has event_count: 20
+2025-09-18 12:00:20,147 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,147 - ERROR - Failed to insert match 654226415: 46 values for 41 columns
+2025-09-18 12:00:20,147 - INFO - DB Insert: Match 654224871 has event_count: 20
+2025-09-18 12:00:20,147 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,147 - ERROR - Failed to insert match 654224871: 46 values for 41 columns
+2025-09-18 12:00:20,148 - INFO - DB Insert: Match 654437738 has event_count: 14
+2025-09-18 12:00:20,148 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,148 - ERROR - Failed to insert match 654437738: 46 values for 41 columns
+2025-09-18 12:00:20,148 - INFO - DB Insert: Match 654202254 has event_count: 18
+2025-09-18 12:00:20,148 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,148 - ERROR - Failed to insert match 654202254: 46 values for 41 columns
+2025-09-18 12:00:20,148 - INFO - DB Insert: Match 654220288 has event_count: 18
+2025-09-18 12:00:20,148 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,148 - ERROR - Failed to insert match 654220288: 46 values for 41 columns
+2025-09-18 12:00:20,148 - INFO - DB Insert: Match 654202640 has event_count: 18
+2025-09-18 12:00:20,148 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,149 - ERROR - Failed to insert match 654202640: 46 values for 41 columns
+2025-09-18 12:00:20,149 - INFO - DB Insert: Match 654202646 has event_count: 18
+2025-09-18 12:00:20,149 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,149 - ERROR - Failed to insert match 654202646: 46 values for 41 columns
+2025-09-18 12:00:20,149 - INFO - DB Insert: Match 654202263 has event_count: 16
+2025-09-18 12:00:20,149 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,149 - ERROR - Failed to insert match 654202263: 46 values for 41 columns
+2025-09-18 12:00:20,149 - INFO - DB Insert: Match 654202257 has event_count: 18
+2025-09-18 12:00:20,150 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,150 - ERROR - Failed to insert match 654202257: 46 values for 41 columns
+2025-09-18 12:00:20,150 - INFO - DB Insert: Match 653245157 has event_count: 20
+2025-09-18 12:00:20,150 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,150 - ERROR - Failed to insert match 653245157: 46 values for 41 columns
+2025-09-18 12:00:20,150 - INFO - DB Insert: Match 653245154 has event_count: 20
+2025-09-18 12:00:20,150 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,150 - ERROR - Failed to insert match 653245154: 46 values for 41 columns
+2025-09-18 12:00:20,150 - INFO - DB Insert: Match 652982131 has event_count: 20
+2025-09-18 12:00:20,150 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,151 - ERROR - Failed to insert match 652982131: 46 values for 41 columns
+2025-09-18 12:00:20,151 - INFO - DB Insert: Match 654296858 has event_count: 18
+2025-09-18 12:00:20,151 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,151 - ERROR - Failed to insert match 654296858: 46 values for 41 columns
+2025-09-18 12:00:20,151 - INFO - DB Insert: Match 649845447 has event_count: 20
+2025-09-18 12:00:20,151 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,151 - ERROR - Failed to insert match 649845447: 46 values for 41 columns
+2025-09-18 12:00:20,151 - INFO - DB Insert: Match 653579576 has event_count: 20
+2025-09-18 12:00:20,151 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,151 - ERROR - Failed to insert match 653579576: 46 values for 41 columns
+2025-09-18 12:00:20,152 - INFO - DB Insert: Match 24325406 has event_count: 2
+2025-09-18 12:00:20,152 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,152 - ERROR - Failed to insert match 24325406: 46 values for 41 columns
+2025-09-18 12:00:20,152 - INFO - DB Insert: Match 24325158 has event_count: 2
+2025-09-18 12:00:20,152 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,152 - ERROR - Failed to insert match 24325158: 46 values for 41 columns
+2025-09-18 12:00:20,152 - INFO - DB Insert: Match 24325552 has event_count: 2
+2025-09-18 12:00:20,152 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,152 - ERROR - Failed to insert match 24325552: 46 values for 41 columns
+2025-09-18 12:00:20,153 - INFO - DB Insert: Match 24325578 has event_count: 2
+2025-09-18 12:00:20,153 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,153 - ERROR - Failed to insert match 24325578: 46 values for 41 columns
+2025-09-18 12:00:20,153 - INFO - DB Insert: Match 24325592 has event_count: 2
+2025-09-18 12:00:20,153 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,153 - ERROR - Failed to insert match 24325592: 46 values for 41 columns
+2025-09-18 12:00:20,153 - INFO - DB Insert: Match 24325604 has event_count: 2
+2025-09-18 12:00:20,154 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,154 - ERROR - Failed to insert match 24325604: 46 values for 41 columns
+2025-09-18 12:00:20,154 - INFO - DB Insert: Match 24325628 has event_count: 1
+2025-09-18 12:00:20,154 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,154 - ERROR - Failed to insert match 24325628: 46 values for 41 columns
+2025-09-18 12:00:20,154 - INFO - DB Insert: Match 24325630 has event_count: 1
+2025-09-18 12:00:20,154 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,155 - ERROR - Failed to insert match 24325630: 46 values for 41 columns
+2025-09-18 12:00:20,164 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 35
+2025-09-18 12:00:20,164 - INFO - SUCCESS: Inserted 0 matches into soccer_2025_09_18
+2025-09-18 12:00:20,164 - INFO - WARNING: ISCJXXQGMB failed for american_football, trying XBET
+2025-09-18 12:00:20,242 - INFO - INFO: No matches found for rugby
+2025-09-18 12:00:20,243 - INFO - SUCCESS: rugby: 0 matches collected
+2025-09-18 12:00:20,352 - INFO - SUCCESS: 1xBet: Retrieved 50 matches for sport 13
+2025-09-18 12:00:20,358 - INFO - SUCCESS: 1xBet: Retrieved 50 matches for sport 9
+2025-09-18 12:00:20,385 - INFO - INFO: No matches found for american_football
+2025-09-18 12:00:20,386 - INFO - SUCCESS: american_football: 0 matches collected
+2025-09-18 12:00:20,386 - INFO - SUCCESS: Created/verified table: volleyball_2025_09_18
+2025-09-18 12:00:20,386 - INFO - DB Insert: Match 653579268 has event_count: 10
+2025-09-18 12:00:20,386 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,387 - ERROR - Failed to insert match 653579268: 46 values for 41 columns
+2025-09-18 12:00:20,387 - INFO - DB Insert: Match 652231912 has event_count: 10
+2025-09-18 12:00:20,387 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,387 - ERROR - Failed to insert match 652231912: 46 values for 41 columns
+2025-09-18 12:00:20,387 - INFO - DB Insert: Match 654454654 has event_count: 6
+2025-09-18 12:00:20,387 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,387 - ERROR - Failed to insert match 654454654: 46 values for 41 columns
+2025-09-18 12:00:20,387 - INFO - DB Insert: Match 653847592 has event_count: 10
+2025-09-18 12:00:20,387 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,387 - ERROR - Failed to insert match 653847592: 46 values for 41 columns
+2025-09-18 12:00:20,387 - INFO - DB Insert: Match 653450550 has event_count: 10
+2025-09-18 12:00:20,387 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,387 - ERROR - Failed to insert match 653450550: 46 values for 41 columns
+2025-09-18 12:00:20,388 - INFO - DB Insert: Match 652496955 has event_count: 10
+2025-09-18 12:00:20,388 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,388 - ERROR - Failed to insert match 652496955: 46 values for 41 columns
+2025-09-18 12:00:20,388 - INFO - DB Insert: Match 653848121 has event_count: 8
+2025-09-18 12:00:20,388 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,388 - ERROR - Failed to insert match 653848121: 46 values for 41 columns
+2025-09-18 12:00:20,388 - INFO - DB Insert: Match 653421052 has event_count: 10
+2025-09-18 12:00:20,388 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,388 - ERROR - Failed to insert match 653421052: 46 values for 41 columns
+2025-09-18 12:00:20,388 - INFO - DB Insert: Match 654459060 has event_count: 6
+2025-09-18 12:00:20,388 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,388 - ERROR - Failed to insert match 654459060: 46 values for 41 columns
+2025-09-18 12:00:20,388 - INFO - DB Insert: Match 653424701 has event_count: 10
+2025-09-18 12:00:20,388 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,388 - ERROR - Failed to insert match 653424701: 46 values for 41 columns
+2025-09-18 12:00:20,388 - INFO - DB Insert: Match 653427989 has event_count: 10
+2025-09-18 12:00:20,388 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,389 - ERROR - Failed to insert match 653427989: 46 values for 41 columns
+2025-09-18 12:00:20,389 - INFO - DB Insert: Match 653460547 has event_count: 10
+2025-09-18 12:00:20,389 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,389 - ERROR - Failed to insert match 653460547: 46 values for 41 columns
+2025-09-18 12:00:20,389 - INFO - DB Insert: Match 653371845 has event_count: 10
+2025-09-18 12:00:20,389 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,389 - ERROR - Failed to insert match 653371845: 46 values for 41 columns
+2025-09-18 12:00:20,389 - INFO - DB Insert: Match 654455225 has event_count: 6
+2025-09-18 12:00:20,389 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,389 - ERROR - Failed to insert match 654455225: 46 values for 41 columns
+2025-09-18 12:00:20,389 - INFO - DB Insert: Match 654490793 has event_count: 6
+2025-09-18 12:00:20,389 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,389 - ERROR - Failed to insert match 654490793: 46 values for 41 columns
+2025-09-18 12:00:20,389 - INFO - DB Insert: Match 653470927 has event_count: 10
+2025-09-18 12:00:20,389 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,389 - ERROR - Failed to insert match 653470927: 46 values for 41 columns
+2025-09-18 12:00:20,389 - INFO - DB Insert: Match 652497978 has event_count: 10
+2025-09-18 12:00:20,389 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,390 - ERROR - Failed to insert match 652497978: 46 values for 41 columns
+2025-09-18 12:00:20,390 - INFO - DB Insert: Match 654494167 has event_count: 4
+2025-09-18 12:00:20,390 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,390 - ERROR - Failed to insert match 654494167: 46 values for 41 columns
+2025-09-18 12:00:20,390 - INFO - DB Insert: Match 653423309 has event_count: 10
+2025-09-18 12:00:20,390 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,390 - ERROR - Failed to insert match 653423309: 46 values for 41 columns
+2025-09-18 12:00:20,390 - INFO - DB Insert: Match 654455224 has event_count: 6
+2025-09-18 12:00:20,390 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,390 - ERROR - Failed to insert match 654455224: 46 values for 41 columns
+2025-09-18 12:00:20,390 - INFO - DB Insert: Match 653609087 has event_count: 8
+2025-09-18 12:00:20,390 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,390 - ERROR - Failed to insert match 653609087: 46 values for 41 columns
+2025-09-18 12:00:20,390 - INFO - DB Insert: Match 654491285 has event_count: 6
+2025-09-18 12:00:20,390 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,390 - ERROR - Failed to insert match 654491285: 46 values for 41 columns
+2025-09-18 12:00:20,390 - INFO - DB Insert: Match 654464593 has event_count: 6
+2025-09-18 12:00:20,391 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,391 - ERROR - Failed to insert match 654464593: 46 values for 41 columns
+2025-09-18 12:00:20,391 - INFO - DB Insert: Match 654463506 has event_count: 6
+2025-09-18 12:00:20,391 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,391 - ERROR - Failed to insert match 654463506: 46 values for 41 columns
+2025-09-18 12:00:20,392 - INFO - DB Insert: Match 654468326 has event_count: 6
+2025-09-18 12:00:20,392 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,392 - ERROR - Failed to insert match 654468326: 46 values for 41 columns
+2025-09-18 12:00:20,392 - INFO - DB Insert: Match 654461216 has event_count: 6
+2025-09-18 12:00:20,392 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,392 - ERROR - Failed to insert match 654461216: 46 values for 41 columns
+2025-09-18 12:00:20,392 - INFO - DB Insert: Match 654462366 has event_count: 6
+2025-09-18 12:00:20,392 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,392 - ERROR - Failed to insert match 654462366: 46 values for 41 columns
+2025-09-18 12:00:20,392 - INFO - DB Insert: Match 654466738 has event_count: 5
+2025-09-18 12:00:20,392 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,392 - ERROR - Failed to insert match 654466738: 46 values for 41 columns
+2025-09-18 12:00:20,392 - INFO - DB Insert: Match 654469619 has event_count: 6
+2025-09-18 12:00:20,392 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,392 - ERROR - Failed to insert match 654469619: 46 values for 41 columns
+2025-09-18 12:00:20,393 - INFO - DB Insert: Match 654473143 has event_count: 6
+2025-09-18 12:00:20,393 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,393 - ERROR - Failed to insert match 654473143: 46 values for 41 columns
+2025-09-18 12:00:20,393 - INFO - DB Insert: Match 654472039 has event_count: 6
+2025-09-18 12:00:20,393 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,393 - ERROR - Failed to insert match 654472039: 46 values for 41 columns
+2025-09-18 12:00:20,393 - INFO - DB Insert: Match 654476127 has event_count: 6
+2025-09-18 12:00:20,393 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,393 - ERROR - Failed to insert match 654476127: 46 values for 41 columns
+2025-09-18 12:00:20,393 - INFO - DB Insert: Match 654472040 has event_count: 6
+2025-09-18 12:00:20,393 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,393 - ERROR - Failed to insert match 654472040: 46 values for 41 columns
+2025-09-18 12:00:20,394 - INFO - DB Insert: Match 654477336 has event_count: 6
+2025-09-18 12:00:20,394 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,394 - ERROR - Failed to insert match 654477336: 46 values for 41 columns
+2025-09-18 12:00:20,394 - INFO - DB Insert: Match 653848113 has event_count: 6
+2025-09-18 12:00:20,394 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,395 - ERROR - Failed to insert match 653848113: 46 values for 41 columns
+2025-09-18 12:00:20,395 - INFO - DB Insert: Match 653614090 has event_count: 6
+2025-09-18 12:00:20,395 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,395 - ERROR - Failed to insert match 653614090: 46 values for 41 columns
+2025-09-18 12:00:20,395 - INFO - DB Insert: Match 654480224 has event_count: 6
+2025-09-18 12:00:20,395 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,395 - ERROR - Failed to insert match 654480224: 46 values for 41 columns
+2025-09-18 12:00:20,396 - INFO - DB Insert: Match 654477335 has event_count: 6
+2025-09-18 12:00:20,396 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,396 - ERROR - Failed to insert match 654477335: 46 values for 41 columns
+2025-09-18 12:00:20,396 - INFO - DB Insert: Match 653641572 has event_count: 10
+2025-09-18 12:00:20,396 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,396 - ERROR - Failed to insert match 653641572: 46 values for 41 columns
+2025-09-18 12:00:20,396 - INFO - DB Insert: Match 653642484 has event_count: 10
+2025-09-18 12:00:20,396 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,396 - ERROR - Failed to insert match 653642484: 46 values for 41 columns
+2025-09-18 12:00:20,397 - INFO - DB Insert: Match 653642482 has event_count: 10
+2025-09-18 12:00:20,397 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,397 - ERROR - Failed to insert match 653642482: 46 values for 41 columns
+2025-09-18 12:00:20,397 - INFO - DB Insert: Match 653429387 has event_count: 8
+2025-09-18 12:00:20,398 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,398 - ERROR - Failed to insert match 653429387: 46 values for 41 columns
+2025-09-18 12:00:20,398 - INFO - DB Insert: Match 653427988 has event_count: 10
+2025-09-18 12:00:20,398 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,398 - ERROR - Failed to insert match 653427988: 46 values for 41 columns
+2025-09-18 12:00:20,398 - INFO - DB Insert: Match 653458261 has event_count: 10
+2025-09-18 12:00:20,398 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,398 - ERROR - Failed to insert match 653458261: 46 values for 41 columns
+2025-09-18 12:00:20,398 - INFO - DB Insert: Match 626896777 has event_count: 10
+2025-09-18 12:00:20,399 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,399 - ERROR - Failed to insert match 626896777: 46 values for 41 columns
+2025-09-18 12:00:20,399 - INFO - DB Insert: Match 653465640 has event_count: 10
+2025-09-18 12:00:20,399 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,399 - ERROR - Failed to insert match 653465640: 46 values for 41 columns
+2025-09-18 12:00:20,399 - INFO - DB Insert: Match 654495598 has event_count: 6
+2025-09-18 12:00:20,400 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,400 - ERROR - Failed to insert match 654495598: 46 values for 41 columns
+2025-09-18 12:00:20,400 - INFO - DB Insert: Match 652497725 has event_count: 10
+2025-09-18 12:00:20,400 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,400 - ERROR - Failed to insert match 652497725: 46 values for 41 columns
+2025-09-18 12:00:20,400 - INFO - DB Insert: Match 653455702 has event_count: 10
+2025-09-18 12:00:20,400 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,400 - ERROR - Failed to insert match 653455702: 46 values for 41 columns
+2025-09-18 12:00:20,400 - INFO - DB Insert: Match 653640596 has event_count: 10
+2025-09-18 12:00:20,400 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,400 - ERROR - Failed to insert match 653640596: 46 values for 41 columns
+2025-09-18 12:00:20,435 - INFO - SUCCESS: Created/verified table: boxing_2025_09_18
+2025-09-18 12:00:20,436 - INFO - DB Insert: Match 650055455 has event_count: 5
+2025-09-18 12:00:20,436 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,440 - ERROR - Failed to insert match 650055455: 46 values for 41 columns
+2025-09-18 12:00:20,440 - INFO - DB Insert: Match 652609484 has event_count: 10
+2025-09-18 12:00:20,440 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,440 - ERROR - Failed to insert match 652609484: 46 values for 41 columns
+2025-09-18 12:00:20,441 - INFO - DB Insert: Match 654000117 has event_count: 5
+2025-09-18 12:00:20,441 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,441 - ERROR - Failed to insert match 654000117: 46 values for 41 columns
+2025-09-18 12:00:20,441 - INFO - DB Insert: Match 654303710 has event_count: 5
+2025-09-18 12:00:20,441 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,441 - ERROR - Failed to insert match 654303710: 46 values for 41 columns
+2025-09-18 12:00:20,441 - INFO - DB Insert: Match 654022179 has event_count: 8
+2025-09-18 12:00:20,441 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,441 - ERROR - Failed to insert match 654022179: 46 values for 41 columns
+2025-09-18 12:00:20,441 - INFO - DB Insert: Match 649772946 has event_count: 9
+2025-09-18 12:00:20,441 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,441 - ERROR - Failed to insert match 649772946: 46 values for 41 columns
+2025-09-18 12:00:20,442 - INFO - DB Insert: Match 654367417 has event_count: 3
+2025-09-18 12:00:20,442 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,442 - ERROR - Failed to insert match 654367417: 46 values for 41 columns
+2025-09-18 12:00:20,442 - INFO - DB Insert: Match 654367418 has event_count: 3
+2025-09-18 12:00:20,442 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,442 - ERROR - Failed to insert match 654367418: 46 values for 41 columns
+2025-09-18 12:00:20,442 - INFO - DB Insert: Match 654400251 has event_count: 5
+2025-09-18 12:00:20,442 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,442 - ERROR - Failed to insert match 654400251: 46 values for 41 columns
+2025-09-18 12:00:20,442 - INFO - DB Insert: Match 654307711 has event_count: 3
+2025-09-18 12:00:20,442 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,442 - ERROR - Failed to insert match 654307711: 46 values for 41 columns
+2025-09-18 12:00:20,442 - INFO - DB Insert: Match 654306659 has event_count: 3
+2025-09-18 12:00:20,442 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,442 - ERROR - Failed to insert match 654306659: 46 values for 41 columns
+2025-09-18 12:00:20,443 - INFO - DB Insert: Match 654296317 has event_count: 3
+2025-09-18 12:00:20,443 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,443 - ERROR - Failed to insert match 654296317: 46 values for 41 columns
+2025-09-18 12:00:20,443 - INFO - DB Insert: Match 654296316 has event_count: 3
+2025-09-18 12:00:20,443 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,443 - ERROR - Failed to insert match 654296316: 46 values for 41 columns
+2025-09-18 12:00:20,443 - INFO - DB Insert: Match 654368908 has event_count: 3
+2025-09-18 12:00:20,443 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,443 - ERROR - Failed to insert match 654368908: 46 values for 41 columns
+2025-09-18 12:00:20,443 - INFO - DB Insert: Match 654296315 has event_count: 3
+2025-09-18 12:00:20,443 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,443 - ERROR - Failed to insert match 654296315: 46 values for 41 columns
+2025-09-18 12:00:20,443 - INFO - DB Insert: Match 654368907 has event_count: 3
+2025-09-18 12:00:20,443 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,443 - ERROR - Failed to insert match 654368907: 46 values for 41 columns
+2025-09-18 12:00:20,443 - INFO - DB Insert: Match 654383487 has event_count: 8
+2025-09-18 12:00:20,443 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,443 - ERROR - Failed to insert match 654383487: 46 values for 41 columns
+2025-09-18 12:00:20,444 - INFO - DB Insert: Match 649777411 has event_count: 9
+2025-09-18 12:00:20,444 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,444 - ERROR - Failed to insert match 649777411: 46 values for 41 columns
+2025-09-18 12:00:20,444 - INFO - DB Insert: Match 652663896 has event_count: 5
+2025-09-18 12:00:20,444 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,444 - ERROR - Failed to insert match 652663896: 46 values for 41 columns
+2025-09-18 12:00:20,444 - INFO - DB Insert: Match 652609483 has event_count: 5
+2025-09-18 12:00:20,445 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,445 - ERROR - Failed to insert match 652609483: 46 values for 41 columns
+2025-09-18 12:00:20,445 - INFO - DB Insert: Match 649752925 has event_count: 5
+2025-09-18 12:00:20,445 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,445 - ERROR - Failed to insert match 649752925: 46 values for 41 columns
+2025-09-18 12:00:20,445 - INFO - DB Insert: Match 654239404 has event_count: 3
+2025-09-18 12:00:20,445 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,445 - ERROR - Failed to insert match 654239404: 46 values for 41 columns
+2025-09-18 12:00:20,445 - INFO - DB Insert: Match 649752926 has event_count: 5
+2025-09-18 12:00:20,445 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,445 - ERROR - Failed to insert match 649752926: 46 values for 41 columns
+2025-09-18 12:00:20,445 - INFO - DB Insert: Match 649752316 has event_count: 5
+2025-09-18 12:00:20,445 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,445 - ERROR - Failed to insert match 649752316: 46 values for 41 columns
+2025-09-18 12:00:20,445 - INFO - DB Insert: Match 649750623 has event_count: 5
+2025-09-18 12:00:20,445 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,445 - ERROR - Failed to insert match 649750623: 46 values for 41 columns
+2025-09-18 12:00:20,446 - INFO - DB Insert: Match 652666435 has event_count: 5
+2025-09-18 12:00:20,446 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,446 - ERROR - Failed to insert match 652666435: 46 values for 41 columns
+2025-09-18 12:00:20,446 - INFO - DB Insert: Match 652609482 has event_count: 5
+2025-09-18 12:00:20,446 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,446 - ERROR - Failed to insert match 652609482: 46 values for 41 columns
+2025-09-18 12:00:20,446 - INFO - DB Insert: Match 652663895 has event_count: 5
+2025-09-18 12:00:20,446 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,446 - ERROR - Failed to insert match 652663895: 46 values for 41 columns
+2025-09-18 12:00:20,446 - INFO - DB Insert: Match 649749805 has event_count: 5
+2025-09-18 12:00:20,446 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,446 - ERROR - Failed to insert match 649749805: 46 values for 41 columns
+2025-09-18 12:00:20,446 - INFO - DB Insert: Match 652330695 has event_count: 5
+2025-09-18 12:00:20,446 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,446 - ERROR - Failed to insert match 652330695: 46 values for 41 columns
+2025-09-18 12:00:20,446 - INFO - DB Insert: Match 652330696 has event_count: 5
+2025-09-18 12:00:20,446 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,446 - ERROR - Failed to insert match 652330696: 46 values for 41 columns
+2025-09-18 12:00:20,447 - INFO - DB Insert: Match 654237875 has event_count: 5
+2025-09-18 12:00:20,447 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,447 - ERROR - Failed to insert match 654237875: 46 values for 41 columns
+2025-09-18 12:00:20,447 - INFO - DB Insert: Match 652330694 has event_count: 5
+2025-09-18 12:00:20,447 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,447 - ERROR - Failed to insert match 652330694: 46 values for 41 columns
+2025-09-18 12:00:20,447 - INFO - DB Insert: Match 651426482 has event_count: 3
+2025-09-18 12:00:20,447 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,447 - ERROR - Failed to insert match 651426482: 46 values for 41 columns
+2025-09-18 12:00:20,447 - INFO - DB Insert: Match 652336655 has event_count: 5
+2025-09-18 12:00:20,447 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,447 - ERROR - Failed to insert match 652336655: 46 values for 41 columns
+2025-09-18 12:00:20,447 - INFO - DB Insert: Match 652344106 has event_count: 5
+2025-09-18 12:00:20,447 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,447 - ERROR - Failed to insert match 652344106: 46 values for 41 columns
+2025-09-18 12:00:20,447 - INFO - DB Insert: Match 648139957 has event_count: 3
+2025-09-18 12:00:20,447 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,448 - ERROR - Failed to insert match 648139957: 46 values for 41 columns
+2025-09-18 12:00:20,448 - INFO - DB Insert: Match 654325734 has event_count: 3
+2025-09-18 12:00:20,448 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,448 - ERROR - Failed to insert match 654325734: 46 values for 41 columns
+2025-09-18 12:00:20,448 - INFO - DB Insert: Match 646205224 has event_count: 5
+2025-09-18 12:00:20,448 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,448 - ERROR - Failed to insert match 646205224: 46 values for 41 columns
+2025-09-18 12:00:20,448 - INFO - DB Insert: Match 645137704 has event_count: 5
+2025-09-18 12:00:20,448 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,448 - ERROR - Failed to insert match 645137704: 46 values for 41 columns
+2025-09-18 12:00:20,448 - INFO - DB Insert: Match 644761630 has event_count: 5
+2025-09-18 12:00:20,448 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,448 - ERROR - Failed to insert match 644761630: 46 values for 41 columns
+2025-09-18 12:00:20,448 - INFO - DB Insert: Match 648160969 has event_count: 5
+2025-09-18 12:00:20,448 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,448 - ERROR - Failed to insert match 648160969: 46 values for 41 columns
+2025-09-18 12:00:20,448 - INFO - DB Insert: Match 648146254 has event_count: 2
+2025-09-18 12:00:20,448 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,449 - ERROR - Failed to insert match 648146254: 46 values for 41 columns
+2025-09-18 12:00:20,449 - INFO - DB Insert: Match 649577371 has event_count: 9
+2025-09-18 12:00:20,449 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,449 - ERROR - Failed to insert match 649577371: 46 values for 41 columns
+2025-09-18 12:00:20,449 - INFO - DB Insert: Match 648163087 has event_count: 5
+2025-09-18 12:00:20,449 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,449 - ERROR - Failed to insert match 648163087: 46 values for 41 columns
+2025-09-18 12:00:20,449 - INFO - DB Insert: Match 646543216 has event_count: 5
+2025-09-18 12:00:20,449 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,449 - ERROR - Failed to insert match 646543216: 46 values for 41 columns
+2025-09-18 12:00:20,449 - INFO - DB Insert: Match 637506298 has event_count: 9
+2025-09-18 12:00:20,449 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,449 - ERROR - Failed to insert match 637506298: 46 values for 41 columns
+2025-09-18 12:00:20,449 - INFO - DB Insert: Match 637506296 has event_count: 9
+2025-09-18 12:00:20,449 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,450 - ERROR - Failed to insert match 637506296: 46 values for 41 columns
+2025-09-18 12:00:20,450 - INFO - DB Insert: Match 637506297 has event_count: 9
+2025-09-18 12:00:20,450 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,450 - ERROR - Failed to insert match 637506297: 46 values for 41 columns
+2025-09-18 12:00:20,450 - INFO - DB Insert: Match 637506299 has event_count: 9
+2025-09-18 12:00:20,450 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:00:20,450 - ERROR - Failed to insert match 637506299: 46 values for 41 columns
+2025-09-18 12:00:20,455 - INFO - SUCCESS: Inserted 0 matches into volleyball_2025_09_18
+2025-09-18 12:00:20,485 - INFO - SUCCESS: Inserted 0 matches into boxing_2025_09_18
+2025-09-18 12:00:22,018 - INFO - SUCCESS: handball: 2 matches from XBET
+2025-09-18 12:00:22,018 - INFO - SUCCESS: handball: 2 matches collected
+2025-09-18 12:00:47,703 - INFO - SUCCESS: futsal: 25 matches from XBET
+2025-09-18 12:00:47,704 - INFO - SUCCESS: futsal: 25 matches collected
+2025-09-18 12:01:09,077 - INFO - SUCCESS: tennis: 50 matches from XBET
+2025-09-18 12:01:09,077 - INFO - SUCCESS: tennis: 50 matches collected
+2025-09-18 12:01:09,168 - INFO - SUCCESS: soccer: 58 matches from BOTH
+2025-09-18 12:01:09,169 - INFO - SUCCESS: soccer: 58 matches collected
+2025-09-18 12:01:09,220 - INFO - SUCCESS: boxing: 50 matches from XBET
+2025-09-18 12:01:09,221 - INFO - SUCCESS: boxing: 50 matches collected
+2025-09-18 12:01:09,290 - INFO - SUCCESS: volleyball: 50 matches from XBET
+2025-09-18 12:01:09,292 - INFO - SUCCESS: volleyball: 50 matches collected
+2025-09-18 12:01:09,292 - INFO - COMPLETE: Collection complete: 13 sports, 252 matches
+2025-09-18 12:01:09,293 - INFO - CYCLE: Collection cycle complete: 252 matches from 13 sports
+2025-09-18 12:01:28,577 - INFO - STATUS: System Status: {'timestamp': '2025-09-18T12:01:17.124353', 'api_status': {'xbet': {'request_count': 0, 'last_request_time': 0, 'rate_limit': 45, 'healthy': False, 'sports_cached': 0, 'client_status': 'active'}, 'iscjxxqgmb': {'request_count': 0, 'last_request_time': 0, 'rate_limit': 50, 'healthy': False, 'sports_cached': 0, 'sports_supported': 38, 'api_status': 'active'}}, 'database_stats': {'total_tables': 9, 'total_records': 0, 'sports_covered': ['basketball', 'boxing', 'cricket', 'soccer', 'futsal', 'volleyball', 'ice_hockey', 'tennis', 'handball'], 'date_range': {'oldest': '2025-09-18', 'newest': '2025-09-18'}}, 'predictions_available': True}
+2025-09-18 12:01:28,577 - INFO - DEMO: Demonstrating prediction capabilities
+2025-09-18 12:01:28,893 - INFO - PREDICT: Manchester City vs Arsenal (soccer)
+2025-09-18 12:01:28,893 - INFO -    Outcome: home_win (40.0% confidence)
+2025-09-18 12:01:28,893 - INFO -    Score: 0:0
+2025-09-18 12:01:29,193 - INFO - PREDICT: Los Angeles Lakers vs Golden State Warriors (basketball)
+2025-09-18 12:01:29,193 - INFO -    Outcome: home_win (40.0% confidence)
+2025-09-18 12:01:29,193 - INFO -    Score: 0:0
+2025-09-18 12:01:29,504 - INFO - PREDICT: Real Madrid vs Barcelona (soccer)
+2025-09-18 12:01:29,504 - INFO -    Outcome: home_win (40.0% confidence)
+2025-09-18 12:01:29,504 - INFO -    Score: 0:0
+2025-09-18 12:01:29,504 - INFO - CONTINUOUS: Starting continuous collection (interval: 15 minutes)
+2025-09-18 12:01:29,504 - INFO - STARTING: Comprehensive sports data collection
+2025-09-18 12:01:29,505 - INFO - COLLECTING: soccer data
+2025-09-18 12:01:29,506 - INFO - COLLECTING: basketball data
+2025-09-18 12:01:29,507 - INFO - COLLECTING: tennis data
+2025-09-18 12:01:29,507 - INFO - COLLECTING: ice_hockey data
+2025-09-18 12:01:29,508 - INFO - COLLECTING: cricket data
+2025-09-18 12:01:29,509 - INFO - COLLECTING: volleyball data
+2025-09-18 12:01:29,510 - INFO - COLLECTING: baseball data
+2025-09-18 12:01:29,511 - INFO - COLLECTING: handball data
+2025-09-18 12:01:29,512 - INFO - COLLECTING: futsal data
+2025-09-18 12:01:29,513 - INFO - COLLECTING: table_tennis data
+2025-09-18 12:01:30,105 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 8 live matches for sport 7
+2025-09-18 12:01:30,107 - INFO - INFO: Dropping existing table basketball_2025_09_18 to ensure correct schema
+2025-09-18 12:01:30,112 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 21
+2025-09-18 12:01:30,112 - INFO - WARNING: ISCJXXQGMB failed for futsal, trying XBET
+2025-09-18 12:01:30,131 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 3 live matches for sport 45
+2025-09-18 12:01:30,138 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 57
+2025-09-18 12:01:30,138 - INFO - WARNING: ISCJXXQGMB failed for table_tennis, trying XBET
+2025-09-18 12:01:30,144 - INFO - INFO: Dropping existing table cricket_2025_09_18 to ensure correct schema
+2025-09-18 12:01:30,145 - INFO - SUCCESS: 1xBet: Retrieved 50 matches for sport 1
+2025-09-18 12:01:30,149 - INFO - SUCCESS: Created/verified table: basketball_2025_09_18
+2025-09-18 12:01:30,150 - INFO - DB Insert: Match 24325236 has event_count: 2
+2025-09-18 12:01:30,150 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,150 - ERROR - Failed to insert match 24325236: 46 values for 41 columns
+2025-09-18 12:01:30,150 - INFO - DB Insert: Match 24325210 has event_count: 2
+2025-09-18 12:01:30,150 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,150 - ERROR - Failed to insert match 24325210: 46 values for 41 columns
+2025-09-18 12:01:30,150 - INFO - DB Insert: Match 24325192 has event_count: 2
+2025-09-18 12:01:30,151 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,151 - ERROR - Failed to insert match 24325192: 46 values for 41 columns
+2025-09-18 12:01:30,151 - INFO - DB Insert: Match 24325186 has event_count: 2
+2025-09-18 12:01:30,151 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,151 - ERROR - Failed to insert match 24325186: 46 values for 41 columns
+2025-09-18 12:01:30,151 - INFO - DB Insert: Match 24325572 has event_count: 2
+2025-09-18 12:01:30,151 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,151 - ERROR - Failed to insert match 24325572: 46 values for 41 columns
+2025-09-18 12:01:30,151 - INFO - DB Insert: Match 24325594 has event_count: 2
+2025-09-18 12:01:30,151 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,151 - ERROR - Failed to insert match 24325594: 46 values for 41 columns
+2025-09-18 12:01:30,151 - INFO - DB Insert: Match 24325652 has event_count: 1
+2025-09-18 12:01:30,151 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,151 - ERROR - Failed to insert match 24325652: 46 values for 41 columns
+2025-09-18 12:01:30,151 - INFO - DB Insert: Match 24325654 has event_count: 1
+2025-09-18 12:01:30,151 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,152 - ERROR - Failed to insert match 24325654: 46 values for 41 columns
+2025-09-18 12:01:30,157 - INFO - SUCCESS: Inserted 0 matches into basketball_2025_09_18
+2025-09-18 12:01:30,157 - INFO - SUCCESS: basketball: 8 matches from ISCJXXQGMB
+2025-09-18 12:01:30,157 - INFO - COLLECTING: rugby data
+2025-09-18 12:01:30,157 - INFO - SUCCESS: basketball: 8 matches collected
+2025-09-18 12:01:30,160 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 3
+2025-09-18 12:01:30,160 - INFO - WARNING: ISCJXXQGMB failed for tennis, trying XBET
+2025-09-18 12:01:30,172 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 8 live matches for sport 5
+2025-09-18 12:01:30,173 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 17
+2025-09-18 12:01:30,173 - INFO - WARNING: ISCJXXQGMB failed for handball, trying XBET
+2025-09-18 12:01:30,184 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 19
+2025-09-18 12:01:30,184 - INFO - WARNING: ISCJXXQGMB failed for baseball, trying XBET
+2025-09-18 12:01:30,195 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 13
+2025-09-18 12:01:30,195 - INFO - WARNING: ISCJXXQGMB failed for volleyball, trying XBET
+2025-09-18 12:01:30,217 - INFO - SUCCESS: Created/verified table: cricket_2025_09_18
+2025-09-18 12:01:30,218 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,218 - INFO - INFO: Dropping existing table ice_hockey_2025_09_18 to ensure correct schema
+2025-09-18 12:01:30,219 - ERROR - Failed to insert match 24285046: 46 values for 41 columns
+2025-09-18 12:01:30,219 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,219 - ERROR - Failed to insert match 24285050: 46 values for 41 columns
+2025-09-18 12:01:30,219 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,219 - ERROR - Failed to insert match 24285052: 46 values for 41 columns
+2025-09-18 12:01:30,250 - INFO - SUCCESS: Created/verified table: ice_hockey_2025_09_18
+2025-09-18 12:01:30,251 - INFO - DB Insert: Match 24325362 has event_count: 2
+2025-09-18 12:01:30,251 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,252 - ERROR - Failed to insert match 24325362: 46 values for 41 columns
+2025-09-18 12:01:30,252 - INFO - DB Insert: Match 24325440 has event_count: 2
+2025-09-18 12:01:30,252 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,252 - ERROR - Failed to insert match 24325440: 46 values for 41 columns
+2025-09-18 12:01:30,252 - INFO - DB Insert: Match 24325526 has event_count: 2
+2025-09-18 12:01:30,252 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,252 - ERROR - Failed to insert match 24325526: 46 values for 41 columns
+2025-09-18 12:01:30,252 - INFO - DB Insert: Match 24325554 has event_count: 2
+2025-09-18 12:01:30,252 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,252 - ERROR - Failed to insert match 24325554: 46 values for 41 columns
+2025-09-18 12:01:30,252 - INFO - DB Insert: Match 24325580 has event_count: 2
+2025-09-18 12:01:30,252 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,252 - ERROR - Failed to insert match 24325580: 46 values for 41 columns
+2025-09-18 12:01:30,253 - INFO - DB Insert: Match 24325608 has event_count: 2
+2025-09-18 12:01:30,253 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,253 - ERROR - Failed to insert match 24325608: 46 values for 41 columns
+2025-09-18 12:01:30,253 - INFO - DB Insert: Match 24325650 has event_count: 1
+2025-09-18 12:01:30,253 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,253 - ERROR - Failed to insert match 24325650: 46 values for 41 columns
+2025-09-18 12:01:30,253 - INFO - DB Insert: Match 24325658 has event_count: 2
+2025-09-18 12:01:30,253 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,253 - ERROR - Failed to insert match 24325658: 46 values for 41 columns
+2025-09-18 12:01:30,258 - INFO - SUCCESS: Inserted 0 matches into ice_hockey_2025_09_18
+2025-09-18 12:01:30,258 - INFO - SUCCESS: ice_hockey: 8 matches from ISCJXXQGMB
+2025-09-18 12:01:30,258 - INFO - COLLECTING: american_football data
+2025-09-18 12:01:30,258 - INFO - SUCCESS: ice_hockey: 8 matches collected
+2025-09-18 12:01:30,268 - INFO - SUCCESS: Inserted 0 matches into cricket_2025_09_18
+2025-09-18 12:01:30,268 - INFO - SUCCESS: cricket: 3 matches from ISCJXXQGMB
+2025-09-18 12:01:30,268 - INFO - COLLECTING: boxing data
+2025-09-18 12:01:30,268 - INFO - SUCCESS: cricket: 3 matches collected
+2025-09-18 12:01:30,407 - INFO - SUCCESS: 1xBet: Retrieved 0 matches for sport 57
+2025-09-18 12:01:30,407 - INFO - INFO: No matches found for table_tennis
+2025-09-18 12:01:30,407 - INFO - SUCCESS: table_tennis: 0 matches collected
+2025-09-18 12:01:30,492 - INFO - SUCCESS: 1xBet: Retrieved 25 matches for sport 21
+2025-09-18 12:01:30,493 - INFO - INFO: Dropping existing table futsal_2025_09_18 to ensure correct schema
+2025-09-18 12:01:30,526 - INFO - SUCCESS: Created/verified table: futsal_2025_09_18
+2025-09-18 12:01:30,527 - INFO - DB Insert: Match 654421562 has event_count: 6
+2025-09-18 12:01:30,528 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,528 - ERROR - Failed to insert match 654421562: 46 values for 41 columns
+2025-09-18 12:01:30,528 - INFO - DB Insert: Match 654422917 has event_count: 6
+2025-09-18 12:01:30,528 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,528 - ERROR - Failed to insert match 654422917: 46 values for 41 columns
+2025-09-18 12:01:30,528 - INFO - DB Insert: Match 654401096 has event_count: 6
+2025-09-18 12:01:30,528 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,529 - ERROR - Failed to insert match 654401096: 46 values for 41 columns
+2025-09-18 12:01:30,529 - INFO - DB Insert: Match 654422919 has event_count: 6
+2025-09-18 12:01:30,529 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,529 - ERROR - Failed to insert match 654422919: 46 values for 41 columns
+2025-09-18 12:01:30,529 - INFO - DB Insert: Match 654422918 has event_count: 6
+2025-09-18 12:01:30,529 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,529 - ERROR - Failed to insert match 654422918: 46 values for 41 columns
+2025-09-18 12:01:30,529 - INFO - DB Insert: Match 654401091 has event_count: 6
+2025-09-18 12:01:30,529 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,529 - ERROR - Failed to insert match 654401091: 46 values for 41 columns
+2025-09-18 12:01:30,529 - INFO - DB Insert: Match 654422922 has event_count: 6
+2025-09-18 12:01:30,529 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,529 - ERROR - Failed to insert match 654422922: 46 values for 41 columns
+2025-09-18 12:01:30,529 - INFO - DB Insert: Match 654401095 has event_count: 6
+2025-09-18 12:01:30,529 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,529 - ERROR - Failed to insert match 654401095: 46 values for 41 columns
+2025-09-18 12:01:30,529 - INFO - DB Insert: Match 654422925 has event_count: 6
+2025-09-18 12:01:30,529 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,529 - ERROR - Failed to insert match 654422925: 46 values for 41 columns
+2025-09-18 12:01:30,529 - INFO - DB Insert: Match 654422924 has event_count: 6
+2025-09-18 12:01:30,529 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,529 - ERROR - Failed to insert match 654422924: 46 values for 41 columns
+2025-09-18 12:01:30,530 - INFO - DB Insert: Match 654422923 has event_count: 6
+2025-09-18 12:01:30,530 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,530 - ERROR - Failed to insert match 654422923: 46 values for 41 columns
+2025-09-18 12:01:30,530 - INFO - DB Insert: Match 654401106 has event_count: 6
+2025-09-18 12:01:30,530 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,530 - ERROR - Failed to insert match 654401106: 46 values for 41 columns
+2025-09-18 12:01:30,530 - INFO - DB Insert: Match 654422920 has event_count: 6
+2025-09-18 12:01:30,530 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,530 - ERROR - Failed to insert match 654422920: 46 values for 41 columns
+2025-09-18 12:01:30,530 - INFO - DB Insert: Match 654422921 has event_count: 6
+2025-09-18 12:01:30,530 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,530 - ERROR - Failed to insert match 654422921: 46 values for 41 columns
+2025-09-18 12:01:30,530 - INFO - DB Insert: Match 654401092 has event_count: 6
+2025-09-18 12:01:30,530 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,530 - ERROR - Failed to insert match 654401092: 46 values for 41 columns
+2025-09-18 12:01:30,530 - INFO - DB Insert: Match 654432327 has event_count: 6
+2025-09-18 12:01:30,531 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,531 - ERROR - Failed to insert match 654432327: 46 values for 41 columns
+2025-09-18 12:01:30,531 - INFO - DB Insert: Match 654432328 has event_count: 6
+2025-09-18 12:01:30,531 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,531 - ERROR - Failed to insert match 654432328: 46 values for 41 columns
+2025-09-18 12:01:30,531 - INFO - DB Insert: Match 654434025 has event_count: 6
+2025-09-18 12:01:30,531 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,531 - ERROR - Failed to insert match 654434025: 46 values for 41 columns
+2025-09-18 12:01:30,531 - INFO - DB Insert: Match 654435595 has event_count: 6
+2025-09-18 12:01:30,531 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,531 - ERROR - Failed to insert match 654435595: 46 values for 41 columns
+2025-09-18 12:01:30,531 - INFO - DB Insert: Match 654437073 has event_count: 6
+2025-09-18 12:01:30,531 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,531 - ERROR - Failed to insert match 654437073: 46 values for 41 columns
+2025-09-18 12:01:30,531 - INFO - DB Insert: Match 654437482 has event_count: 6
+2025-09-18 12:01:30,531 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,531 - ERROR - Failed to insert match 654437482: 46 values for 41 columns
+2025-09-18 12:01:30,531 - INFO - DB Insert: Match 654438578 has event_count: 6
+2025-09-18 12:01:30,531 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,531 - ERROR - Failed to insert match 654438578: 46 values for 41 columns
+2025-09-18 12:01:30,531 - INFO - DB Insert: Match 654440934 has event_count: 6
+2025-09-18 12:01:30,531 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,531 - ERROR - Failed to insert match 654440934: 46 values for 41 columns
+2025-09-18 12:01:30,531 - INFO - DB Insert: Match 654440933 has event_count: 6
+2025-09-18 12:01:30,533 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,533 - ERROR - Failed to insert match 654440933: 46 values for 41 columns
+2025-09-18 12:01:30,533 - INFO - DB Insert: Match 654440935 has event_count: 6
+2025-09-18 12:01:30,533 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,533 - ERROR - Failed to insert match 654440935: 46 values for 41 columns
+2025-09-18 12:01:30,538 - INFO - SUCCESS: Inserted 0 matches into futsal_2025_09_18
+2025-09-18 12:01:30,539 - INFO - SUCCESS: 1xBet: Retrieved 2 matches for sport 17
+2025-09-18 12:01:30,539 - INFO - INFO: Dropping existing table handball_2025_09_18 to ensure correct schema
+2025-09-18 12:01:30,547 - INFO - INFO: No matches found for baseball
+2025-09-18 12:01:30,548 - INFO - SUCCESS: baseball: 0 matches collected
+2025-09-18 12:01:30,572 - INFO - SUCCESS: Created/verified table: handball_2025_09_18
+2025-09-18 12:01:30,572 - INFO - DB Insert: Match 654365787 has event_count: 13
+2025-09-18 12:01:30,572 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,573 - ERROR - Failed to insert match 654365787: 46 values for 41 columns
+2025-09-18 12:01:30,573 - INFO - DB Insert: Match 654365788 has event_count: 13
+2025-09-18 12:01:30,573 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,573 - ERROR - Failed to insert match 654365788: 46 values for 41 columns
+2025-09-18 12:01:30,593 - INFO - SUCCESS: Inserted 0 matches into handball_2025_09_18
+2025-09-18 12:01:30,726 - INFO - SUCCESS: 1xBet: Retrieved 50 matches for sport 3
+2025-09-18 12:01:30,728 - INFO - INFO: Dropping existing table tennis_2025_09_18 to ensure correct schema
+2025-09-18 12:01:30,764 - INFO - SUCCESS: 1xBet: Retrieved 50 matches for sport 13
+2025-09-18 12:01:30,773 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 49
+2025-09-18 12:01:30,773 - INFO - WARNING: ISCJXXQGMB failed for rugby, trying XBET
+2025-09-18 12:01:30,787 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 11 live matches for sport 1
+2025-09-18 12:01:30,787 - INFO - 1xBet match 649529227 has event_count: 20
+2025-09-18 12:01:30,787 - INFO - 1xBet match fields: ['match_id', 'home_team', 'away_team', 'score', 'status', 'period', 'tournament', 'sport_id', 'event_count', 'start_time', 'odds_home', 'odds_away', 'odds_draw', 'raw_data']
+2025-09-18 12:01:30,787 - INFO - 1xBet match 649529221 has event_count: 20
+2025-09-18 12:01:30,787 - INFO - 1xBet match fields: ['match_id', 'home_team', 'away_team', 'score', 'status', 'period', 'tournament', 'sport_id', 'event_count', 'start_time', 'odds_home', 'odds_away', 'odds_draw', 'raw_data']
+2025-09-18 12:01:30,787 - INFO - 1xBet match 649543844 has event_count: 20
+2025-09-18 12:01:30,787 - INFO - 1xBet match fields: ['match_id', 'home_team', 'away_team', 'score', 'status', 'period', 'tournament', 'sport_id', 'event_count', 'start_time', 'odds_home', 'odds_away', 'odds_draw', 'raw_data']
+2025-09-18 12:01:30,787 - INFO - 1xBet match 649543850 has event_count: 20
+2025-09-18 12:01:30,788 - INFO - 1xBet match 649543838 has event_count: 20
+2025-09-18 12:01:30,788 - INFO - 1xBet match 649529840 has event_count: 20
+2025-09-18 12:01:30,788 - INFO - 1xBet match 653771323 has event_count: 18
+2025-09-18 12:01:30,788 - INFO - 1xBet match 652467922 has event_count: 20
+2025-09-18 12:01:30,788 - INFO - 1xBet match 654361550 has event_count: 15
+2025-09-18 12:01:30,788 - INFO - SUCCESS: Created/verified table: tennis_2025_09_18
+2025-09-18 12:01:30,788 - INFO - 1xBet match 649246066 has event_count: 22
+2025-09-18 12:01:30,788 - INFO - 1xBet match 649246560 has event_count: 22
+2025-09-18 12:01:30,788 - INFO - 1xBet match 654275124 has event_count: 20
+2025-09-18 12:01:30,788 - INFO - 1xBet match 653902365 has event_count: 20
+2025-09-18 12:01:30,788 - INFO - DB Insert: Match 654322156 has event_count: 15
+2025-09-18 12:01:30,789 - INFO - 1xBet match 653678608 has event_count: 20
+2025-09-18 12:01:30,789 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,789 - INFO - 1xBet match 653678602 has event_count: 20
+2025-09-18 12:01:30,789 - INFO - 1xBet match 653382162 has event_count: 20
+2025-09-18 12:01:30,789 - INFO - 1xBet match 654308044 has event_count: 11
+2025-09-18 12:01:30,789 - INFO - 1xBet match 654243305 has event_count: 20
+2025-09-18 12:01:30,789 - INFO - 1xBet match 654243308 has event_count: 20
+2025-09-18 12:01:30,789 - INFO - 1xBet match 654248930 has event_count: 20
+2025-09-18 12:01:30,789 - INFO - 1xBet match 654235743 has event_count: 20
+2025-09-18 12:01:30,789 - INFO - 1xBet match 654243314 has event_count: 20
+2025-09-18 12:01:30,790 - INFO - 1xBet match 654243311 has event_count: 20
+2025-09-18 12:01:30,790 - INFO - 1xBet match 654485120 has event_count: 18
+2025-09-18 12:01:30,790 - INFO - 1xBet match 653643027 has event_count: 20
+2025-09-18 12:01:30,790 - INFO - 1xBet match 653333429 has event_count: 20
+2025-09-18 12:01:30,790 - INFO - 1xBet match 654030705 has event_count: 20
+2025-09-18 12:01:30,790 - INFO - 1xBet match 654310988 has event_count: 11
+2025-09-18 12:01:30,790 - INFO - 1xBet match 654435354 has event_count: 20
+2025-09-18 12:01:30,790 - INFO - 1xBet match 654419667 has event_count: 20
+2025-09-18 12:01:30,790 - INFO - 1xBet match 654463845 has event_count: 20
+2025-09-18 12:01:30,790 - INFO - 1xBet match 654431973 has event_count: 20
+2025-09-18 12:01:30,790 - INFO - 1xBet match 654185739 has event_count: 20
+2025-09-18 12:01:30,790 - INFO - 1xBet match 654189020 has event_count: 20
+2025-09-18 12:01:30,791 - INFO - 1xBet match 654194527 has event_count: 20
+2025-09-18 12:01:30,791 - INFO - 1xBet match 654226412 has event_count: 20
+2025-09-18 12:01:30,791 - INFO - INFO: Dropping existing table volleyball_2025_09_18 to ensure correct schema
+2025-09-18 12:01:30,791 - INFO - 1xBet match 654226415 has event_count: 20
+2025-09-18 12:01:30,791 - ERROR - Failed to insert match 654322156: 46 values for 41 columns
+2025-09-18 12:01:30,791 - INFO - 1xBet match 654224871 has event_count: 20
+2025-09-18 12:01:30,791 - INFO - DB Insert: Match 654314799 has event_count: 15
+2025-09-18 12:01:30,792 - INFO - 1xBet match 654437738 has event_count: 14
+2025-09-18 12:01:30,792 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,793 - INFO - 1xBet match 654202254 has event_count: 18
+2025-09-18 12:01:30,793 - ERROR - Failed to insert match 654314799: 46 values for 41 columns
+2025-09-18 12:01:30,794 - INFO - 1xBet match 654220288 has event_count: 18
+2025-09-18 12:01:30,794 - INFO - DB Insert: Match 654314792 has event_count: 15
+2025-09-18 12:01:30,794 - INFO - 1xBet match 654202640 has event_count: 18
+2025-09-18 12:01:30,794 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,794 - INFO - 1xBet match 654202646 has event_count: 18
+2025-09-18 12:01:30,794 - ERROR - Failed to insert match 654314792: 46 values for 41 columns
+2025-09-18 12:01:30,794 - INFO - 1xBet match 654202263 has event_count: 16
+2025-09-18 12:01:30,794 - INFO - DB Insert: Match 654382304 has event_count: 13
+2025-09-18 12:01:30,795 - INFO - 1xBet match 654202257 has event_count: 18
+2025-09-18 12:01:30,795 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,795 - INFO - 1xBet match 654202637 has event_count: 18
+2025-09-18 12:01:30,795 - ERROR - Failed to insert match 654382304: 46 values for 41 columns
+2025-09-18 12:01:30,795 - INFO - 1xBet match 654202643 has event_count: 18
+2025-09-18 12:01:30,795 - INFO - DB Insert: Match 654502221 has event_count: 13
+2025-09-18 12:01:30,795 - INFO - 1xBet match 654269162 has event_count: 18
+2025-09-18 12:01:30,795 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,795 - INFO - 1xBet match 649845447 has event_count: 20
+2025-09-18 12:01:30,795 - ERROR - Failed to insert match 654502221: 46 values for 41 columns
+2025-09-18 12:01:30,796 - INFO - 1xBet match 653579576 has event_count: 20
+2025-09-18 12:01:30,796 - INFO - DB Insert: Match 654367933 has event_count: 11
+2025-09-18 12:01:30,796 - INFO - ISCJXXQGMB match 24325660 has event_count: 2
+2025-09-18 12:01:30,796 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,796 - INFO - ISCJXXQGMB match fields: ['match_id', 'home_team', 'away_team', 'score', 'status', 'period', 'tournament', 'sport_id', 'event_count', 'is_live', 'start_time', 'odds_home', 'odds_away', 'odds_draw', 'home_team_id', 'away_team_id', 'home_team_logo', 'away_team_logo', 'match_weight', 'set_number', 'match_time_extended', 'in_top', 'match_in_campaign', 'yellow_cards_home', 'yellow_cards_away', 'red_cards_home', 'red_cards_away', 'corners_home', 'corners_away', 'segment_scores', 'sets_score', 'stoppage_time', 'half_time', 'overtime_score', 'regular_time_score', 'after_penalties_score', 'line_status', 'is_outright', 'is_cyber', 'in_favorites', 'other_outcomes_qty', 'raw_data'], event_count: 2
+2025-09-18 12:01:30,796 - ERROR - Failed to insert match 654367933: 46 values for 41 columns
+2025-09-18 12:01:30,796 - INFO - ISCJXXQGMB match 24325406 has event_count: 2
+2025-09-18 12:01:30,796 - INFO - DB Insert: Match 654506589 has event_count: 10
+2025-09-18 12:01:30,796 - INFO - ISCJXXQGMB match fields: ['match_id', 'home_team', 'away_team', 'score', 'status', 'period', 'tournament', 'sport_id', 'event_count', 'is_live', 'start_time', 'odds_home', 'odds_away', 'odds_draw', 'home_team_id', 'away_team_id', 'home_team_logo', 'away_team_logo', 'match_weight', 'set_number', 'match_time_extended', 'in_top', 'match_in_campaign', 'yellow_cards_home', 'yellow_cards_away', 'red_cards_home', 'red_cards_away', 'corners_home', 'corners_away', 'segment_scores', 'sets_score', 'stoppage_time', 'half_time', 'overtime_score', 'regular_time_score', 'after_penalties_score', 'line_status', 'is_outright', 'is_cyber', 'in_favorites', 'other_outcomes_qty', 'raw_data'], event_count: 2
+2025-09-18 12:01:30,796 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,796 - INFO - ISCJXXQGMB match 24325158 has event_count: 2
+2025-09-18 12:01:30,796 - ERROR - Failed to insert match 654506589: 46 values for 41 columns
+2025-09-18 12:01:30,796 - INFO - ISCJXXQGMB match fields: ['match_id', 'home_team', 'away_team', 'score', 'status', 'period', 'tournament', 'sport_id', 'event_count', 'is_live', 'start_time', 'odds_home', 'odds_away', 'odds_draw', 'home_team_id', 'away_team_id', 'home_team_logo', 'away_team_logo', 'match_weight', 'set_number', 'match_time_extended', 'in_top', 'match_in_campaign', 'yellow_cards_home', 'yellow_cards_away', 'red_cards_home', 'red_cards_away', 'corners_home', 'corners_away', 'segment_scores', 'sets_score', 'stoppage_time', 'half_time', 'overtime_score', 'regular_time_score', 'after_penalties_score', 'line_status', 'is_outright', 'is_cyber', 'in_favorites', 'other_outcomes_qty', 'raw_data'], event_count: 2
+2025-09-18 12:01:30,797 - INFO - DB Insert: Match 654502214 has event_count: 13
+2025-09-18 12:01:30,797 - INFO - ISCJXXQGMB match 24325552 has event_count: 2
+2025-09-18 12:01:30,797 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,797 - INFO - ISCJXXQGMB match 24325578 has event_count: 2
+2025-09-18 12:01:30,797 - ERROR - Failed to insert match 654502214: 46 values for 41 columns
+2025-09-18 12:01:30,797 - INFO - ISCJXXQGMB match 24325592 has event_count: 2
+2025-09-18 12:01:30,797 - INFO - DB Insert: Match 654498574 has event_count: 15
+2025-09-18 12:01:30,797 - INFO - ISCJXXQGMB match 24325604 has event_count: 2
+2025-09-18 12:01:30,798 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,798 - INFO - ISCJXXQGMB match 24325606 has event_count: 2
+2025-09-18 12:01:30,798 - ERROR - Failed to insert match 654498574: 46 values for 41 columns
+2025-09-18 12:01:30,798 - INFO - ISCJXXQGMB match 24325628 has event_count: 2
+2025-09-18 12:01:30,798 - INFO - DB Insert: Match 654317157 has event_count: 7
+2025-09-18 12:01:30,798 - INFO - ISCJXXQGMB match 24325630 has event_count: 2
+2025-09-18 12:01:30,798 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,798 - INFO - ISCJXXQGMB match 24325666 has event_count: 1
+2025-09-18 12:01:30,799 - INFO - MERGED: Intelligently merged (normalized): 50 from 1xBet + 11 from ISCJXXQGMB = 61 total
+2025-09-18 12:01:30,799 - ERROR - Failed to insert match 654317157: 46 values for 41 columns
+2025-09-18 12:01:30,799 - INFO - STATS: Event counts: 61/61 matches have event_count > 0, values: [1, 2, 11, 14, 15, 16, 18, 20, 22]
+2025-09-18 12:01:30,799 - INFO - DB Insert: Match 654317506 has event_count: 7
+2025-09-18 12:01:30,799 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,799 - ERROR - Failed to insert match 654317506: 46 values for 41 columns
+2025-09-18 12:01:30,799 - INFO - DB Insert: Match 654317507 has event_count: 7
+2025-09-18 12:01:30,800 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,800 - ERROR - Failed to insert match 654317507: 46 values for 41 columns
+2025-09-18 12:01:30,800 - INFO - DB Insert: Match 654317505 has event_count: 7
+2025-09-18 12:01:30,800 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,800 - ERROR - Failed to insert match 654317505: 46 values for 41 columns
+2025-09-18 12:01:30,800 - INFO - DB Insert: Match 654318037 has event_count: 7
+2025-09-18 12:01:30,800 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,800 - ERROR - Failed to insert match 654318037: 46 values for 41 columns
+2025-09-18 12:01:30,800 - INFO - DB Insert: Match 654318038 has event_count: 7
+2025-09-18 12:01:30,800 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,800 - ERROR - Failed to insert match 654318038: 46 values for 41 columns
+2025-09-18 12:01:30,800 - INFO - DB Insert: Match 654318914 has event_count: 7
+2025-09-18 12:01:30,800 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,801 - ERROR - Failed to insert match 654318914: 46 values for 41 columns
+2025-09-18 12:01:30,801 - INFO - DB Insert: Match 654318913 has event_count: 7
+2025-09-18 12:01:30,801 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,801 - ERROR - Failed to insert match 654318913: 46 values for 41 columns
+2025-09-18 12:01:30,801 - INFO - DB Insert: Match 654305974 has event_count: 4
+2025-09-18 12:01:30,801 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,801 - ERROR - Failed to insert match 654305974: 46 values for 41 columns
+2025-09-18 12:01:30,801 - INFO - DB Insert: Match 654304193 has event_count: 9
+2025-09-18 12:01:30,801 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,801 - ERROR - Failed to insert match 654304193: 46 values for 41 columns
+2025-09-18 12:01:30,801 - INFO - DB Insert: Match 654365659 has event_count: 12
+2025-09-18 12:01:30,801 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,801 - ERROR - Failed to insert match 654365659: 46 values for 41 columns
+2025-09-18 12:01:30,801 - INFO - DB Insert: Match 654386278 has event_count: 15
+2025-09-18 12:01:30,801 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,802 - ERROR - Failed to insert match 654386278: 46 values for 41 columns
+2025-09-18 12:01:30,802 - INFO - DB Insert: Match 654394911 has event_count: 15
+2025-09-18 12:01:30,802 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,802 - ERROR - Failed to insert match 654394911: 46 values for 41 columns
+2025-09-18 12:01:30,802 - INFO - DB Insert: Match 652612417 has event_count: 15
+2025-09-18 12:01:30,802 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,802 - ERROR - Failed to insert match 652612417: 46 values for 41 columns
+2025-09-18 12:01:30,802 - INFO - DB Insert: Match 654328703 has event_count: 12
+2025-09-18 12:01:30,802 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,802 - ERROR - Failed to insert match 654328703: 46 values for 41 columns
+2025-09-18 12:01:30,802 - INFO - DB Insert: Match 654289687 has event_count: 9
+2025-09-18 12:01:30,802 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,802 - ERROR - Failed to insert match 654289687: 46 values for 41 columns
+2025-09-18 12:01:30,802 - INFO - DB Insert: Match 654365966 has event_count: 9
+2025-09-18 12:01:30,802 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,803 - ERROR - Failed to insert match 654365966: 46 values for 41 columns
+2025-09-18 12:01:30,803 - INFO - DB Insert: Match 654494742 has event_count: 5
+2025-09-18 12:01:30,803 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,803 - ERROR - Failed to insert match 654494742: 46 values for 41 columns
+2025-09-18 12:01:30,803 - INFO - DB Insert: Match 654360390 has event_count: 9
+2025-09-18 12:01:30,803 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,803 - ERROR - Failed to insert match 654360390: 46 values for 41 columns
+2025-09-18 12:01:30,803 - INFO - DB Insert: Match 654360386 has event_count: 9
+2025-09-18 12:01:30,803 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,803 - ERROR - Failed to insert match 654360386: 46 values for 41 columns
+2025-09-18 12:01:30,803 - INFO - DB Insert: Match 654057768 has event_count: 9
+2025-09-18 12:01:30,803 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,803 - ERROR - Failed to insert match 654057768: 46 values for 41 columns
+2025-09-18 12:01:30,803 - INFO - DB Insert: Match 654360388 has event_count: 9
+2025-09-18 12:01:30,803 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,804 - ERROR - Failed to insert match 654360388: 46 values for 41 columns
+2025-09-18 12:01:30,804 - INFO - DB Insert: Match 654360387 has event_count: 9
+2025-09-18 12:01:30,804 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,804 - ERROR - Failed to insert match 654360387: 46 values for 41 columns
+2025-09-18 12:01:30,804 - INFO - DB Insert: Match 654360391 has event_count: 9
+2025-09-18 12:01:30,805 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,805 - ERROR - Failed to insert match 654360391: 46 values for 41 columns
+2025-09-18 12:01:30,805 - INFO - DB Insert: Match 654365660 has event_count: 12
+2025-09-18 12:01:30,805 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,805 - ERROR - Failed to insert match 654365660: 46 values for 41 columns
+2025-09-18 12:01:30,805 - INFO - DB Insert: Match 654302895 has event_count: 12
+2025-09-18 12:01:30,805 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,805 - ERROR - Failed to insert match 654302895: 46 values for 41 columns
+2025-09-18 12:01:30,805 - INFO - DB Insert: Match 654261379 has event_count: 12
+2025-09-18 12:01:30,805 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,806 - ERROR - Failed to insert match 654261379: 46 values for 41 columns
+2025-09-18 12:01:30,806 - INFO - DB Insert: Match 654288687 has event_count: 9
+2025-09-18 12:01:30,806 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,806 - ERROR - Failed to insert match 654288687: 46 values for 41 columns
+2025-09-18 12:01:30,806 - INFO - DB Insert: Match 654389141 has event_count: 12
+2025-09-18 12:01:30,806 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,806 - ERROR - Failed to insert match 654389141: 46 values for 41 columns
+2025-09-18 12:01:30,806 - INFO - DB Insert: Match 654339168 has event_count: 12
+2025-09-18 12:01:30,806 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,806 - ERROR - Failed to insert match 654339168: 46 values for 41 columns
+2025-09-18 12:01:30,806 - INFO - DB Insert: Match 654386091 has event_count: 12
+2025-09-18 12:01:30,807 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,807 - ERROR - Failed to insert match 654386091: 46 values for 41 columns
+2025-09-18 12:01:30,807 - INFO - DB Insert: Match 654303721 has event_count: 12
+2025-09-18 12:01:30,807 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,807 - ERROR - Failed to insert match 654303721: 46 values for 41 columns
+2025-09-18 12:01:30,807 - INFO - DB Insert: Match 654249969 has event_count: 15
+2025-09-18 12:01:30,807 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,807 - ERROR - Failed to insert match 654249969: 46 values for 41 columns
+2025-09-18 12:01:30,807 - INFO - DB Insert: Match 654415412 has event_count: 13
+2025-09-18 12:01:30,807 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,807 - ERROR - Failed to insert match 654415412: 46 values for 41 columns
+2025-09-18 12:01:30,807 - INFO - DB Insert: Match 654395575 has event_count: 12
+2025-09-18 12:01:30,807 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,807 - ERROR - Failed to insert match 654395575: 46 values for 41 columns
+2025-09-18 12:01:30,808 - INFO - DB Insert: Match 654319847 has event_count: 12
+2025-09-18 12:01:30,808 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,808 - ERROR - Failed to insert match 654319847: 46 values for 41 columns
+2025-09-18 12:01:30,808 - INFO - DB Insert: Match 654403456 has event_count: 6
+2025-09-18 12:01:30,808 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,808 - ERROR - Failed to insert match 654403456: 46 values for 41 columns
+2025-09-18 12:01:30,809 - INFO - DB Insert: Match 654254650 has event_count: 10
+2025-09-18 12:01:30,809 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,809 - ERROR - Failed to insert match 654254650: 46 values for 41 columns
+2025-09-18 12:01:30,809 - INFO - DB Insert: Match 654250662 has event_count: 12
+2025-09-18 12:01:30,809 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,809 - ERROR - Failed to insert match 654250662: 46 values for 41 columns
+2025-09-18 12:01:30,809 - INFO - DB Insert: Match 654386092 has event_count: 12
+2025-09-18 12:01:30,809 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,809 - ERROR - Failed to insert match 654386092: 46 values for 41 columns
+2025-09-18 12:01:30,809 - INFO - DB Insert: Match 654403925 has event_count: 13
+2025-09-18 12:01:30,810 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,810 - ERROR - Failed to insert match 654403925: 46 values for 41 columns
+2025-09-18 12:01:30,839 - INFO - SUCCESS: Created/verified table: volleyball_2025_09_18
+2025-09-18 12:01:30,839 - INFO - DB Insert: Match 653579268 has event_count: 10
+2025-09-18 12:01:30,839 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,840 - ERROR - Failed to insert match 653579268: 46 values for 41 columns
+2025-09-18 12:01:30,840 - INFO - DB Insert: Match 652231912 has event_count: 10
+2025-09-18 12:01:30,841 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,841 - ERROR - Failed to insert match 652231912: 46 values for 41 columns
+2025-09-18 12:01:30,841 - INFO - DB Insert: Match 654454654 has event_count: 6
+2025-09-18 12:01:30,841 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,841 - ERROR - Failed to insert match 654454654: 46 values for 41 columns
+2025-09-18 12:01:30,841 - INFO - DB Insert: Match 653847592 has event_count: 10
+2025-09-18 12:01:30,841 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,841 - ERROR - Failed to insert match 653847592: 46 values for 41 columns
+2025-09-18 12:01:30,841 - INFO - DB Insert: Match 653450550 has event_count: 10
+2025-09-18 12:01:30,841 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,842 - ERROR - Failed to insert match 653450550: 46 values for 41 columns
+2025-09-18 12:01:30,842 - INFO - DB Insert: Match 652496955 has event_count: 10
+2025-09-18 12:01:30,842 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,842 - ERROR - Failed to insert match 652496955: 46 values for 41 columns
+2025-09-18 12:01:30,842 - INFO - DB Insert: Match 653848121 has event_count: 8
+2025-09-18 12:01:30,843 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,843 - ERROR - Failed to insert match 653848121: 46 values for 41 columns
+2025-09-18 12:01:30,843 - INFO - DB Insert: Match 653421052 has event_count: 10
+2025-09-18 12:01:30,843 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,843 - ERROR - Failed to insert match 653421052: 46 values for 41 columns
+2025-09-18 12:01:30,843 - INFO - DB Insert: Match 654459060 has event_count: 6
+2025-09-18 12:01:30,843 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,843 - ERROR - Failed to insert match 654459060: 46 values for 41 columns
+2025-09-18 12:01:30,843 - INFO - DB Insert: Match 653424701 has event_count: 10
+2025-09-18 12:01:30,843 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,844 - ERROR - Failed to insert match 653424701: 46 values for 41 columns
+2025-09-18 12:01:30,844 - INFO - DB Insert: Match 653427989 has event_count: 10
+2025-09-18 12:01:30,844 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,844 - ERROR - Failed to insert match 653427989: 46 values for 41 columns
+2025-09-18 12:01:30,844 - INFO - DB Insert: Match 653460547 has event_count: 10
+2025-09-18 12:01:30,844 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,844 - ERROR - Failed to insert match 653460547: 46 values for 41 columns
+2025-09-18 12:01:30,844 - INFO - DB Insert: Match 653371845 has event_count: 10
+2025-09-18 12:01:30,844 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,844 - ERROR - Failed to insert match 653371845: 46 values for 41 columns
+2025-09-18 12:01:30,845 - INFO - DB Insert: Match 654455225 has event_count: 6
+2025-09-18 12:01:30,845 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,845 - ERROR - Failed to insert match 654455225: 46 values for 41 columns
+2025-09-18 12:01:30,845 - INFO - DB Insert: Match 654490793 has event_count: 6
+2025-09-18 12:01:30,845 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,845 - ERROR - Failed to insert match 654490793: 46 values for 41 columns
+2025-09-18 12:01:30,845 - INFO - DB Insert: Match 653470927 has event_count: 10
+2025-09-18 12:01:30,845 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,845 - ERROR - Failed to insert match 653470927: 46 values for 41 columns
+2025-09-18 12:01:30,846 - INFO - DB Insert: Match 652497978 has event_count: 10
+2025-09-18 12:01:30,846 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,846 - ERROR - Failed to insert match 652497978: 46 values for 41 columns
+2025-09-18 12:01:30,846 - INFO - DB Insert: Match 654494167 has event_count: 4
+2025-09-18 12:01:30,846 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,846 - ERROR - Failed to insert match 654494167: 46 values for 41 columns
+2025-09-18 12:01:30,846 - INFO - DB Insert: Match 653423309 has event_count: 10
+2025-09-18 12:01:30,846 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,846 - ERROR - Failed to insert match 653423309: 46 values for 41 columns
+2025-09-18 12:01:30,846 - INFO - DB Insert: Match 654455224 has event_count: 6
+2025-09-18 12:01:30,847 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,847 - ERROR - Failed to insert match 654455224: 46 values for 41 columns
+2025-09-18 12:01:30,847 - INFO - DB Insert: Match 653609087 has event_count: 8
+2025-09-18 12:01:30,847 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,847 - ERROR - Failed to insert match 653609087: 46 values for 41 columns
+2025-09-18 12:01:30,847 - INFO - DB Insert: Match 654491285 has event_count: 6
+2025-09-18 12:01:30,847 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,847 - ERROR - Failed to insert match 654491285: 46 values for 41 columns
+2025-09-18 12:01:30,847 - INFO - DB Insert: Match 654464593 has event_count: 6
+2025-09-18 12:01:30,847 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,847 - ERROR - Failed to insert match 654464593: 46 values for 41 columns
+2025-09-18 12:01:30,848 - INFO - DB Insert: Match 654463506 has event_count: 6
+2025-09-18 12:01:30,848 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,848 - ERROR - Failed to insert match 654463506: 46 values for 41 columns
+2025-09-18 12:01:30,848 - INFO - DB Insert: Match 654468326 has event_count: 6
+2025-09-18 12:01:30,848 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,848 - ERROR - Failed to insert match 654468326: 46 values for 41 columns
+2025-09-18 12:01:30,848 - INFO - DB Insert: Match 654461216 has event_count: 6
+2025-09-18 12:01:30,848 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,849 - ERROR - Failed to insert match 654461216: 46 values for 41 columns
+2025-09-18 12:01:30,849 - INFO - DB Insert: Match 654462366 has event_count: 6
+2025-09-18 12:01:30,849 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,849 - ERROR - Failed to insert match 654462366: 46 values for 41 columns
+2025-09-18 12:01:30,849 - INFO - DB Insert: Match 654466738 has event_count: 5
+2025-09-18 12:01:30,849 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,849 - ERROR - Failed to insert match 654466738: 46 values for 41 columns
+2025-09-18 12:01:30,849 - INFO - DB Insert: Match 654469619 has event_count: 6
+2025-09-18 12:01:30,849 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,849 - ERROR - Failed to insert match 654469619: 46 values for 41 columns
+2025-09-18 12:01:30,849 - INFO - DB Insert: Match 654473143 has event_count: 6
+2025-09-18 12:01:30,849 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,849 - ERROR - Failed to insert match 654473143: 46 values for 41 columns
+2025-09-18 12:01:30,849 - INFO - DB Insert: Match 654472039 has event_count: 6
+2025-09-18 12:01:30,849 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,851 - ERROR - Failed to insert match 654472039: 46 values for 41 columns
+2025-09-18 12:01:30,851 - INFO - DB Insert: Match 654476127 has event_count: 6
+2025-09-18 12:01:30,851 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,851 - ERROR - Failed to insert match 654476127: 46 values for 41 columns
+2025-09-18 12:01:30,851 - INFO - DB Insert: Match 654472040 has event_count: 6
+2025-09-18 12:01:30,851 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,851 - ERROR - Failed to insert match 654472040: 46 values for 41 columns
+2025-09-18 12:01:30,852 - INFO - DB Insert: Match 654477336 has event_count: 6
+2025-09-18 12:01:30,852 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,852 - ERROR - Failed to insert match 654477336: 46 values for 41 columns
+2025-09-18 12:01:30,852 - INFO - DB Insert: Match 653848113 has event_count: 6
+2025-09-18 12:01:30,852 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,852 - ERROR - Failed to insert match 653848113: 46 values for 41 columns
+2025-09-18 12:01:30,852 - INFO - DB Insert: Match 653614090 has event_count: 6
+2025-09-18 12:01:30,852 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,852 - INFO - INFO: Dropping existing table soccer_2025_09_18 to ensure correct schema
+2025-09-18 12:01:30,853 - ERROR - Failed to insert match 653614090: 46 values for 41 columns
+2025-09-18 12:01:30,853 - INFO - DB Insert: Match 654480224 has event_count: 6
+2025-09-18 12:01:30,853 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,853 - ERROR - Failed to insert match 654480224: 46 values for 41 columns
+2025-09-18 12:01:30,853 - INFO - DB Insert: Match 654477335 has event_count: 6
+2025-09-18 12:01:30,853 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,853 - ERROR - Failed to insert match 654477335: 46 values for 41 columns
+2025-09-18 12:01:30,853 - INFO - DB Insert: Match 653641572 has event_count: 10
+2025-09-18 12:01:30,853 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,853 - ERROR - Failed to insert match 653641572: 46 values for 41 columns
+2025-09-18 12:01:30,853 - INFO - DB Insert: Match 653642484 has event_count: 10
+2025-09-18 12:01:30,853 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,853 - ERROR - Failed to insert match 653642484: 46 values for 41 columns
+2025-09-18 12:01:30,854 - INFO - DB Insert: Match 653642482 has event_count: 10
+2025-09-18 12:01:30,854 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,854 - ERROR - Failed to insert match 653642482: 46 values for 41 columns
+2025-09-18 12:01:30,854 - INFO - DB Insert: Match 653429387 has event_count: 8
+2025-09-18 12:01:30,854 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,854 - ERROR - Failed to insert match 653429387: 46 values for 41 columns
+2025-09-18 12:01:30,854 - INFO - DB Insert: Match 653427988 has event_count: 10
+2025-09-18 12:01:30,855 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,855 - ERROR - Failed to insert match 653427988: 46 values for 41 columns
+2025-09-18 12:01:30,855 - INFO - DB Insert: Match 653458261 has event_count: 10
+2025-09-18 12:01:30,855 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,855 - ERROR - Failed to insert match 653458261: 46 values for 41 columns
+2025-09-18 12:01:30,855 - INFO - DB Insert: Match 626896777 has event_count: 10
+2025-09-18 12:01:30,855 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,855 - ERROR - Failed to insert match 626896777: 46 values for 41 columns
+2025-09-18 12:01:30,856 - INFO - DB Insert: Match 653465640 has event_count: 10
+2025-09-18 12:01:30,856 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,856 - ERROR - Failed to insert match 653465640: 46 values for 41 columns
+2025-09-18 12:01:30,856 - INFO - DB Insert: Match 654495598 has event_count: 6
+2025-09-18 12:01:30,856 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,856 - ERROR - Failed to insert match 654495598: 46 values for 41 columns
+2025-09-18 12:01:30,856 - INFO - DB Insert: Match 652497725 has event_count: 10
+2025-09-18 12:01:30,856 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,856 - ERROR - Failed to insert match 652497725: 46 values for 41 columns
+2025-09-18 12:01:30,856 - INFO - DB Insert: Match 653455702 has event_count: 10
+2025-09-18 12:01:30,857 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,857 - ERROR - Failed to insert match 653455702: 46 values for 41 columns
+2025-09-18 12:01:30,857 - INFO - DB Insert: Match 653640596 has event_count: 10
+2025-09-18 12:01:30,857 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,858 - ERROR - Failed to insert match 653640596: 46 values for 41 columns
+2025-09-18 12:01:30,870 - INFO - SUCCESS: Inserted 0 matches into tennis_2025_09_18
+2025-09-18 12:01:30,894 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 9
+2025-09-18 12:01:30,895 - INFO - WARNING: ISCJXXQGMB failed for boxing, trying XBET
+2025-09-18 12:01:30,945 - INFO - SUCCESS: Created/verified table: soccer_2025_09_18
+2025-09-18 12:01:30,946 - INFO - DB Insert: Match 649529227 has event_count: 20
+2025-09-18 12:01:30,946 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,946 - ERROR - Failed to insert match 649529227: 46 values for 41 columns
+2025-09-18 12:01:30,946 - INFO - DB Insert: Match 649529221 has event_count: 20
+2025-09-18 12:01:30,947 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,947 - ERROR - Failed to insert match 649529221: 46 values for 41 columns
+2025-09-18 12:01:30,947 - INFO - DB Insert: Match 649543844 has event_count: 20
+2025-09-18 12:01:30,947 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,947 - ERROR - Failed to insert match 649543844: 46 values for 41 columns
+2025-09-18 12:01:30,947 - INFO - DB Insert: Match 649543850 has event_count: 20
+2025-09-18 12:01:30,947 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,947 - ERROR - Failed to insert match 649543850: 46 values for 41 columns
+2025-09-18 12:01:30,947 - INFO - DB Insert: Match 649543838 has event_count: 20
+2025-09-18 12:01:30,947 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,947 - ERROR - Failed to insert match 649543838: 46 values for 41 columns
+2025-09-18 12:01:30,947 - INFO - DB Insert: Match 649529840 has event_count: 20
+2025-09-18 12:01:30,947 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,947 - ERROR - Failed to insert match 649529840: 46 values for 41 columns
+2025-09-18 12:01:30,948 - INFO - DB Insert: Match 653771323 has event_count: 18
+2025-09-18 12:01:30,948 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,948 - ERROR - Failed to insert match 653771323: 46 values for 41 columns
+2025-09-18 12:01:30,948 - INFO - DB Insert: Match 652467922 has event_count: 20
+2025-09-18 12:01:30,948 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,948 - ERROR - Failed to insert match 652467922: 46 values for 41 columns
+2025-09-18 12:01:30,948 - INFO - DB Insert: Match 654361550 has event_count: 15
+2025-09-18 12:01:30,948 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,948 - ERROR - Failed to insert match 654361550: 46 values for 41 columns
+2025-09-18 12:01:30,948 - INFO - DB Insert: Match 649246066 has event_count: 22
+2025-09-18 12:01:30,948 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,948 - ERROR - Failed to insert match 649246066: 46 values for 41 columns
+2025-09-18 12:01:30,948 - INFO - DB Insert: Match 649246560 has event_count: 22
+2025-09-18 12:01:30,948 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,949 - ERROR - Failed to insert match 649246560: 46 values for 41 columns
+2025-09-18 12:01:30,949 - INFO - DB Insert: Match 654275124 has event_count: 20
+2025-09-18 12:01:30,949 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,949 - ERROR - Failed to insert match 654275124: 46 values for 41 columns
+2025-09-18 12:01:30,949 - INFO - DB Insert: Match 653902365 has event_count: 20
+2025-09-18 12:01:30,949 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,949 - ERROR - Failed to insert match 653902365: 46 values for 41 columns
+2025-09-18 12:01:30,950 - INFO - DB Insert: Match 653678608 has event_count: 20
+2025-09-18 12:01:30,950 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,950 - ERROR - Failed to insert match 653678608: 46 values for 41 columns
+2025-09-18 12:01:30,950 - INFO - DB Insert: Match 653678602 has event_count: 20
+2025-09-18 12:01:30,950 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,950 - ERROR - Failed to insert match 653678602: 46 values for 41 columns
+2025-09-18 12:01:30,950 - INFO - DB Insert: Match 653382162 has event_count: 20
+2025-09-18 12:01:30,950 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,950 - ERROR - Failed to insert match 653382162: 46 values for 41 columns
+2025-09-18 12:01:30,950 - INFO - DB Insert: Match 654308044 has event_count: 11
+2025-09-18 12:01:30,950 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,950 - ERROR - Failed to insert match 654308044: 46 values for 41 columns
+2025-09-18 12:01:30,950 - INFO - DB Insert: Match 654243305 has event_count: 20
+2025-09-18 12:01:30,950 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,950 - ERROR - Failed to insert match 654243305: 46 values for 41 columns
+2025-09-18 12:01:30,951 - INFO - DB Insert: Match 654243308 has event_count: 20
+2025-09-18 12:01:30,951 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,951 - ERROR - Failed to insert match 654243308: 46 values for 41 columns
+2025-09-18 12:01:30,951 - INFO - DB Insert: Match 654248930 has event_count: 20
+2025-09-18 12:01:30,951 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,951 - ERROR - Failed to insert match 654248930: 46 values for 41 columns
+2025-09-18 12:01:30,951 - INFO - DB Insert: Match 654235743 has event_count: 20
+2025-09-18 12:01:30,951 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,951 - ERROR - Failed to insert match 654235743: 46 values for 41 columns
+2025-09-18 12:01:30,951 - INFO - DB Insert: Match 654243314 has event_count: 20
+2025-09-18 12:01:30,951 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,951 - ERROR - Failed to insert match 654243314: 46 values for 41 columns
+2025-09-18 12:01:30,951 - INFO - DB Insert: Match 654243311 has event_count: 20
+2025-09-18 12:01:30,951 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,951 - ERROR - Failed to insert match 654243311: 46 values for 41 columns
+2025-09-18 12:01:30,952 - INFO - DB Insert: Match 654485120 has event_count: 18
+2025-09-18 12:01:30,952 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,952 - ERROR - Failed to insert match 654485120: 46 values for 41 columns
+2025-09-18 12:01:30,952 - INFO - DB Insert: Match 653643027 has event_count: 20
+2025-09-18 12:01:30,952 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,952 - ERROR - Failed to insert match 653643027: 46 values for 41 columns
+2025-09-18 12:01:30,952 - INFO - DB Insert: Match 653333429 has event_count: 20
+2025-09-18 12:01:30,952 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,952 - ERROR - Failed to insert match 653333429: 46 values for 41 columns
+2025-09-18 12:01:30,952 - INFO - DB Insert: Match 654030705 has event_count: 20
+2025-09-18 12:01:30,952 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,952 - ERROR - Failed to insert match 654030705: 46 values for 41 columns
+2025-09-18 12:01:30,952 - INFO - DB Insert: Match 654310988 has event_count: 11
+2025-09-18 12:01:30,952 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,953 - ERROR - Failed to insert match 654310988: 46 values for 41 columns
+2025-09-18 12:01:30,953 - INFO - DB Insert: Match 654435354 has event_count: 20
+2025-09-18 12:01:30,953 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,953 - ERROR - Failed to insert match 654435354: 46 values for 41 columns
+2025-09-18 12:01:30,953 - INFO - DB Insert: Match 654419667 has event_count: 20
+2025-09-18 12:01:30,953 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,953 - ERROR - Failed to insert match 654419667: 46 values for 41 columns
+2025-09-18 12:01:30,953 - INFO - DB Insert: Match 654463845 has event_count: 20
+2025-09-18 12:01:30,953 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,953 - ERROR - Failed to insert match 654463845: 46 values for 41 columns
+2025-09-18 12:01:30,953 - INFO - DB Insert: Match 654431973 has event_count: 20
+2025-09-18 12:01:30,953 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,953 - ERROR - Failed to insert match 654431973: 46 values for 41 columns
+2025-09-18 12:01:30,953 - INFO - DB Insert: Match 654185739 has event_count: 20
+2025-09-18 12:01:30,953 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,954 - ERROR - Failed to insert match 654185739: 46 values for 41 columns
+2025-09-18 12:01:30,954 - INFO - DB Insert: Match 654189020 has event_count: 20
+2025-09-18 12:01:30,954 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,954 - ERROR - Failed to insert match 654189020: 46 values for 41 columns
+2025-09-18 12:01:30,954 - INFO - DB Insert: Match 654194527 has event_count: 20
+2025-09-18 12:01:30,954 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,954 - ERROR - Failed to insert match 654194527: 46 values for 41 columns
+2025-09-18 12:01:30,954 - INFO - DB Insert: Match 654226412 has event_count: 20
+2025-09-18 12:01:30,954 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,954 - ERROR - Failed to insert match 654226412: 46 values for 41 columns
+2025-09-18 12:01:30,954 - INFO - DB Insert: Match 654226415 has event_count: 20
+2025-09-18 12:01:30,954 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,955 - ERROR - Failed to insert match 654226415: 46 values for 41 columns
+2025-09-18 12:01:30,955 - INFO - DB Insert: Match 654224871 has event_count: 20
+2025-09-18 12:01:30,955 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,955 - ERROR - Failed to insert match 654224871: 46 values for 41 columns
+2025-09-18 12:01:30,955 - INFO - DB Insert: Match 654437738 has event_count: 14
+2025-09-18 12:01:30,955 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,955 - ERROR - Failed to insert match 654437738: 46 values for 41 columns
+2025-09-18 12:01:30,955 - INFO - DB Insert: Match 654202254 has event_count: 18
+2025-09-18 12:01:30,955 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,955 - ERROR - Failed to insert match 654202254: 46 values for 41 columns
+2025-09-18 12:01:30,955 - INFO - DB Insert: Match 654220288 has event_count: 18
+2025-09-18 12:01:30,955 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,955 - ERROR - Failed to insert match 654220288: 46 values for 41 columns
+2025-09-18 12:01:30,955 - INFO - DB Insert: Match 654202640 has event_count: 18
+2025-09-18 12:01:30,955 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,956 - ERROR - Failed to insert match 654202640: 46 values for 41 columns
+2025-09-18 12:01:30,956 - INFO - DB Insert: Match 654202646 has event_count: 18
+2025-09-18 12:01:30,956 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,956 - ERROR - Failed to insert match 654202646: 46 values for 41 columns
+2025-09-18 12:01:30,956 - INFO - DB Insert: Match 654202263 has event_count: 16
+2025-09-18 12:01:30,956 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,956 - ERROR - Failed to insert match 654202263: 46 values for 41 columns
+2025-09-18 12:01:30,956 - INFO - DB Insert: Match 654202257 has event_count: 18
+2025-09-18 12:01:30,956 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,956 - ERROR - Failed to insert match 654202257: 46 values for 41 columns
+2025-09-18 12:01:30,956 - INFO - DB Insert: Match 654202637 has event_count: 18
+2025-09-18 12:01:30,956 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,956 - ERROR - Failed to insert match 654202637: 46 values for 41 columns
+2025-09-18 12:01:30,956 - INFO - DB Insert: Match 654202643 has event_count: 18
+2025-09-18 12:01:30,956 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,957 - ERROR - Failed to insert match 654202643: 46 values for 41 columns
+2025-09-18 12:01:30,957 - INFO - DB Insert: Match 654269162 has event_count: 18
+2025-09-18 12:01:30,957 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,957 - ERROR - Failed to insert match 654269162: 46 values for 41 columns
+2025-09-18 12:01:30,957 - INFO - DB Insert: Match 649845447 has event_count: 20
+2025-09-18 12:01:30,957 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,957 - ERROR - Failed to insert match 649845447: 46 values for 41 columns
+2025-09-18 12:01:30,957 - INFO - DB Insert: Match 653579576 has event_count: 20
+2025-09-18 12:01:30,957 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,957 - ERROR - Failed to insert match 653579576: 46 values for 41 columns
+2025-09-18 12:01:30,957 - INFO - DB Insert: Match 24325660 has event_count: 2
+2025-09-18 12:01:30,958 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,958 - ERROR - Failed to insert match 24325660: 46 values for 41 columns
+2025-09-18 12:01:30,958 - INFO - DB Insert: Match 24325406 has event_count: 2
+2025-09-18 12:01:30,958 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,958 - ERROR - Failed to insert match 24325406: 46 values for 41 columns
+2025-09-18 12:01:30,958 - INFO - DB Insert: Match 24325158 has event_count: 2
+2025-09-18 12:01:30,958 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,958 - ERROR - Failed to insert match 24325158: 46 values for 41 columns
+2025-09-18 12:01:30,958 - INFO - DB Insert: Match 24325552 has event_count: 2
+2025-09-18 12:01:30,959 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,959 - ERROR - Failed to insert match 24325552: 46 values for 41 columns
+2025-09-18 12:01:30,959 - INFO - DB Insert: Match 24325578 has event_count: 2
+2025-09-18 12:01:30,959 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,959 - ERROR - Failed to insert match 24325578: 46 values for 41 columns
+2025-09-18 12:01:30,960 - INFO - DB Insert: Match 24325592 has event_count: 2
+2025-09-18 12:01:30,960 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,960 - ERROR - Failed to insert match 24325592: 46 values for 41 columns
+2025-09-18 12:01:30,960 - INFO - DB Insert: Match 24325604 has event_count: 2
+2025-09-18 12:01:30,960 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,961 - ERROR - Failed to insert match 24325604: 46 values for 41 columns
+2025-09-18 12:01:30,961 - INFO - DB Insert: Match 24325606 has event_count: 2
+2025-09-18 12:01:30,961 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,961 - ERROR - Failed to insert match 24325606: 46 values for 41 columns
+2025-09-18 12:01:30,961 - INFO - DB Insert: Match 24325628 has event_count: 2
+2025-09-18 12:01:30,961 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,961 - ERROR - Failed to insert match 24325628: 46 values for 41 columns
+2025-09-18 12:01:30,961 - INFO - DB Insert: Match 24325630 has event_count: 2
+2025-09-18 12:01:30,961 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,961 - ERROR - Failed to insert match 24325630: 46 values for 41 columns
+2025-09-18 12:01:30,961 - INFO - DB Insert: Match 24325666 has event_count: 1
+2025-09-18 12:01:30,962 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:30,962 - ERROR - Failed to insert match 24325666: 46 values for 41 columns
+2025-09-18 12:01:30,971 - INFO - SUCCESS: ISCJXXQGMB: Retrieved 0 live matches for sport 35
+2025-09-18 12:01:30,971 - INFO - WARNING: ISCJXXQGMB failed for american_football, trying XBET
+2025-09-18 12:01:30,977 - INFO - SUCCESS: Inserted 0 matches into volleyball_2025_09_18
+2025-09-18 12:01:30,994 - INFO - INFO: No matches found for rugby
+2025-09-18 12:01:30,994 - INFO - SUCCESS: rugby: 0 matches collected
+2025-09-18 12:01:31,008 - INFO - SUCCESS: Inserted 0 matches into soccer_2025_09_18
+2025-09-18 12:01:31,190 - INFO - SUCCESS: 1xBet: Retrieved 48 matches for sport 9
+2025-09-18 12:01:31,195 - INFO - INFO: Dropping existing table boxing_2025_09_18 to ensure correct schema
+2025-09-18 12:01:31,197 - INFO - INFO: No matches found for american_football
+2025-09-18 12:01:31,197 - INFO - SUCCESS: american_football: 0 matches collected
+2025-09-18 12:01:31,237 - INFO - SUCCESS: Created/verified table: boxing_2025_09_18
+2025-09-18 12:01:31,237 - INFO - DB Insert: Match 654000117 has event_count: 5
+2025-09-18 12:01:31,237 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,238 - ERROR - Failed to insert match 654000117: 46 values for 41 columns
+2025-09-18 12:01:31,238 - INFO - DB Insert: Match 654303710 has event_count: 5
+2025-09-18 12:01:31,238 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,238 - ERROR - Failed to insert match 654303710: 46 values for 41 columns
+2025-09-18 12:01:31,238 - INFO - DB Insert: Match 654022179 has event_count: 8
+2025-09-18 12:01:31,238 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,238 - ERROR - Failed to insert match 654022179: 46 values for 41 columns
+2025-09-18 12:01:31,239 - INFO - DB Insert: Match 649772946 has event_count: 9
+2025-09-18 12:01:31,239 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,239 - ERROR - Failed to insert match 649772946: 46 values for 41 columns
+2025-09-18 12:01:31,239 - INFO - DB Insert: Match 654367417 has event_count: 3
+2025-09-18 12:01:31,239 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,239 - ERROR - Failed to insert match 654367417: 46 values for 41 columns
+2025-09-18 12:01:31,239 - INFO - DB Insert: Match 654367418 has event_count: 3
+2025-09-18 12:01:31,239 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,239 - ERROR - Failed to insert match 654367418: 46 values for 41 columns
+2025-09-18 12:01:31,239 - INFO - DB Insert: Match 654400251 has event_count: 5
+2025-09-18 12:01:31,239 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,239 - ERROR - Failed to insert match 654400251: 46 values for 41 columns
+2025-09-18 12:01:31,239 - INFO - DB Insert: Match 654307711 has event_count: 3
+2025-09-18 12:01:31,239 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,239 - ERROR - Failed to insert match 654307711: 46 values for 41 columns
+2025-09-18 12:01:31,239 - INFO - DB Insert: Match 654306659 has event_count: 3
+2025-09-18 12:01:31,240 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,240 - ERROR - Failed to insert match 654306659: 46 values for 41 columns
+2025-09-18 12:01:31,240 - INFO - DB Insert: Match 654296317 has event_count: 3
+2025-09-18 12:01:31,240 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,240 - ERROR - Failed to insert match 654296317: 46 values for 41 columns
+2025-09-18 12:01:31,240 - INFO - DB Insert: Match 654296316 has event_count: 3
+2025-09-18 12:01:31,240 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,240 - ERROR - Failed to insert match 654296316: 46 values for 41 columns
+2025-09-18 12:01:31,240 - INFO - DB Insert: Match 654368908 has event_count: 3
+2025-09-18 12:01:31,240 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,240 - ERROR - Failed to insert match 654368908: 46 values for 41 columns
+2025-09-18 12:01:31,240 - INFO - DB Insert: Match 654296315 has event_count: 3
+2025-09-18 12:01:31,240 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,240 - ERROR - Failed to insert match 654296315: 46 values for 41 columns
+2025-09-18 12:01:31,240 - INFO - DB Insert: Match 654368907 has event_count: 3
+2025-09-18 12:01:31,241 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,241 - ERROR - Failed to insert match 654368907: 46 values for 41 columns
+2025-09-18 12:01:31,241 - INFO - DB Insert: Match 654383487 has event_count: 8
+2025-09-18 12:01:31,241 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,241 - ERROR - Failed to insert match 654383487: 46 values for 41 columns
+2025-09-18 12:01:31,241 - INFO - DB Insert: Match 649777411 has event_count: 9
+2025-09-18 12:01:31,241 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,241 - ERROR - Failed to insert match 649777411: 46 values for 41 columns
+2025-09-18 12:01:31,242 - INFO - DB Insert: Match 652663896 has event_count: 5
+2025-09-18 12:01:31,242 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,242 - ERROR - Failed to insert match 652663896: 46 values for 41 columns
+2025-09-18 12:01:31,242 - INFO - DB Insert: Match 652609483 has event_count: 5
+2025-09-18 12:01:31,242 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,242 - ERROR - Failed to insert match 652609483: 46 values for 41 columns
+2025-09-18 12:01:31,242 - INFO - DB Insert: Match 649752925 has event_count: 5
+2025-09-18 12:01:31,242 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,242 - ERROR - Failed to insert match 649752925: 46 values for 41 columns
+2025-09-18 12:01:31,242 - INFO - DB Insert: Match 654239404 has event_count: 3
+2025-09-18 12:01:31,242 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,242 - ERROR - Failed to insert match 654239404: 46 values for 41 columns
+2025-09-18 12:01:31,242 - INFO - DB Insert: Match 649752926 has event_count: 5
+2025-09-18 12:01:31,242 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,242 - ERROR - Failed to insert match 649752926: 46 values for 41 columns
+2025-09-18 12:01:31,242 - INFO - DB Insert: Match 649752316 has event_count: 5
+2025-09-18 12:01:31,243 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,243 - ERROR - Failed to insert match 649752316: 46 values for 41 columns
+2025-09-18 12:01:31,243 - INFO - DB Insert: Match 649750623 has event_count: 5
+2025-09-18 12:01:31,243 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,243 - ERROR - Failed to insert match 649750623: 46 values for 41 columns
+2025-09-18 12:01:31,243 - INFO - DB Insert: Match 652666435 has event_count: 5
+2025-09-18 12:01:31,243 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,243 - ERROR - Failed to insert match 652666435: 46 values for 41 columns
+2025-09-18 12:01:31,243 - INFO - DB Insert: Match 652609482 has event_count: 5
+2025-09-18 12:01:31,243 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,243 - ERROR - Failed to insert match 652609482: 46 values for 41 columns
+2025-09-18 12:01:31,243 - INFO - DB Insert: Match 652663895 has event_count: 5
+2025-09-18 12:01:31,243 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,243 - ERROR - Failed to insert match 652663895: 46 values for 41 columns
+2025-09-18 12:01:31,243 - INFO - DB Insert: Match 649749805 has event_count: 5
+2025-09-18 12:01:31,244 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,244 - ERROR - Failed to insert match 649749805: 46 values for 41 columns
+2025-09-18 12:01:31,244 - INFO - DB Insert: Match 652330695 has event_count: 5
+2025-09-18 12:01:31,244 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,244 - ERROR - Failed to insert match 652330695: 46 values for 41 columns
+2025-09-18 12:01:31,244 - INFO - DB Insert: Match 652330696 has event_count: 5
+2025-09-18 12:01:31,244 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,244 - ERROR - Failed to insert match 652330696: 46 values for 41 columns
+2025-09-18 12:01:31,244 - INFO - DB Insert: Match 654237875 has event_count: 5
+2025-09-18 12:01:31,244 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,244 - ERROR - Failed to insert match 654237875: 46 values for 41 columns
+2025-09-18 12:01:31,244 - INFO - DB Insert: Match 652330694 has event_count: 5
+2025-09-18 12:01:31,244 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,244 - ERROR - Failed to insert match 652330694: 46 values for 41 columns
+2025-09-18 12:01:31,244 - INFO - DB Insert: Match 651426482 has event_count: 3
+2025-09-18 12:01:31,244 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,244 - ERROR - Failed to insert match 651426482: 46 values for 41 columns
+2025-09-18 12:01:31,245 - INFO - DB Insert: Match 652336655 has event_count: 5
+2025-09-18 12:01:31,245 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,245 - ERROR - Failed to insert match 652336655: 46 values for 41 columns
+2025-09-18 12:01:31,245 - INFO - DB Insert: Match 652344106 has event_count: 5
+2025-09-18 12:01:31,245 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,245 - ERROR - Failed to insert match 652344106: 46 values for 41 columns
+2025-09-18 12:01:31,245 - INFO - DB Insert: Match 648139957 has event_count: 3
+2025-09-18 12:01:31,245 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,245 - ERROR - Failed to insert match 648139957: 46 values for 41 columns
+2025-09-18 12:01:31,245 - INFO - DB Insert: Match 654325734 has event_count: 3
+2025-09-18 12:01:31,245 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,245 - ERROR - Failed to insert match 654325734: 46 values for 41 columns
+2025-09-18 12:01:31,246 - INFO - DB Insert: Match 646205224 has event_count: 5
+2025-09-18 12:01:31,246 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,246 - ERROR - Failed to insert match 646205224: 46 values for 41 columns
+2025-09-18 12:01:31,246 - INFO - DB Insert: Match 645137704 has event_count: 5
+2025-09-18 12:01:31,246 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,246 - ERROR - Failed to insert match 645137704: 46 values for 41 columns
+2025-09-18 12:01:31,246 - INFO - DB Insert: Match 644761630 has event_count: 5
+2025-09-18 12:01:31,246 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,246 - ERROR - Failed to insert match 644761630: 46 values for 41 columns
+2025-09-18 12:01:31,246 - INFO - DB Insert: Match 648160969 has event_count: 5
+2025-09-18 12:01:31,246 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,247 - ERROR - Failed to insert match 648160969: 46 values for 41 columns
+2025-09-18 12:01:31,247 - INFO - DB Insert: Match 648146254 has event_count: 2
+2025-09-18 12:01:31,247 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,247 - ERROR - Failed to insert match 648146254: 46 values for 41 columns
+2025-09-18 12:01:31,247 - INFO - DB Insert: Match 649577371 has event_count: 9
+2025-09-18 12:01:31,247 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,247 - ERROR - Failed to insert match 649577371: 46 values for 41 columns
+2025-09-18 12:01:31,247 - INFO - DB Insert: Match 648163087 has event_count: 5
+2025-09-18 12:01:31,247 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,247 - ERROR - Failed to insert match 648163087: 46 values for 41 columns
+2025-09-18 12:01:31,247 - INFO - DB Insert: Match 646543216 has event_count: 5
+2025-09-18 12:01:31,247 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,247 - ERROR - Failed to insert match 646543216: 46 values for 41 columns
+2025-09-18 12:01:31,247 - INFO - DB Insert: Match 637506298 has event_count: 9
+2025-09-18 12:01:31,248 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,248 - ERROR - Failed to insert match 637506298: 46 values for 41 columns
+2025-09-18 12:01:31,248 - INFO - DB Insert: Match 637506296 has event_count: 9
+2025-09-18 12:01:31,248 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,248 - ERROR - Failed to insert match 637506296: 46 values for 41 columns
+2025-09-18 12:01:31,248 - INFO - DB Insert: Match 637506297 has event_count: 9
+2025-09-18 12:01:31,248 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,248 - ERROR - Failed to insert match 637506297: 46 values for 41 columns
+2025-09-18 12:01:31,248 - INFO - DB Insert: Match 637506299 has event_count: 9
+2025-09-18 12:01:31,248 - INFO - DEBUG: Inserting 41 values into table with columns list
+2025-09-18 12:01:31,248 - ERROR - Failed to insert match 637506299: 46 values for 41 columns
+2025-09-18 12:01:31,254 - INFO - SUCCESS: Inserted 0 matches into boxing_2025_09_18
+2025-09-18 12:01:33,503 - INFO - SUCCESS: handball: 2 matches from XBET
+2025-09-18 12:01:33,503 - INFO - SUCCESS: handball: 2 matches collected
+2025-09-18 12:01:59,230 - INFO - SUCCESS: futsal: 25 matches from XBET
+2025-09-18 12:01:59,231 - INFO - SUCCESS: futsal: 25 matches collected
+2025-09-18 12:02:19,085 - INFO - SUCCESS: boxing: 48 matches from XBET
+2025-09-18 12:02:19,086 - INFO - SUCCESS: boxing: 48 matches collected
+2025-09-18 12:02:20,345 - INFO - SUCCESS: soccer: 61 matches from BOTH
+2025-09-18 12:02:20,346 - INFO - SUCCESS: soccer: 61 matches collected
+2025-09-18 12:02:20,552 - INFO - SUCCESS: volleyball: 50 matches from XBET
+2025-09-18 12:02:20,553 - INFO - SUCCESS: volleyball: 50 matches collected
+2025-09-18 12:02:20,590 - INFO - SUCCESS: tennis: 50 matches from XBET
+2025-09-18 12:02:20,590 - INFO - SUCCESS: tennis: 50 matches collected
+2025-09-18 12:02:20,591 - INFO - COMPLETE: Collection complete: 13 sports, 255 matches
+2025-09-18 12:02:20,591 - INFO - CYCLE: Collection cycle complete: 255 matches from 13 sports
+2025-09-18 12:14:33,835 - INFO - DEMO: Demonstrating prediction capabilities
+2025-09-18 12:14:34,148 - INFO - PREDICT: Manchester City vs Arsenal (soccer)
+2025-09-18 12:14:34,149 - INFO -    Outcome: home_win (40.0% confidence)
+2025-09-18 12:14:34,149 - INFO -    Score: 0:0
+2025-09-18 12:14:34,453 - INFO - PREDICT: Los Angeles Lakers vs Golden State Warriors (basketball)
+2025-09-18 12:14:34,453 - INFO -    Outcome: home_win (40.0% confidence)
+2025-09-18 12:14:34,453 - INFO -    Score: 0:0
+2025-09-18 12:14:34,790 - INFO - PREDICT: Real Madrid vs Barcelona (soccer)
+2025-09-18 12:14:34,790 - INFO -    Outcome: home_win (40.0% confidence)
+2025-09-18 12:14:34,790 - INFO -    Score: 0:0

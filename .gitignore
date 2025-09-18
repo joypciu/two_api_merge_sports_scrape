@@ -117,20 +117,99 @@ dmypy.json
 # Project-specific ignores
 # Database files
 *.db
+*.sqlite
+*.sqlite3
+sports_data_v2.db
+app/sports_data_v2.db
 
 # Log files
 *.log
+sports_collector_v2.log
+logs/
+log/
 
 # Debug directory and files
 debug/
+debug_*.py
+test_*.py
 *.json
+api_response_*.json
+data/api_response_*.json
+
+# API and data files
+api_responses/
+temp_data/
+cache/
+*.cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
 # IDE files
 .vscode/
+.idea/
+*.swp
+*.swo
+*~
 
 # OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+Desktop.ini
+
+# Windows specific
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux specific
+*~
+.directory
+.Trash-*
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+*.temp
 
 # Configuration files (may contain sensitive data)
 config.yaml
+config.yml
+.env
+.env.local
+.env.production
+.env.staging
+secrets.json
+credentials.json
+
+# Data export files
+exports/
+*.csv
+*.xlsx
+*.xls
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.pyc
+*.log
+.pyc
+.log
+__pycache__/
