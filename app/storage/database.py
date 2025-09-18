@@ -4,6 +4,7 @@ Eliminates null columns and provides efficient data storage
 """
 import sqlite3
 import logging
+import json
 from datetime import datetime, date, timedelta
 from typing import Dict, List, Optional, Any
 from contextlib import contextmanager
@@ -56,12 +57,21 @@ class DatabaseManager:
         return f"{sport}_{target_date.strftime('%Y_%m_%d')}"
 
     def create_daily_table(self, sport: str, target_date: Optional[date] = None) -> str:
-        """Create optimized daily table for a sport"""
+        """Create optimized daily table for a sport with expanded fields"""
         table_name = self.get_table_name(sport, target_date)
 
-        # Optimized schema with no null columns - only essential fields
+        with self.get_connection() as conn:
+            cursor = conn.cursor()
+
+            # Check if table exists and drop it if schema might be wrong
+            cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name=?", (table_name,))
+            if cursor.fetchone():
+                logging.info(f"INFO: Dropping existing table {table_name} to ensure correct schema")
+                cursor.execute(f"DROP TABLE {table_name}")
+
+        # Optimized schema - only essential columns (20 total)
         schema = f'''
-            CREATE TABLE IF NOT EXISTS {table_name} (
+            CREATE TABLE {table_name} (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 match_id TEXT UNIQUE NOT NULL,
                 timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
@@ -78,13 +88,20 @@ class DatabaseManager:
                 odds_away REAL,
                 odds_draw REAL,
 
-                -- Live statistics
-                is_live BOOLEAN DEFAULT 0,
+                -- Match statistics
+                event_count INTEGER DEFAULT 0,
                 start_time INTEGER,
 
+                -- Team information (only IDs)
+                home_team_id INTEGER,
+                away_team_id INTEGER,
+
+                -- Essential match metadata
+                stoppage_time BOOLEAN DEFAULT 0,
+                half_time BOOLEAN DEFAULT 0,
+
                 -- Metadata
-                data_source TEXT DEFAULT '1xbet',
-                confidence REAL DEFAULT 0.0
+                data_source TEXT DEFAULT 'iscjxxqgmb'
             )
         '''
 
@@ -114,7 +131,7 @@ class DatabaseManager:
 
             conn.commit()
 
-        logging.info(f"✅ Created/verified table: {table_name}")
+        logging.info(f"SUCCESS: Created/verified table: {table_name}")
         return table_name
 
     def insert_match_data(self, sport: str, matches: List[Dict], target_date: Optional[date] = None) -> int:
@@ -133,15 +150,13 @@ class DatabaseManager:
                 try:
                     # Clean and validate data
                     match_data = self._clean_match_data(match)
+    
+                    # Debug: Log event_count for first few matches
+                    if inserted_count < 5 and match_data.get('event_count', 0) > 0:
+                        logging.info(f"DB Insert: Match {match_data['match_id']} has event_count: {match_data['event_count']}")
 
-                    # Insert or update match data
-                    cursor.execute(f'''
-                        INSERT OR REPLACE INTO {table_name}
-                        (match_id, home_team, away_team, score, status, period,
-                         tournament, sport, odds_home, odds_away, odds_draw,
-                         is_live, start_time, data_source, confidence)
-                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                    ''', (
+                    # Insert or update match data with optimized fields (18 columns including sport)
+                    values = (
                         match_data['match_id'],
                         match_data['home_team'],
                         match_data['away_team'],
@@ -153,11 +168,30 @@ class DatabaseManager:
                         match_data['odds_home'],
                         match_data['odds_away'],
                         match_data['odds_draw'],
-                        match_data['is_live'],
+                        match_data['event_count'],
                         match_data['start_time'],
                         match_data['data_source'],
-                        match_data['confidence']
-                    ))
+                        # Team information (only IDs)
+                        match_data.get('home_team_id'),
+                        match_data.get('away_team_id'),
+                        # Essential match metadata
+                        match_data.get('stoppage_time', False),
+                        match_data.get('half_time', False)
+                    )
+
+                    # Verify the values count matches columns before insertion
+                    expected_columns = 18
+                    if len(values) != expected_columns:
+                        logging.error(f"Column count mismatch: expected {expected_columns}, got {len(values)}")
+                        continue
+
+                    cursor.execute(f'''
+                        INSERT OR REPLACE INTO {table_name}
+                        (match_id, home_team, away_team, score, status, period, tournament, sport,
+                         odds_home, odds_away, odds_draw, event_count, start_time, data_source,
+                         home_team_id, away_team_id, stoppage_time, half_time)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    ''', values)
 
                     inserted_count += 1
 
@@ -177,27 +211,45 @@ class DatabaseManager:
 
             conn.commit()
 
-        logging.info(f"✅ Inserted {inserted_count} matches into {table_name}")
+        logging.info(f"SUCCESS: Inserted {inserted_count} matches into {table_name}")
         return inserted_count
 
     def _clean_match_data(self, match: Dict) -> Dict:
-        """Clean and validate match data, providing defaults for missing fields"""
-        return {
+        """Clean and validate match data with optimized fields (18 columns), providing defaults for missing fields"""
+        # Validate status field
+        status = match.get('status', 'pregame')
+        if status not in ['pregame', 'live']:
+            status = 'pregame'  # Default to pregame for unknown statuses
+
+        # Create a completely new dictionary with ONLY the fields that exist in the optimized database schema (18 columns)
+        # This ensures no extra fields from the API response are included and matches the optimized schema
+        cleaned_data = {
+            # Core match data (columns 1-14)
             'match_id': str(match.get('match_id', '')),
             'home_team': match.get('home_team', '').strip(),
             'away_team': match.get('away_team', '').strip(),
             'score': match.get('score', ''),
-            'status': match.get('status', 'scheduled'),
+            'status': status,
             'period': int(match.get('period', 1)),
             'tournament': match.get('tournament', ''),
+            'sport': match.get('sport', ''),  # This will be set by the calling function
             'odds_home': match.get('odds_home'),
             'odds_away': match.get('odds_away'),
             'odds_draw': match.get('odds_draw'),
-            'is_live': bool(match.get('is_live', False)),
+            'event_count': int(match.get('event_count', 0)),
             'start_time': match.get('start_time', 0),
-            'data_source': match.get('data_source', '1xbet'),
-            'confidence': float(match.get('confidence', 0.0))
+            'data_source': match.get('data_source', 'iscjxxqgmb'),
+
+            # Team information (columns 15-16) - only IDs, removed logos
+            'home_team_id': match.get('home_team_id'),
+            'away_team_id': match.get('away_team_id'),
+
+            # Essential match metadata (columns 17-18) - kept only essential ones
+            'stoppage_time': bool(match.get('stoppage_time', False)),
+            'half_time': bool(match.get('half_time', False))
         }
+
+        return cleaned_data
 
     def get_matches_by_date(self, sport: str, target_date: date) -> List[Dict]:
         """Get all matches for a specific sport and date"""
@@ -275,11 +327,104 @@ class DatabaseManager:
                 try:
                     cursor.execute(f"DROP TABLE {table_name}")
                     cursor.execute("DELETE FROM table_metadata WHERE table_name = ?", (table_name,))
-                    logging.info(f"🗑️ Dropped old table: {table_name}")
+                    logging.info(f"CLEANUP: Dropped old table: {table_name}")
                 except Exception as e:
                     logging.error(f"Failed to drop table {table_name}: {e}")
 
             conn.commit()
+
+    def migrate_table_schema(self, table_name: str):
+        """Migrate existing table to new schema (replace is_live and confidence with event_count)"""
+        with self.get_connection() as conn:
+            cursor = conn.cursor()
+
+            try:
+                # Check if table exists and has old schema
+                cursor.execute(f"PRAGMA table_info({table_name})")
+                columns = cursor.fetchall()
+                column_names = [col[1] for col in columns]
+
+                if 'is_live' in column_names and 'confidence' in column_names:
+                    logging.info(f"🔄 Migrating table {table_name} to new schema...")
+
+                    # Create temporary table with new schema
+                    temp_table = f"{table_name}_temp_migration"
+                    new_schema = f'''
+                        CREATE TABLE {temp_table} (
+                            id INTEGER PRIMARY KEY AUTOINCREMENT,
+                            match_id TEXT UNIQUE NOT NULL,
+                            timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+                            home_team TEXT NOT NULL,
+                            away_team TEXT NOT NULL,
+                            score TEXT,
+                            status TEXT,
+                            period INTEGER DEFAULT 1,
+                            tournament TEXT,
+                            sport TEXT NOT NULL,
+                            odds_home REAL,
+                            odds_away REAL,
+                            odds_draw REAL,
+                            event_count INTEGER DEFAULT 0,
+                            start_time INTEGER,
+                            data_source TEXT DEFAULT '1xbet'
+                        )
+                    '''
+
+                    cursor.execute(new_schema)
+
+                    # Copy data from old table to new table, converting status values
+                    cursor.execute(f'''
+                        INSERT INTO {temp_table}
+                        (id, match_id, timestamp, home_team, away_team, score, status, period,
+                         tournament, sport, odds_home, odds_away, odds_draw, event_count,
+                         start_time, data_source)
+                        SELECT id, match_id, timestamp, home_team, away_team, score,
+                               CASE
+                                   WHEN status = 'scheduled' THEN 'pregame'
+                                   WHEN status IN ('pregame', 'live') THEN status
+                                   ELSE 'pregame'
+                               END as status,
+                               period, tournament, sport, odds_home, odds_away, odds_draw, 0,
+                               start_time, data_source
+                        FROM {table_name}
+                    ''')
+
+                    # Drop old table and rename new table
+                    cursor.execute(f"DROP TABLE {table_name}")
+                    cursor.execute(f"ALTER TABLE {temp_table} RENAME TO {table_name}")
+
+                    # Recreate indexes
+                    index_sql = f'''
+                        CREATE INDEX IF NOT EXISTS idx_{table_name}_timestamp ON {table_name} (timestamp);
+                        CREATE INDEX IF NOT EXISTS idx_{table_name}_teams ON {table_name} (home_team, away_team);
+                        CREATE INDEX IF NOT EXISTS idx_{table_name}_status ON {table_name} (status);
+                        CREATE INDEX IF NOT EXISTS idx_{table_name}_match_id ON {table_name} (match_id);
+                    '''
+                    for index_stmt in index_sql.strip().split(';'):
+                        if index_stmt.strip():
+                            cursor.execute(index_stmt.strip())
+
+                    conn.commit()
+                    logging.info(f"✅ Successfully migrated table {table_name}")
+                else:
+                    logging.info(f"ℹ️ Table {table_name} already has new schema or doesn't exist")
+
+            except Exception as e:
+                logging.error(f"❌ Failed to migrate table {table_name}: {e}")
+                conn.rollback()
+
+    def migrate_all_tables(self):
+        """Migrate all existing tables to new schema"""
+        with self.get_connection() as conn:
+            cursor = conn.cursor()
+
+            # Get all sport tables (excluding metadata tables)
+            cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name LIKE '%_%'")
+            tables = cursor.fetchall()
+
+            for (table_name,) in tables:
+                if not table_name.startswith('table_metadata') and not table_name.startswith('sqlite'):
+                    self.migrate_table_schema(table_name)
 
     def optimize_database(self):
         """Optimize database performance"""
@@ -290,4 +435,4 @@ class DatabaseManager:
             cursor.execute("VACUUM")
             cursor.execute("ANALYZE")
 
-            logging.info("✅ Database optimized")
+            logging.info("SUCCESS: Database optimized")
